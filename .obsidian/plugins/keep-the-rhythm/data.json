@@ -2221,7 +2221,7 @@
       },
       {
         "date": "2025-06-26",
-        "filePath": "🍀 花园导览/👓 如何高效学习.md",
+        "filePath": "📥 Inbox/👓 如何高效学习.md",
         "wordCountStart": 69,
         "charCountStart": 197,
         "changes": [
@@ -6868,7 +6868,13 @@
         "filePath": "Spaces/3-Resource/软件梳理/macos软件/Obsidian.md",
         "wordCountStart": 387,
         "charCountStart": 1083,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": -6,
+            "c": -21
+          }
+        ],
         "id": 677
       },
       {
@@ -7091,6 +7097,21 @@
             "timeKey": "20:55",
             "w": 11,
             "c": 38
+          },
+          {
+            "timeKey": "22:35",
+            "w": -33,
+            "c": -145
+          },
+          {
+            "timeKey": "22:40",
+            "w": -102,
+            "c": -256
+          },
+          {
+            "timeKey": "23:00",
+            "w": 5,
+            "c": 20
           }
         ],
         "id": 702
@@ -7111,10 +7132,16 @@
       },
       {
         "date": "2025-07-08",
-        "filePath": "🍀 花园导览/👓 如何高效学习.md",
+        "filePath": "📥 Inbox/👓 如何高效学习.md",
         "wordCountStart": 69,
         "charCountStart": 192,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "23:20",
+            "w": 0,
+            "c": 1
+          }
+        ],
         "id": 704
       },
       {
@@ -7127,6 +7154,11 @@
             "timeKey": "14:10",
             "w": -7,
             "c": -26
+          },
+          {
+            "timeKey": "23:20",
+            "w": 0,
+            "c": 2
           }
         ],
         "id": 705
@@ -7321,6 +7353,60 @@
       },
       {
         "date": "2025-07-08",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/增肌减脂计划.md",
+        "wordCountStart": 101,
+        "charCountStart": 154,
+        "changes": [],
+        "id": 722
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/运动.md",
+        "wordCountStart": 63,
+        "charCountStart": 143,
+        "changes": [],
+        "id": 723
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/PPV人生管理系统/Pipelines - 行动管道/人生价值目标 - Objects/45岁之前不出大病.md",
+        "wordCountStart": 39,
+        "charCountStart": 105,
+        "changes": [],
+        "id": 724
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件.md",
+        "wordCountStart": 858,
+        "charCountStart": 3821,
+        "changes": [],
+        "id": 725
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/3-Resource/软件梳理/安卓软件/∑ 安卓必备软件.md",
+        "wordCountStart": 540,
+        "charCountStart": 1592,
+        "changes": [],
+        "id": 726
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/工作流与SOP/» 视频笔记工作流.md",
+        "wordCountStart": 220,
+        "charCountStart": 565,
+        "changes": [
+          {
+            "timeKey": "23:10",
+            "w": 1,
+            "c": 9
+          }
+        ],
+        "id": 727
+      },
+      {
+        "date": "2025-07-08",
         "filePath": "📥 Inbox/lunar.md",
         "wordCountStart": 0,
         "charCountStart": 0,
@@ -7343,6 +7429,11 @@
             "timeKey": "18:45",
             "w": 24,
             "c": 152
+          },
+          {
+            "timeKey": "22:45",
+            "w": 10,
+            "c": 13
           }
         ],
         "id": 729
@@ -7366,7 +7457,13 @@
         "filePath": "🍀 花园导览/🍀 花园导览.md",
         "wordCountStart": 231,
         "charCountStart": 552,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "23:20",
+            "w": -5,
+            "c": -21
+          }
+        ],
         "id": 731
       },
       {
@@ -7384,6 +7481,430 @@
         "charCountStart": 917,
         "changes": [],
         "id": 733
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/ChatGPT.md",
+        "wordCountStart": 251,
+        "charCountStart": 1017,
+        "changes": [
+          {
+            "timeKey": "22:55",
+            "w": -39,
+            "c": -195
+          },
+          {
+            "timeKey": "23:00",
+            "w": -110,
+            "c": -457
+          }
+        ],
+        "id": 734
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/∑ Spaces.md",
+        "wordCountStart": 300,
+        "charCountStart": 685,
+        "changes": [],
+        "id": 735
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Atlas/∑ Atlas.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 736
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "📥 Inbox/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "22:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 737
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/flashcards-obsidian.md",
+        "wordCountStart": 62,
+        "charCountStart": 474,
+        "changes": [],
+        "id": 738
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/📂 本库目录及插件介绍.md",
+        "wordCountStart": 125,
+        "charCountStart": 239,
+        "changes": [],
+        "id": 739
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/🧰 本库使用指南.md",
+        "wordCountStart": 1015,
+        "charCountStart": 1827,
+        "changes": [],
+        "id": 740
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/🆕 本库更新日志.md",
+        "wordCountStart": 1410,
+        "charCountStart": 2770,
+        "changes": [],
+        "id": 741
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/§ obsidian 从了解到沉醉 - PPT.md",
+        "wordCountStart": 171,
+        "charCountStart": 413,
+        "changes": [],
+        "id": 742
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件.md",
+        "wordCountStart": 1411,
+        "charCountStart": 12664,
+        "changes": [
+          {
+            "timeKey": "22:45",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 743
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Various Complements.md",
+        "wordCountStart": 255,
+        "charCountStart": 544,
+        "changes": [],
+        "id": 744
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Recent Notes.md",
+        "wordCountStart": 17,
+        "charCountStart": 98,
+        "changes": [],
+        "id": 745
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Rich Foot.md",
+        "wordCountStart": 34,
+        "charCountStart": 119,
+        "changes": [],
+        "id": 746
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Share to NotionNext.md",
+        "wordCountStart": 20,
+        "charCountStart": 122,
+        "changes": [],
+        "id": 747
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/这才是真的AI Agent：使用Cursor对Obsidian进行一键批量智能操作.md",
+        "wordCountStart": 1993,
+        "charCountStart": 4618,
+        "changes": [],
+        "id": 748
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/国人如何使用chatGPT.md",
+        "wordCountStart": 792,
+        "charCountStart": 1220,
+        "changes": [
+          {
+            "timeKey": "22:55",
+            "w": -792,
+            "c": -1220
+          }
+        ],
+        "id": 749
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/chatGPT web页面的自带提示词破解.md",
+        "wordCountStart": 781,
+        "charCountStart": 4749,
+        "changes": [
+          {
+            "timeKey": "22:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 750
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/raycast ai 的自带提示词破解.md",
+        "wordCountStart": 133,
+        "charCountStart": 931,
+        "changes": [
+          {
+            "timeKey": "22:55",
+            "w": 12,
+            "c": 52
+          }
+        ],
+        "id": 751
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/claude 伪多模态.md",
+        "wordCountStart": 135,
+        "charCountStart": 408,
+        "changes": [
+          {
+            "timeKey": "23:00",
+            "w": 48,
+            "c": 84
+          }
+        ],
+        "id": 752
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/chatgpt windows 下载.md",
+        "wordCountStart": 51,
+        "charCountStart": 256,
+        "changes": [
+          {
+            "timeKey": "23:00",
+            "w": 2,
+            "c": 15
+          }
+        ],
+        "id": 753
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/∑ ChatGPT和LLM.md",
+        "wordCountStart": 12,
+        "charCountStart": 74,
+        "changes": [],
+        "id": 754
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "GEMINI.md",
+        "wordCountStart": 614,
+        "charCountStart": 4273,
+        "changes": [],
+        "id": 755
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/Gemini.md",
+        "wordCountStart": 26,
+        "charCountStart": 126,
+        "changes": [
+          {
+            "timeKey": "23:00",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 756
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/DeepSeek.md",
+        "wordCountStart": 182,
+        "charCountStart": 515,
+        "changes": [
+          {
+            "timeKey": "23:00",
+            "w": 1,
+            "c": -27
+          }
+        ],
+        "id": 757
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/3-Resource/账号密码/deepseek 官方 api key.md",
+        "wordCountStart": 23,
+        "charCountStart": 162,
+        "changes": [
+          {
+            "timeKey": "23:00",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 758
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/最佳实践.md",
+        "wordCountStart": 403,
+        "charCountStart": 537,
+        "changes": [
+          {
+            "timeKey": "23:00",
+            "w": 0,
+            "c": 2
+          }
+        ],
+        "id": 759
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "📥 Inbox/解决方案.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "23:00",
+            "w": 11,
+            "c": 65
+          },
+          {
+            "timeKey": "23:05",
+            "w": 45,
+            "c": 67
+          }
+        ],
+        "id": 760
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/80%默认优先，20%深度定制.md",
+        "wordCountStart": 154,
+        "charCountStart": 235,
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 761
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/简悦.md",
+        "wordCountStart": 30,
+        "charCountStart": 91,
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 762
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/使用简悦对web文章进行渐进式总结.md",
+        "wordCountStart": 495,
+        "charCountStart": 868,
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 763
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/笔记软件的选择.md",
+        "wordCountStart": 605,
+        "charCountStart": 1099,
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": -4,
+            "c": -66
+          }
+        ],
+        "id": 764
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Cards/重器轻用.md",
+        "wordCountStart": 474,
+        "charCountStart": 757,
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": 2,
+            "c": -17
+          }
+        ],
+        "id": 765
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/2-Area/知识管理/个人知识笔记系统.md",
+        "wordCountStart": 265,
+        "charCountStart": 503,
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 766
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "Spaces/2-Area/知识管理/第二大脑.md",
+        "wordCountStart": 249,
+        "charCountStart": 413,
+        "changes": [
+          {
+            "timeKey": "23:05",
+            "w": 2,
+            "c": 5
+          }
+        ],
+        "id": 767
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🏋 如何保持健康.md",
+        "wordCountStart": 1503,
+        "charCountStart": 1919,
+        "changes": [],
+        "id": 768
+      },
+      {
+        "date": "2025-07-08",
+        "filePath": "🍀 花园导览/🔧 如何用好AI工具.md",
+        "wordCountStart": 143,
+        "charCountStart": 496,
+        "changes": [
+          {
+            "timeKey": "23:20",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 769
       }
     ]
   }

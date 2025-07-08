@@ -1,8 +1,0 @@
-# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
-.smart-connections/*
-# .obsidian/*
-.fileorganizer2000/*
-.trash/*
-Extras/Media
-.fileorganizer2000/*
-.smart-env/*

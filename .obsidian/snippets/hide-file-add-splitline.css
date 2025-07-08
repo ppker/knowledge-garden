@@ -28,6 +28,10 @@ div[data-path='logseq'] + div.nav-folder-children
   display: none;
 }
 
+.nav-file-title[data-path="publish_by_frontmatter.py"] {
+  display: none;
+}
+
 /* 文件浏览器添加分隔线 */
 /* 原始代码来自： https://github.com/replete/obsidian-minimal-theme-css-snippets */
 
