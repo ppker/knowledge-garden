@@ -284,7 +284,13 @@
     "Extras/Templates",
     "Atlas/Draws"
   ],
-  "filesToIgnore": [],
+  "filesToIgnore": [
+    {
+      "match": "^Extras/Other/Obsidian当前开启的全部第三方插件及其命令行\\.md$",
+      "flags": "",
+      "label": ""
+    }
+  ],
   "linterLocale": "zh-cn",
   "logLevel": "ERROR",
   "lintCommands": [],

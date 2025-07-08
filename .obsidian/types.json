@@ -43,6 +43,8 @@
     "是否有破解版": "checkbox",
     "是否通过UniGetUI安装": "checkbox",
     "publish": "checkbox",
-    "优先级": "number"
+    "优先级": "number",
+    "开始日期": "date",
+    "截止日期": "date"
   }
 }
