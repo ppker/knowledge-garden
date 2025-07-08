@@ -71,7 +71,8 @@
     "highestStreakStartDate": "",
     "highestStreakEndDate": "",
     "daysWithCompletedGoal": [
-      "2025-06-25"
+      "2025-06-25",
+      "2025-07-09"
     ],
     "dailyActivity": [
       {
@@ -8218,6 +8219,142 @@
           }
         ],
         "id": 797
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "🍀 花园导览/🏋 如何保持健康.md",
+        "wordCountStart": 1503,
+        "charCountStart": 1919,
+        "changes": [
+          {
+            "timeKey": "00:10",
+            "w": 5,
+            "c": 9
+          },
+          {
+            "timeKey": "00:15",
+            "w": 9,
+            "c": 18
+          }
+        ],
+        "id": 798
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/2-Area/运动健康/∑ 运动健康.md",
+        "wordCountStart": 285,
+        "charCountStart": 537,
+        "changes": [
+          {
+            "timeKey": "00:10",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 799
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/2-Area/运动健康/健身动作库.md",
+        "wordCountStart": 33,
+        "charCountStart": 181,
+        "changes": [],
+        "id": 800
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/力量训练动作库/∑ 力量训练动作库.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "00:10",
+            "w": 0,
+            "c": 0
+          },
+          {
+            "timeKey": "00:15",
+            "w": 660,
+            "c": 1163
+          }
+        ],
+        "id": 801
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/力量训练动作库/龙门架拉索夹胸.md",
+        "wordCountStart": 26,
+        "charCountStart": 53,
+        "changes": [],
+        "id": 802
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Cards/文件夹和标签.md",
+        "wordCountStart": 95,
+        "charCountStart": 207,
+        "changes": [],
+        "id": 803
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Sources/Articles/flomo101阅读笔记/∑ flomo101阅读笔记.md",
+        "wordCountStart": 231,
+        "charCountStart": 400,
+        "changes": [],
+        "id": 804
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/肌肉部位库/肌肉库/∑ 肌肉库.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "00:15",
+            "w": 262,
+            "c": 519
+          }
+        ],
+        "id": 805
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/肌肉部位库/肌肉库/胸大肌.md",
+        "wordCountStart": 257,
+        "charCountStart": 496,
+        "changes": [],
+        "id": 806
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/肌肉部位库/肌肉库/三角肌中束.md",
+        "wordCountStart": 89,
+        "charCountStart": 237,
+        "changes": [],
+        "id": 807
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/肌肉部位库/肌肉库/胸大肌/∑ 胸大肌.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "00:15",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 808
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/运动/增肌减脂计划/肌肉部位库/∑ 肌肉部位库.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 809
       }
     ]
   }
