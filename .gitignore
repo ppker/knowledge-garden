@@ -1,0 +1,38 @@
+# 首先忽略所有文件和文件夹
+# *
+# */
+
+.fileorganizer2000/
+.obsidian/
+.smart-env/
+.smtcmp_chat_histories/
+.trash/
+# Atlas/
+# Calendar/
+# Extras/FileClasses
+# Extras/Other
+# Extras/Prompts
+# Extras/Templates
+# Extras/Media/豆瓣影音封面
+
+# 🍀 花园导览/
+
+# 📥 Inbox/
+
+
+# 然后取消忽略 ingtube 文件夹及其内容
+# !ingtube/
+# !ingtube/**
+
+# 如果 ingtube 文件夹内有一些不想提交的文件，可以在这里指定
+# 例如：
+# ingtube/*.log
+# ingtube/.DS_Store
+.smtcmp_vector_db.tar.gz
+.DS_Store
+.cursorignore
+.cursorrules
+LICENSE
+AboutTheGarden.md
+README.md
+.aider*

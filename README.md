@@ -1,6 +1,6 @@
 ---
 date created: 2022-08-06
-date modified: 2024-10-21
+date modified: 2025-07-08
 tags:
   - 本库教程
 title: README
@@ -19,7 +19,6 @@ publish: true
 
 > [!TIP] 重大更新💡  
 > 迎接AI时代，本库发布 v2.0 版本，包含了大量使用[[Spaces/1-Project/求职/ChatGPT]]、[[Gemini|Gemini]]、[[DeepSeek]]等应用的笔记，请到 release 中下载。
-
 
 ## 这是什么
 
@@ -51,7 +50,9 @@ publish: true
 
 [![Star History Chart](https://api.star-history.com/svg?repos=oldwinter/knowledge-garden&type=Date)](https://star-history.com/#oldwinter/knowledge-garden&Date)
 
-![Alt](https://repobeats.axiom.co/api/embed/2a5fe91fc704e698437055b29741043e12f5771e.svg "Repobeats analytics image")
+## 赞助
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 [^1]: [备发布站](https://notes.oldwinter.top/readme#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
 [^2]: 目前我已经放弃 logseq 联用 obsidian 的方案，不过您依旧可以用 logseq 打开本库进行阅读。尝试过将本库导入 remnote、craft，也都是完美支持的哦，这就是 obsidian 原生 md 语法的魅力所在。
