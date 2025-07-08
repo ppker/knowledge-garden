@@ -1,1 +1,0 @@
-[Introduction - OpenAI API](https://platform.openai.com/docs/plugins/introduction)
