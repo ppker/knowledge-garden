@@ -1,0 +1,116 @@
+{
+  "strategy": "chinese",
+  "cedictPath": "Extras/Other/cedict_ts.u8",
+  "matchStrategy": "prefix",
+  "fuzzyMatch": true,
+  "minFuzzyMatchScore": 0.5,
+  "matchingWithoutEmoji": true,
+  "treatAccentDiacriticsAsAlphabeticCharacters": true,
+  "treatUnderscoreAsPartOfWord": false,
+  "maxNumberOfSuggestions": 20,
+  "maxNumberOfWordsAsPhrase": 2,
+  "minNumberOfCharactersTriggered": 1,
+  "minNumberOfWordsTriggeredPhrase": 1,
+  "complementAutomatically": true,
+  "delayMilliSeconds": 0,
+  "disableSuggestionsDuringImeOn": true,
+  "disableSuggestionsInMathBlock": true,
+  "insertSpaceAfterCompletion": false,
+  "firstCharactersDisableSuggestions": ":/^。，：",
+  "patternsToSuppressTrigger": [
+    "^~~~.*",
+    "^```.*"
+  ],
+  "phrasePatternsToSuppressTrigger": [
+    "的"
+  ],
+  "noAutoFocusUntilCycle": false,
+  "showMatchStrategy": false,
+  "showComplementAutomatically": false,
+  "showIndexingStatus": false,
+  "descriptionOnSuggestion": "Full",
+  "hotkeys": {
+    "select": [
+      {
+        "modifiers": [],
+        "key": "ArrowRight",
+        "hideHotkeyGuide": false
+      }
+    ],
+    "select with custom alias": [],
+    "select with query alias": [],
+    "up": [
+      {
+        "modifiers": [],
+        "key": "ArrowUp"
+      }
+    ],
+    "down": [
+      {
+        "modifiers": [],
+        "key": "ArrowDown"
+      }
+    ],
+    "select 1st": [],
+    "select 2nd": [],
+    "select 3rd": [],
+    "select 4th": [],
+    "select 5th": [],
+    "select 6th": [],
+    "select 7th": [],
+    "select 8th": [],
+    "select 9th": [],
+    "open": [],
+    "completion": [],
+    "insert as text": []
+  },
+  "propagateEsc": false,
+  "enableCurrentFileComplement": true,
+  "currentFileMinNumberOfCharacters": 0,
+  "onlyComplementEnglishOnCurrentFileComplement": false,
+  "excludeCurrentFileWordPatterns": [],
+  "enableCurrentVaultComplement": true,
+  "currentVaultMinNumberOfCharacters": 0,
+  "includeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathPrefixPatterns": "",
+  "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "excludeCurrentVaultWordPatterns": [],
+  "enableCustomDictionaryComplement": true,
+  "customDictionaryPaths": "Extras/Other/Obsidian当前开启的全部第三方插件及其命令行.md",
+  "columnDelimiter": "Tab",
+  "customDictionaryWordRegexPattern": "",
+  "delimiterToHideSuggestion": "",
+  "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
+  "caretLocationSymbolAfterComplement": "",
+  "displayedTextSuffix": " => ...",
+  "enableInternalLinkComplement": true,
+  "suggestInternalLinkWithAlias": true,
+  "excludeInternalLinkPathPrefixPatterns": "",
+  "excludeSelfInternalLink": false,
+  "excludeExistingInActiveFileInternalLinks": false,
+  "updateInternalLinksOnSave": true,
+  "insertAliasTransformedFromDisplayedInternalLink": {
+    "enabled": false,
+    "beforeRegExp": "",
+    "after": ""
+  },
+  "frontMatterKeyForExclusionInternalLink": "",
+  "tagsForExclusionInternalLink": [],
+  "enableFrontMatterComplement": true,
+  "frontMatterComplementMatchStrategy": "inherit",
+  "insertCommaAfterFrontMatterCompletion": false,
+  "currentFileMinNumberOfCharactersForTrigger": 0,
+  "currentVaultMinNumberOfCharactersForTrigger": 0,
+  "customDictionaryMinNumberOfCharactersForTrigger": 4,
+  "internalLinkMinNumberOfCharactersForTrigger": 0,
+  "intelligentSuggestionPrioritization": {
+    "enabled": true,
+    "historyFilePath": "",
+    "maxDaysToKeepHistory": 0,
+    "maxNumberOfHistoryToKeep": 0
+  },
+  "disableOnMobile": false,
+  "showLogAboutPerformanceInConsole": false,
+  "insertAfterCompletion": false,
+  "selectionHistoryTree": {}
+}

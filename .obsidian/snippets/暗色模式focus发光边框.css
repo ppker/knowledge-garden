@@ -1,0 +1,35 @@
+.theme-dark .workspace-leaf {
+  position: relative;
+}
+
+.theme-dark .workspace-leaf.mod-active .view-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #93e2d5; /* #ef8daa; */
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.theme-light .workspace-leaf {
+  position: relative;
+}
+
+.theme-light .workspace-leaf.mod-active .view-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #93e2d5; /* #ef8daa; */
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+

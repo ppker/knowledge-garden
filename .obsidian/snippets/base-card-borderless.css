@@ -1,0 +1,6 @@
+.bases-embed.is-loaded .bases-header {
+  display: none;
+}
+body {
+  --bases-cards-width: 80px;
+}

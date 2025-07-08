@@ -1,0 +1,41 @@
+{
+  "generalSettings": {
+    "displayNotesCreatedOnDate": false,
+    "displayNoteIndicator": true,
+    "useModifierKeyToCreateNote": false,
+    "firstDayOfWeek": 1,
+    "weekNumberStandard": 0
+  },
+  "notesSettings": {
+    "displayDateTemplate": "HH:mm",
+    "useCreatedOnDateFromProperties": false,
+    "createdOnDatePropertyName": "created_on",
+    "createdOnPropertyFormat": "yyyy/MM/dd HH:mm",
+    "sortNotes": "ascending"
+  },
+  "dailyNotes": {
+    "nameTemplate": "yyyy/yyyy-MM-dd",
+    "folder": "Calendar/Daily notes",
+    "templateFile": "Extras/Templates/Calendar模板/Dailynotes模板.md"
+  },
+  "weeklyNotes": {
+    "nameTemplate": "yyyy-MM-'W'ww",
+    "folder": "Calendar/Plan & Review/Weekly",
+    "templateFile": "Extras/Templates/Calendar模板/回顾总结模板/周记模板.md"
+  },
+  "monthlyNotes": {
+    "nameTemplate": "yyyy-MM",
+    "folder": "Calendar/Plan & Review/Monthly",
+    "templateFile": "Extras/Templates/Calendar模板/回顾总结模板/月度模板.md"
+  },
+  "quarterlyNotes": {
+    "nameTemplate": "yyyy-qqq",
+    "folder": "Calendar/Plan & Review/Quarterly",
+    "templateFile": "Extras/Templates/Calendar模板/回顾总结模板/季度模版.md"
+  },
+  "yearlyNotes": {
+    "nameTemplate": "yyyy",
+    "folder": "Calendar/Plan & Review/Yearly",
+    "templateFile": "Extras/Templates/Calendar模板/回顾总结模板/年度模版.md"
+  }
+}

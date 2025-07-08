@@ -1,0 +1,27 @@
+{
+  "accentColor": "",
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "color-headings",
+    "aaa",
+    "bases-table-styling",
+    "bullet-list-live-preview-highlight-active",
+    "bullet-list-live-preview-threading-active",
+    "hide-LICENSE-file",
+    "行尾2个空格显示",
+    "canvas-candy",
+    "supercharged-links-gen",
+    "hide-file-add-splitline",
+    "editor-full"
+  ],
+  "showViewHeader": true,
+  "cssTheme": "Willemstad",
+  "theme": "moonstone",
+  "translucency": false,
+  "textFontFamily": "LXGW WenKai GB Screen,霞鹜文楷",
+  "interfaceFontFamily": "LXGW WenKai GB Screen,霞鹜文楷",
+  "monospaceFontFamily": "LXGW WenKai Mono GB Screen,霞鹜文楷",
+  "baseFontSize": 16,
+  "baseFontSizeAction": false,
+  "showRibbon": false
+}

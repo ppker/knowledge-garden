@@ -1,0 +1,213 @@
+
+/* @settings
+
+name: Live preview list threading - on hover
+id: live-preview-list-threading-hover
+settings:
+    - 
+        id: list-threading-hover-elbow-location
+        title: Threading line elbow location
+        description: Where the threading line elbow is located
+        type: class-select
+        allowEmpty: false
+        default: list-threading-hover-elbow-top
+        options:
+            - 
+                label: "Top (priority for wrapped text)"
+                value: list-threading-hover-elbow-top
+            - 
+                label: "Bottom (priority for images)"
+                value: list-threading-hover-elbow-bottom
+    - 
+        id: list-threading-hover-width
+        title: Threading line width
+        description: The width of the threading line
+        type: variable-number
+        default: 1
+        format: px
+    - 
+        id: list-threading-hover-offset-extra
+        title: Thread line extra offset
+        description: Extra offset for threading line
+        type: variable-number
+        default: 4
+        format: px
+    - 
+        id: colors-section
+        title: Colors
+        type: heading
+        level: 2
+        collapsed: false
+    - 
+        id: list-threading-hover-alpha
+        title: Alpha
+        description: The alpha (transparency) of all threading lines
+        type: variable-number-slider
+        default: 0.4
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    - 
+        id: style-settings-bug-note
+        title: Note
+        description: "Style Settings seems to be [bugged](https://github.com/mgmeyers/obsidian-style-settings/issues/168). You may not see the actual colors here before interacting with each color picker."
+        type: info-text
+        markdown: true
+    - 
+        id: list-threading-hover-color-1
+        title: Color 1
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(23, 100%, 45%)'
+    - 
+        id: list-threading-hover-color-2
+        title: Color 2
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(46, 100%, 45%)'
+    - 
+        id: list-threading-hover-color-3
+        title: Color 3
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(70, 100%, 45%)'
+    - 
+        id: list-threading-hover-color-4
+        title: Color 4
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(105, 100%, 45%)'
+    - 
+        id: list-threading-hover-color-5
+        title: Color 5
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(187, 100%, 45%)'
+
+*/
+
+.markdown-source-view .HyperMD-list-line {
+  /* Unitless zero in variables is evil */
+  --list-padding-inline-start-fix: 0px; /*calc(1px * var(--list-indent-source));*/
+}
+.markdown-source-view.is-live-preview .HyperMD-list-line {
+  --list-padding-inline-start-fix: var(--list-indent-editing);
+}
+
+.HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3, .HyperMD-list-line-2):hover),
+.HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-2:hover, ~ .HyperMD-list-line-2 ~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6):hover),
+.HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6):hover)) > .cm-hmd-list-indent {
+  &::after {
+    --list-threading-hover-color: hsl(var(--list-threading-hover-color-1, 23, 100%, 45%), var(--list-threading-hover-alpha, 0.4));
+    --list-threading-hover-offset: calc(var(--list-threading-hover-offset-extra, 4px) + var(--list-padding-inline-start-fix));
+  }
+}
+
+.HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3):hover),
+.HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-3:hover, ~ .HyperMD-list-line-3 ~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6):hover),
+.HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6):hover)) > .cm-hmd-list-indent {
+  &::after {
+    --list-threading-hover-color: hsl(var(--list-threading-hover-color-2, 46, 100%, 45%), var(--list-threading-hover-alpha, 0.4));
+    --list-threading-hover-offset: calc(var(--list-threading-hover-offset-extra, 4px) + var(--list-padding-inline-start-fix) + var(--list-indent));
+  }
+}
+
+.HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4):hover),
+.HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-4:hover, ~ .HyperMD-list-line-4 ~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6):hover),
+.HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6):hover)) > .cm-hmd-list-indent {
+  &::after {
+    --list-threading-hover-color: hsl(var(--list-threading-hover-color-3, 70, 100%, 45%), var(--list-threading-hover-alpha, 0.4));
+    --list-threading-hover-offset: calc(var(--list-threading-hover-offset-extra, 4px) + var(--list-padding-inline-start-fix) + 2 * var(--list-indent));
+  }
+}
+
+.HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5):hover),
+.HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-5:hover, ~ .HyperMD-list-line-5 ~ :is(.HyperMD-list-line-6):hover),
+.HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-6):hover)) > .cm-hmd-list-indent {
+  &::after {
+    --list-threading-hover-color: hsl(var(--list-threading-hover-color-4, 105, 100%, 45%), var(--list-threading-hover-alpha, 0.4));
+    --list-threading-hover-offset: calc(var(--list-threading-hover-offset-extra, 4px) + var(--list-padding-inline-start-fix) + 3 * var(--list-indent));
+  }
+}
+
+.HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6):hover),
+.HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-6:hover),
+.HyperMD-list-line-6:not(:has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover)):is(:hover) > .cm-hmd-list-indent {
+  &::after {
+    --list-threading-hover-color: hsl(var(--list-threading-hover-color-5, 187, 100%, 45%), var(--list-threading-hover-alpha, 0.4));
+    --list-threading-hover-offset: calc(var(--list-threading-hover-offset-extra, 4px) + var(--list-padding-inline-start-fix) + 4 * var(--list-indent));
+  }
+}
+
+/* tails */
+.HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3, .HyperMD-list-line-2):hover),
+.HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3):hover),
+.HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4):hover),
+.HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5):hover),
+.HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover)):has(~ :is(.HyperMD-list-line-6):hover) {
+  &::after {
+    content: "";
+    position: absolute;
+    left: var(--list-threading-hover-offset);
+    bottom: 0;
+    width: var(--list-threading-hover-width, 1px);
+    background-color: var(--list-threading-hover-color);
+    height: calc(100% - 0.75em);
+  }
+  .is-live-preview &:is(.HyperMD-task-line)::after {
+    max-height: calc(100% - 1.3em);
+  }
+  body.list-threading-hover-elbow-bottom &::after {
+    height: 0.8em;
+  }
+  body.list-threading-hover-elbow-bottom .is-live-preview &:is(.HyperMD-task-line)::after {
+    max-height: 0.275em;
+  }
+}
+
+/* in-between lines */
+.HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-2:hover, ~ .HyperMD-list-line-2 ~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3):hover),
+.HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-3:hover, ~ .HyperMD-list-line-3 ~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4):hover),
+.HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-4:hover, ~ .HyperMD-list-line-4 ~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5):hover),
+.HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-5:hover, ~ .HyperMD-list-line-5 ~ :is(.HyperMD-list-line-6):hover),
+.HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-6:hover) {
+  &::after {
+    content: "";
+    position: absolute;
+    left: var(--list-threading-hover-offset);
+    top: 0;
+    height: 100%;
+    width: var(--list-threading-hover-width, 1px);
+    background-color: var(--list-threading-hover-color);
+  }
+}
+
+/* elbows */
+.HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4, .HyperMD-list-line-3):hover)),
+.HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5, .HyperMD-list-line-4):hover)),
+.HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-6, .HyperMD-list-line-5):hover)),
+.HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line:hover)):is(:hover, :has(~ :is(.HyperMD-list-line-6):hover)),
+.HyperMD-list-line-6:not(:has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line:hover)):is(:hover) {
+  & > .cm-hmd-list-indent::after {
+    content: "";
+    position: absolute;
+    left: var(--list-threading-hover-offset);
+    width: calc(var(--list-indent) - var(--list-threading-hover-width, 1px));
+    top: 0;
+    border-bottom-left-radius: var(--radius-m);
+    border-bottom: var(--list-threading-hover-width, 1px) solid var(--list-threading-hover-color);
+    border-left: var(--list-threading-hover-width, 1px) solid var(--list-threading-hover-color);
+    height: calc(0.775em);
+  }
+  body.list-threading-hover-elbow-bottom & > .cm-hmd-list-indent::after {
+    height: calc(100% - 0.825em - var(--list-threading-hover-width, 1px) / 2);
+  }
+  .is-live-preview &:is(.HyperMD-task-line) > .cm-hmd-list-indent::after {
+    max-width: calc(var(--list-indent) - 0.35em - var(--list-threading-hover-offset-extra, 4px));
+  }
+}

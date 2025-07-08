@@ -1,0 +1,36 @@
+{
+  "aliases": {
+    "1741506797019": {
+      "name": "社区插件",
+      "commandId": "hotkey-helper:browse-plugins"
+    },
+    "1743676317817": {
+      "name": "插件搜索",
+      "commandId": "hotkey-helper:browse-plugins"
+    },
+    "1744086070311": {
+      "name": "横向滚动视图",
+      "commandId": "vertical-tabs:set-current-group-column-view"
+    },
+    "1744086182350": {
+      "name": "调度中心视图",
+      "commandId": "vertical-tabs:set-current-group-mission-control-view"
+    },
+    "1744086207387": {
+      "name": "默认视图",
+      "commandId": "vertical-tabs:set-current-group-default-view"
+    },
+    "1745767276696": {
+      "name": "切换编辑器显示宽度",
+      "commandId": "toggle-readable-line-length:flip-readable-line-length-setting"
+    },
+    "1749472879377": {
+      "name": "快照",
+      "commandId": "file-recovery:open"
+    }
+  },
+  "commandDetection": {
+    "maxTry": 5,
+    "msecOfInterval": 200
+  }
+}

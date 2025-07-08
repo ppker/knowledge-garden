@@ -1,0 +1,1195 @@
+{
+  "debugEnabled": false,
+  "emptyViewToolbar": null,
+  "export": {
+    "includeIcons": true,
+    "replaceVars": true,
+    "useDataEls": true,
+    "useIds": true
+  },
+  "folderMappings": [
+    {
+      "folder": "Calendar/Plan & Review",
+      "toolbar": "eebdd31a-f812-473d-a52f-e47fe7368fe6"
+    },
+    {
+      "folder": "Calendar/Daily notes",
+      "toolbar": "e33f9971-6d4e-4bbd-8bda-c69d84f2a295"
+    },
+    {
+      "folder": "Calendar/Plan & Review/Monthly",
+      "toolbar": "e747cb9b-d37f-4905-8f8e-6f489bfb7e13"
+    },
+    {
+      "folder": "Calendar/Plan & Review/Yearly",
+      "toolbar": "23c452a3-1346-4de5-861b-42cc883db6a2"
+    }
+  ],
+  "icon": "circle-ellipsis",
+  "keepPropsState": true,
+  "onboarding": {
+    "new-toolbar-mapping": true
+  },
+  "ribbonAction": "item-suggester",
+  "scriptingEnabled": true,
+  "showEditInFabMenu": true,
+  "showLaunchpad": false,
+  "showToolbarIn": {
+    "audio": false,
+    "canvas": true,
+    "image": false,
+    "pdf": false,
+    "video": false,
+    "bases": true
+  },
+  "showToolbarInFileMenu": true,
+  "showToolbarInOther": "",
+  "toolbarProp": "notetoolbar",
+  "toolbars": [
+    {
+      "defaultStyles": [
+        "even",
+        "sticky",
+        "noborder"
+      ],
+      "items": [
+        {
+          "uuid": "b4a5e7f2-28ac-4813-a61c-e928eeda4d58",
+          "hasCommand": false,
+          "icon": "lucide-arrow-big-left",
+          "inGallery": false,
+          "label": "",
+          "link": "Periodic Notes: Open previous daily note",
+          "linkAttr": {
+            "commandId": "periodic-notes:prev-daily-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Previous daily note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "0e19c61b-33f6-4938-bf93-cd0942b0f1ae",
+          "hasCommand": false,
+          "icon": "calendar",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandId": "daily-notes",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Today's daily note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "3f217812-f152-4ac1-a3f2-19f0bb68cb88",
+          "hasCommand": false,
+          "icon": "lucide-arrow-big-right",
+          "inGallery": false,
+          "label": "",
+          "link": "Periodic Notes: Open next daily note",
+          "linkAttr": {
+            "commandId": "periodic-notes:next-daily-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Next daily note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "mobileStyles": [
+        "mevn",
+        "mnwd"
+      ],
+      "name": "DailyNotes",
+      "updated": "2025-07-01T17:44:19.236Z",
+      "position": {
+        "desktop": {
+          "allViews": {
+            "position": "top"
+          }
+        },
+        "mobile": {
+          "allViews": {
+            "position": "top"
+          }
+        },
+        "tablet": {
+          "allViews": {
+            "position": "top"
+          }
+        }
+      },
+      "uuid": "e33f9971-6d4e-4bbd-8bda-c69d84f2a295",
+      "hasCommand": false
+    },
+    {
+      "uuid": "e747cb9b-d37f-4905-8f8e-6f489bfb7e13",
+      "customClasses": "",
+      "defaultItem": null,
+      "defaultStyles": [
+        "border",
+        "even",
+        "sticky"
+      ],
+      "hasCommand": false,
+      "items": [
+        {
+          "uuid": "8dd7b6b9-c000-428a-99b2-2f450910554c",
+          "hasCommand": false,
+          "icon": "lucide-calendar-minus",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "periodic-notes:prev-monthly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Previous monthly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "9a41b692-29a9-4f38-a561-fbe8327bd13d",
+          "hasCommand": false,
+          "icon": "calendar-days",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "periodic-notes:open-monthly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Open monthly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "0d0cbd42-d44c-4f36-bdf2-be938963523e",
+          "hasCommand": false,
+          "icon": "lucide-calendar-plus",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "periodic-notes:next-monthly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Next monthly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "mobileStyles": [],
+      "name": "monthly",
+      "position": {
+        "desktop": {
+          "allViews": {
+            "position": "props"
+          }
+        },
+        "mobile": {
+          "allViews": {
+            "position": "props"
+          }
+        },
+        "tablet": {
+          "allViews": {
+            "position": "props"
+          }
+        }
+      },
+      "updated": "2025-06-24T18:25:50.437Z"
+    },
+    {
+      "uuid": "bb6f1066-392f-4c84-a3e3-1a74b99b25fb",
+      "defaultStyles": [
+        "border",
+        "even",
+        "sticky"
+      ],
+      "items": [
+        {
+          "uuid": "2bd475df-9ae4-49e1-aab4-56dbdfc1e62f",
+          "label": "简单",
+          "icon": "lucide-list-todo",
+          "link": "Spaced Repetition: Review note as 简单",
+          "linkAttr": {
+            "commandId": "obsidian-spaced-repetition:srs-note-review-easy",
+            "hasVars": false,
+            "type": "command"
+          },
+          "tooltip": "",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          },
+          "inGallery": false
+        },
+        {
+          "uuid": "58e0c2f5-8175-4de0-ba5a-b56a981f7896",
+          "hasCommand": false,
+          "icon": "",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "",
+            "hasVars": false,
+            "type": "separator"
+          },
+          "tooltip": "",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "ab56f826-b773-46b8-83ed-7c6f6d18c92c",
+          "hasCommand": false,
+          "icon": "lucide-target",
+          "inGallery": false,
+          "label": "记得",
+          "link": "Spaced Repetition: Review note as 记得",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "obsidian-spaced-repetition:srs-note-review-good",
+            "hasVars": false,
+            "type": "command"
+          },
+          "tooltip": "",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          },
+          "scriptConfig": {
+            "pluginFunction": "appendTemplate"
+          }
+        },
+        {
+          "uuid": "556e4435-eaa2-45b0-85fb-2da0c287f8ba",
+          "hasCommand": false,
+          "icon": "",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "",
+            "hasVars": false,
+            "type": "separator"
+          },
+          "tooltip": "",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "5dc4a0ba-53b5-4875-a14d-65be32849a09",
+          "label": "较难",
+          "icon": "lucide-alert-circle",
+          "link": "Spaced Repetition: Review note as 较难",
+          "linkAttr": {
+            "commandId": "obsidian-spaced-repetition:srs-note-review-hard",
+            "hasVars": false,
+            "type": "command"
+          },
+          "tooltip": "",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          },
+          "inGallery": false
+        }
+      ],
+      "mobileStyles": [],
+      "name": "SpacedRepetition",
+      "position": {
+        "desktop": {
+          "allViews": {
+            "position": "bottom"
+          }
+        },
+        "mobile": {
+          "allViews": {
+            "position": "bottom"
+          }
+        },
+        "tablet": {
+          "allViews": {
+            "position": "bottom"
+          }
+        }
+      },
+      "updated": "2025-06-24T19:59:11.475Z",
+      "hasCommand": true,
+      "customClasses": ""
+    },
+    {
+      "uuid": "3428e787-1792-432e-914c-66a8804686b9",
+      "customClasses": "",
+      "defaultItem": "47e8a832-76a2-41b7-9ffb-45b34a5bcc55",
+      "defaultStyles": [
+        "border",
+        "even",
+        "sticky"
+      ],
+      "hasCommand": true,
+      "items": [
+        {
+          "uuid": "91eb21c5-e313-4634-a91a-244cebbf67e2",
+          "hasCommand": false,
+          "icon": "focus",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandId": "",
+            "hasVars": false,
+            "target": "",
+            "type": "javascript"
+          },
+          "plugin": "",
+          "scriptConfig": {
+            "expression": "const h = activeDocument.querySelector('.view-header'), s = activeDocument.querySelector('.status-bar');\nif (h && s) {\n if (h.style.display === 'none') {\n h.style.display = '';\n s.style.display = '';\n app.workspace.leftSplit?.expand();\n app.workspace.rightSplit?.expand();  // 取消注释这一行\n await app.commands.executeCommandById('note-toolbar:show-properties');\n }\n else {\n h.style.display = 'none';\n s.style.display = 'none';\n app.workspace.leftSplit?.collapse();\n app.workspace.rightSplit?.collapse();  // 取消注释这一行\n await app.commands.executeCommandById('note-toolbar:hide-properties');\n }\n}",
+            "pluginFunction": "evaluate"
+          },
+          "tooltip": "Toggle UI",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "47e8a832-76a2-41b7-9ffb-45b34a5bcc55",
+          "hasCommand": false,
+          "icon": "file-json-2",
+          "inGallery": false,
+          "label": "",
+          "link": "cursor://file/{{encode:vault_path}}%2F{{encode:file_path}}",
+          "linkAttr": {
+            "commandId": "",
+            "hasVars": false,
+            "target": "",
+            "type": "uri"
+          },
+          "plugin": "",
+          "tooltip": "Open in Cursor",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "cf3ff6e0-799b-4081-8fac-078a98f36aa7",
+          "hasCommand": false,
+          "icon": "folder-search",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandId": "open-with-default-app:show",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Show file in system",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "d814977d-601b-4277-8591-b9079a2e1d38",
+          "hasCommand": false,
+          "icon": "venetian-mask",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "theme:switch",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Change theme",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "a0780fc0-63c1-4810-86e2-dea320daf16b",
+          "hasCommand": false,
+          "icon": "folder-code",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "",
+            "hasVars": false,
+            "target": "",
+            "type": "javascript"
+          },
+          "plugin": "",
+          "scriptConfig": {
+            "expression": "let v = this.app.vault.adapter.getBasePath() + '/' + app.vault.configDir + '/snippets'; window.open('file://' + encodeURI(v));",
+            "pluginFunction": "evaluate"
+          },
+          "tooltip": "Open snippets folder",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "mobileStyles": [],
+      "name": "Tools",
+      "position": {
+        "desktop": {
+          "allViews": {
+            "position": "props"
+          }
+        },
+        "mobile": {
+          "allViews": {
+            "position": "hidden"
+          }
+        },
+        "tablet": {
+          "allViews": {
+            "position": "hidden"
+          }
+        }
+      },
+      "updated": "2025-06-24T19:15:13.309Z"
+    },
+    {
+      "defaultStyles": [
+        "border",
+        "even",
+        "sticky"
+      ],
+      "items": [
+        {
+          "uuid": "f5056486-3d1f-4ebe-8fcc-7b4ce926a8b6",
+          "hasCommand": false,
+          "icon": "lucide-calendar-arrow-up",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandId": "periodic-notes:prev-weekly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Previous weekly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "54f7fdfe-0d7c-4ecb-b2ee-eda2413a7fbb",
+          "hasCommand": false,
+          "icon": "calendar-range",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandId": "periodic-notes:open-weekly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Open weekly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "365e5996-2120-40b2-9e30-ced5dc0a7199",
+          "hasCommand": false,
+          "icon": "lucide-calendar-arrow-down",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandId": "periodic-notes:next-weekly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Next weekly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "mobileStyles": [],
+      "name": "WeeklyNotes",
+      "position": {
+        "desktop": {
+          "allViews": {
+            "position": "top"
+          }
+        },
+        "mobile": {
+          "allViews": {
+            "position": "top"
+          }
+        },
+        "tablet": {
+          "allViews": {
+            "position": "top"
+          }
+        }
+      },
+      "updated": "2025-07-01T17:41:56.928Z",
+      "uuid": "eebdd31a-f812-473d-a52f-e47fe7368fe6",
+      "hasCommand": false
+    },
+    {
+      "uuid": "23c452a3-1346-4de5-861b-42cc883db6a2",
+      "customClasses": "",
+      "defaultItem": null,
+      "defaultStyles": [
+        "border",
+        "even",
+        "sticky"
+      ],
+      "hasCommand": false,
+      "items": [
+        {
+          "uuid": "a207e011-8939-4ac5-b61a-4fc913228e77",
+          "hasCommand": false,
+          "icon": "rewind",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "periodic-notes:prev-yearly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Previous yearly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "e57d9dd4-6a31-4d54-aa9e-9b8d418e2730",
+          "hasCommand": false,
+          "icon": "calendar-clock",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "periodic-notes:open-yearly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Open yearly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "uuid": "705965b4-b219-41a4-bd86-79515eb9b555",
+          "hasCommand": false,
+          "icon": "fast-forward",
+          "inGallery": false,
+          "label": "",
+          "link": "",
+          "linkAttr": {
+            "commandCheck": false,
+            "commandId": "periodic-notes:next-yearly-note",
+            "hasVars": false,
+            "target": "",
+            "type": "command"
+          },
+          "plugin": "",
+          "tooltip": "Next yearly note",
+          "visibility": {
+            "desktop": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "mobile": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            },
+            "tablet": {
+              "allViews": {
+                "components": [
+                  "icon",
+                  "label"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "mobileStyles": [],
+      "name": "yearly",
+      "position": {
+        "desktop": {
+          "allViews": {
+            "position": "props"
+          }
+        },
+        "mobile": {
+          "allViews": {
+            "position": "props"
+          }
+        },
+        "tablet": {
+          "allViews": {
+            "position": "props"
+          }
+        }
+      },
+      "updated": "2025-06-24T18:26:23.422Z"
+    }
+  ],
+  "version": 20250313.1,
+  "whatsnew_version": "1.24",
+  "recentFiles": [
+    "Calendar/Daily notes/2025-06-10.md",
+    "Calendar/Daily notes/2025-06-11.md",
+    "Calendar/Daily notes/ALL Properties.md",
+    "Sources/Clippings/笔记的策略：冗余设计、可靠性、高效发现和其他 - 少数派.md",
+    "Sources/Movies + TV/豆瓣影音导入/movie/29+1.md",
+    "Calendar/Plan & Review/2025-06-W24.md",
+    "Sources/Movies + TV/豆瓣影音导入/teleplay/长安十二时辰.md",
+    "Atlas/Dataviews/模板汇总.md",
+    "Atlas/Canvas/Obsidian vs Notion KM Comparison.canvas",
+    "Atlas/Canvas/test11.canvas"
+  ],
+  "showToolbarInCanvas": false
+}

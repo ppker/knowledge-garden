@@ -1,0 +1,9 @@
+{
+  "snapToObjects": true,
+  "snapToGrid": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Atlas/Canvas",
+  "cardLabelVisibility": "always",
+  "defaultWheelBehavior": "pan",
+  "zoomBreakpoint": 0
+}

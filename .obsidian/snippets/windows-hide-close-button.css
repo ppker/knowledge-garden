@@ -1,0 +1,17 @@
+/* 隐藏窗口控制按钮和右侧空白 - 仅在Windows上生效 */
+
+/* 使用 .mod-windows 选择器确保只在Windows平台生效 */
+body.mod-windows .titlebar-button-container.mod-right,
+body.mod-windows .workspace-tab-header-container::after {
+  display: none !important;
+}
+
+/* 隐藏窗口控制按钮 - 仅Windows */
+body.mod-windows .titlebar-button-container.mod-right {
+  display: none;
+}
+
+/* 移除因隐藏按钮导致的标签栏右侧空白 - 仅Windows */
+body.mod-windows .workspace-tab-header-container {
+  padding-right: 0px !important;
+}

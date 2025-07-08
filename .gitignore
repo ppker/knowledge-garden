@@ -1,38 +1,73 @@
-# 首先忽略所有文件和文件夹
-# *
-# */
-
-.fileorganizer2000/
-.obsidian/
-.smart-env/
-.smtcmp_chat_histories/
-.trash/
-# Atlas/
-# Calendar/
-# Extras/FileClasses
-# Extras/Other
-# Extras/Prompts
-# Extras/Templates
-# Extras/Media/豆瓣影音封面
-
-# 🍀 花园导览/
-
-# 📥 Inbox/
-
-
-# 然后取消忽略 ingtube 文件夹及其内容
-# !ingtube/
-# !ingtube/**
-
-# 如果 ingtube 文件夹内有一些不想提交的文件，可以在这里指定
-# 例如：
-# ingtube/*.log
-# ingtube/.DS_Store
-.smtcmp_vector_db.tar.gz
+# 无用状态文件屏蔽
+logseq/bak
+logseq/.recycle
 .DS_Store
-.cursorignore
-.cursorrules
-LICENSE
-AboutTheGarden.md
-README.md
-.aider*
+.trash
+
+# 个人隐私屏蔽
+Extras/Media
+Spaces/0-Work/
+Spaces/2-Area/个人职业生涯
+
+# 带token的敏感插件数据屏蔽
+.obsidian/plugins/remotely-save/data.json
+.obsidian/plugins/obsidian-local-rest-api/data.json
+.obsidian/plugins/obsidian-weread-plugin/data.json
+.obsidian/plugins/simpread/data.json
+.obsidian/plugins/obsidian-to-notion/data.json
+.obsidian/plugins/obsidian-textgenerator-plugin/data.json
+.obsidian/plugins/ava/data.json
+.obsidian/plugins/digitalgarden/data.json
+.obsidian/plugins/smart-connections/data.json
+.obsidian/plugins/chatgpt-md/data.json
+
+
+# 没必要上传的数据屏蔽
+.obsidian/plugins/recent-notes/data.json
+.obsidian/plugins/omnisearch/searchIndex.json
+.obsidian/plugins/omnisearch/notesCache.json
+.obsidian/plugins/obsidian-advanced-slides/**
+.obsidian/plugins/obsidian-excalidraw-plugin/data.json
+.obsidian/plugins/wucai-highlights-official/data.json
+.obsidian/plugins/obsidian-douban-plugin/data.json
+.obsidian/plugins/weread-plugin/data.json
+
+# 自己私人使用插件
+.obsidian/plugins/obsidian-content-protection
+.obsidian/plugins/components
+.obsidian/plugins/quartz-syncer/data.json
+.obsidian/plugins/obsidian-cubox/data.json
+.obsidian/plugins/obsidian-image-auto-upload-plugin/data.json
+
+# billfish配置文件忽略
+Extras/Media/.bf/**
+
+# workspace文件若不上传，会导致用户下载库以后，新打开的界面的布局信息丢失
+# .obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspaces.json
+
+# obsidian发布用文件不需要上传
+publish.css
+publish.js
+
+# 不上传pdf,epub,mobi文件
+*.pdf
+*.epub
+*.mobi
+
+# 不上传office文件
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.doc
+*.docx
+
+
+# 脚本类文件不上传
+*.py
+*.sh
+
+# Ignore Smart Connections folder because embeddings file is large and updated frequently
+.smart-connections

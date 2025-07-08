@@ -1,0 +1,50 @@
+/* div[data-path='logseq'],
+div[data-path='logseq'] + div.nav-folder-children 
+{
+    display: none;
+} */
+
+.nav-file-title[data-path="LICENSE"] {
+  display: none;
+}
+
+.nav-file-title[data-path="GEMINI.md"] {
+  display: none;
+}
+
+.nav-file-title[data-path="CLAUDE.md"] {
+  display: none;
+}
+
+.nav-file-title[data-path="cedict_ts.u8"] {
+  display: none;
+}
+
+.nav-file-title[data-path="publish.js"] {
+  display: none;
+}
+
+.nav-file-title[data-path="publish.css"] {
+  display: none;
+}
+
+/* 文件浏览器添加分隔线 */
+/* 原始代码来自： https://github.com/replete/obsidian-minimal-theme-css-snippets */
+
+/* 这里填写间距的尺寸 */
+/* :root {
+    --replete-custom-separators-vertical-padding: 6px;
+    --replete-custom-separators-left-margin: -12px;
+} */
+
+/* 这里填写文件夹名称 */
+/* 例如，你填写了”学习笔记“，那就会在学习笔记后面添加分隔线 */
+/* .nav-folder:has([data-path="🍀 花园导览"])::after,
+.nav-folder:has([data-path="Spaces"])::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: calc(100% + 32px);
+    background: var(--tab-outline-color);
+    margin: var(--replete-custom-separators-vertical-padding) 0 var(--replete-custom-separators-vertical-padding) var(--replete-custom-separators-left-margin);
+} */

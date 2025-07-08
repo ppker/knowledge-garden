@@ -1,0 +1,100 @@
+
+/* @settings
+
+name: Live preview list highlight - active line
+id: live-preview-list-highlight-active
+settings:
+    - 
+        id: colors-section
+        title: Colors
+        type: heading
+        level: 2
+        collapsed: false
+    - 
+        id: list-highlight-active-alpha
+        title: Alpha
+        description: The alpha (transparency) of all highlights
+        type: variable-number-slider
+        default: 0.05
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    - 
+        id: style-settings-bug-note
+        title: Note
+        description: "Style Settings seems to be [bugged](https://github.com/mgmeyers/obsidian-style-settings/issues/168). You may not see the actual colors here before interacting with each color picker."
+        type: info-text
+        markdown: true
+    - 
+        id: list-highlight-active-color-1
+        title: Color 1
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(23, 100%, 45%)'
+    - 
+        id: list-highlight-active-color-2
+        title: Color 2
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(46, 100%, 45%)'
+    - 
+        id: list-highlight-active-color-3
+        title: Color 3
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(70, 100%, 45%)'
+    - 
+        id: list-highlight-active-color-4
+        title: Color 4
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(105, 100%, 45%)'
+    - 
+        id: list-highlight-active-color-5
+        title: Color 5
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(187, 100%, 45%)'
+    - 
+        id: list-highlight-active-color-6
+        title: Color 6
+        type: variable-color
+        opacity: false
+        format: hsl-values
+        default: 'hsl(223, 100%, 45%)'
+
+*/
+
+.HyperMD-list-line-1.cm-active,
+.HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-2, .HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) {
+  background-color: hsl(var(--list-highlight-active-color-1, 23, 100%, 45%), var(--list-highlight-active-alpha, 0.05));
+}
+
+.HyperMD-list-line-2.cm-active,
+.HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) {
+  background-color: hsl(var(--list-highlight-active-color-2, 46, 100%, 45%), var(--list-highlight-active-alpha, 0.05));
+}
+
+.HyperMD-list-line-3.cm-active,
+.HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) {
+  background-color: hsl(var(--list-highlight-active-color-3, 70, 100%, 45%), var(--list-highlight-active-alpha, 0.05));
+}
+
+.HyperMD-list-line-4.cm-active,
+.HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) {
+  background-color: hsl(var(--list-highlight-active-color-4, 105, 100%, 45%), var(--list-highlight-active-alpha, 0.05));
+}
+
+.HyperMD-list-line-5.cm-active,
+.HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-6).cm-active) {
+  background-color: hsl(var(--list-highlight-active-color-5, 187, 100%, 45%), var(--list-highlight-active-alpha, 0.05));
+}
+
+.HyperMD-list-line-6.cm-active {
+  background-color: hsl(var(--list-highlight-active-color-6, 223, 100%, 45%), var(--list-highlight-active-alpha, 0.05));
+}

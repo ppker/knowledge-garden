@@ -1,0 +1,50 @@
+/* ───────────────────────────────────────────────── */
+/* << Trailing Whitespace (Two Space Rule) 也就是在每行后的两个空格，显著地显示一个回车符号。copy from theme shimmering foucs。
+──────────────────────────────────────────────────── */
+body:not(.hide-trailing-whitespace) :is(.cm-trailing-space-a, .cm-trailing-space-b, .cm-trailing-space-new-line)::before {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: var(--text-faint);
+}
+
+body:not(.hide-trailing-whitespace) :is(.cm-trailing-space-b, .cm-trailing-space-a)::before {
+  content: "\00B7";
+  /* dot character */
+}
+
+/* first characters */
+body:not(.hide-trailing-whitespace) :not(.cm-trailing-space-b)+.cm-trailing-space-a::before {
+  content: "\00B7  \00B7";
+  padding-left: 5px;
+}
+
+body:not(.hide-trailing-whitespace) .cm-trailing-space-new-line::before {
+  content: "\21B5";
+  /* return character */
+}
+
+
+
+
+/* 代码块显示行号 */
+.markdown-preview-view pre[class^="language-"] {
+  position: relative;
+  padding-left: 3.8em !important;
+}
+
+.markdown-preview-view pre[class^="language-"]::before {
+  content: attr(data-line-number);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3em;
+  padding: 0 0.5em;
+  text-align: right;
+  color: var(--text-normal);
+  font-size: 14px;
+  line-height: inherit;
+  white-space: nowrap;
+  pointer-events: none;
+}

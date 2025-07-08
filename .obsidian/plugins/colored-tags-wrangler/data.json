@@ -1,0 +1,202 @@
+{
+  "TagColors": {
+    "ColorPicker": [
+      {
+        "tag_name": "todo",
+        "color": {
+          "r": 0,
+          "g": 122,
+          "b": 255
+        },
+        "background_color": {
+          "r": 230,
+          "g": 242,
+          "b": 255
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "important",
+        "color": {
+          "r": 255,
+          "g": 59,
+          "b": 48
+        },
+        "background_color": {
+          "r": 255,
+          "g": 235,
+          "b": 233
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "project",
+        "color": {
+          "r": 52,
+          "g": 199,
+          "b": 89
+        },
+        "background_color": {
+          "r": 232,
+          "g": 248,
+          "b": 237
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "idea",
+        "color": {
+          "r": 175,
+          "g": 82,
+          "b": 222
+        },
+        "background_color": {
+          "r": 248,
+          "g": 240,
+          "b": 252
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "review",
+        "color": {
+          "r": 255,
+          "g": 149,
+          "b": 0
+        },
+        "background_color": {
+          "r": 255,
+          "g": 248,
+          "b": 230
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "archive",
+        "color": {
+          "r": 142,
+          "g": 142,
+          "b": 147
+        },
+        "background_color": {
+          "r": 245,
+          "g": 245,
+          "b": 247
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "draft",
+        "color": {
+          "r": 90,
+          "g": 200,
+          "b": 250
+        },
+        "background_color": {
+          "r": 240,
+          "g": 249,
+          "b": 255
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "reference",
+        "color": {
+          "r": 255,
+          "g": 45,
+          "b": 85
+        },
+        "background_color": {
+          "r": 255,
+          "g": 235,
+          "b": 240
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "moc",
+        "color": {
+          "r": 48,
+          "g": 79,
+          "b": 254
+        },
+        "background_color": {
+          "r": 237,
+          "g": 242,
+          "b": 255
+        },
+        "luminance_offset": 0.15
+      },
+      {
+        "tag_name": "meeting",
+        "color": {
+          "r": 255,
+          "g": 204,
+          "b": 0
+        },
+        "background_color": {
+          "r": 255,
+          "g": 252,
+          "b": 230
+        },
+        "luminance_offset": 0.15
+      }
+    ],
+    "EnableMultipleTags": true,
+    "EnableSeparateBackground": true,
+    "EnableBackgroundOpacity": true,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "LuminanceOffset": 0.15
+    }
+  },
+  "CSS": {
+    "NoteTags": true,
+    "NoteProperties": true,
+    "NoteBackgrounds": false,
+    "TagsNoWrap": true,
+    "TagsNoWrapText": "pre"
+  },
+  "FolderNote": {
+    "Enable": true,
+    "FolderTagLinks": [],
+    "EnableAutoDetect": true,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "ForceImportant": true,
+      "BorderRadius": "12px",
+      "Padding": "5px"
+    }
+  },
+  "Kanban": {
+    "Enable": false,
+    "EnableCards": false,
+    "EnableLists": false,
+    "HideHashtags": false,
+    "EnableBackgroundOpacity": false,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "CardBackgroundOpacity": 0.2,
+      "CardBorderOpacity": 0.3,
+      "ListBackgroundOpacity": 0.2,
+      "ListBorderOpacity": 0.3
+    }
+  },
+  "Canvas": {
+    "Enable": true,
+    "EnableBackgroundOpacity": true,
+    "Values": {
+      "BackgroundOpacity": 0.45,
+      "CardBorderOpacity": 0.3,
+      "CardBackgroundLuminanceOffset": 0.15
+    }
+  },
+  "Debug": {
+    "Enable": false,
+    "EnableExperimentalCommands": true
+  },
+  "Info": {
+    "SettingsVersion": 14
+  }
+}
