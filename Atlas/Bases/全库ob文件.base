@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.ext.containsAny("md", "canvas", "base")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.size
+      - aliases
+      - file.ext
+      - file.links
+    sort:
+      - property: file.size
+        direction: DESC
+      - property: file.ext
+        direction: ASC
+    columnSize:
+      file.name: 454
+      note.aliases: 92
