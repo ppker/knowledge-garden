@@ -1,0 +1,84 @@
+{
+  "documents": {
+    "🍀 花园导览/🧰 本库指南/Obsidian/Plugins/测试验证lineage视图语法.md": {
+      "documentFormat": "sections",
+      "viewType": "lineage",
+      "activeSection": "2.1",
+      "pinnedSections": {
+        "sections": [
+          "2.1.1",
+          "2.1.1",
+          "2.2"
+        ],
+        "activeSection": "2.2"
+      },
+      "outline": {
+        "collapsedSections": []
+      }
+    },
+    "Sources/Books/读书笔记/《影响力》Lineage笔记.md": {
+      "documentFormat": "sections",
+      "viewType": "markdown",
+      "activeSection": "1.3.4",
+      "pinnedSections": {
+        "sections": []
+      },
+      "outline": {
+        "collapsedSections": []
+      }
+    },
+    "🍀 花园导览/Lineage 花园导览.md": {
+      "documentFormat": "sections",
+      "viewType": "lineage",
+      "activeSection": "1.2.2.2",
+      "pinnedSections": {
+        "sections": [],
+        "activeSection": null
+      },
+      "outline": {
+        "collapsedSections": []
+      }
+    }
+  },
+  "hotkeys": {
+    "customHotkeys": {}
+  },
+  "view": {
+    "fontSize": 16,
+    "h1FontSize_em": 1.802,
+    "theme": {
+      "inactiveNodeOpacity": 25
+    },
+    "cardWidth": 550,
+    "cardsGap": 50,
+    "scrolling": {
+      "centerActiveNodeH": false,
+      "centerActiveNodeV": true
+    },
+    "limitPreviewHeight": true,
+    "zoomLevel": 0.7,
+    "showMinimap": false,
+    "showLeftSidebar": false,
+    "leftSidebarWidth": 500,
+    "leftSidebarActiveTab": "pinned-cards",
+    "applyGapBetweenCards": false,
+    "outlineMode": false,
+    "nodeIndentationWidth": 60,
+    "maintainEditMode": false,
+    "alwaysShowCardButtons": false,
+    "hiddenVerticalToolbarButtons": []
+  },
+  "general": {
+    "defaultDocumentFormat": "sections",
+    "linkPaneType": "tab"
+  },
+  "styleRules": {
+    "documents": {},
+    "global": {
+      "rules": []
+    },
+    "settings": {
+      "activeTab": "global-rules"
+    }
+  }
+}

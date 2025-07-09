@@ -3,6 +3,9 @@ title: obsidian的不同人的用法
 date created: 2023-02-24
 date modified: 2023-03-14
 publish: true
+aliases:
+  - obsidian的使用level tier
+是否已review: true
 ---
 
 - markdown编辑器  

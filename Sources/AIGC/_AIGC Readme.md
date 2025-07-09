@@ -4,7 +4,11 @@ title: AIGC
 tags:
   - AI生成
 publish: true
+是否已review: true
 ---
+
+> AI生成，且未经过审阅修改的，先都放这个目录下。
+
 [[Sources/AIGC/Obsidian 专家学习追踪仪表板.md]]
 [[Sources/AIGC/Obsidian 专家快速开始指南.md]]
 [[Sources/AIGC/Obsidian 专家进阶学习计划.md]]

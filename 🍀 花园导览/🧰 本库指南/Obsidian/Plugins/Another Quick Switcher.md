@@ -7,7 +7,7 @@ status:
 当前是否还在使用: false
 当前使用频率:
 title: Another Quicker Switcher
-rating: 7
+rating: 5
 publish: true
 ---
 

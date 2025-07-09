@@ -27,6 +27,10 @@
     "1749472879377": {
       "name": "快照",
       "commandId": "file-recovery:open"
+    },
+    "1752048340268": {
+      "name": "发布笔记-发布中心",
+      "commandId": "quartz-syncer:open-publish-modal"
     }
   },
   "commandDetection": {

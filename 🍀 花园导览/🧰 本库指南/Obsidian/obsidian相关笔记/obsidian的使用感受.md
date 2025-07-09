@@ -5,13 +5,11 @@ title: obsidian的使用感受
 publish: true
 ---
 
-obsidian 的使用感受
-
 ## 别人眼中的 obsidian
 
 ### Obsidian 官方介绍
 
-> Obsidian is a powerful**knowledge base**on top of a**local folder**of plain text Markdown files.
+> Obsidian is a powerful **knowledge base** on top of a **local folder** of plain text Markdown files.
 
 ### 写作之难
 

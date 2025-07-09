@@ -45,6 +45,7 @@
     "publish": "checkbox",
     "优先级": "number",
     "开始日期": "date",
-    "截止日期": "date"
+    "截止日期": "date",
+    "是否已review": "checkbox"
   }
 }

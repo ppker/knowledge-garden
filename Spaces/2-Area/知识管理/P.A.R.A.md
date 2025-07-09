@@ -6,6 +6,7 @@ date created: 2022-06-09
 date modified: 2024-07-25
 title: PARA
 publish: true
+是否已review: true
 ---
 
 读[[Building a Second Brain-Tiago Forte]]，恍然大悟。PARA应该是用来组织信息，而非组织笔记。不应该生搬硬套到我的[[个人知识笔记系统]]中，而是应该纳入[[个人信息管理系统]]。

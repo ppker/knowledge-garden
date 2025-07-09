@@ -31,10 +31,10 @@
     "url",
     "tags"
   ],
-  "contentTemplate": "# {{{title}}}\n\n{{{description}}}\n\n[Read in Cubox]({{{cubox_url}}})  \n[Read Original]({{{url}}})  \n\n---\n\n{{#highlights.length}}\n## Annotations  \n\n{{#highlights}}\n> {{{text}}}  \n\n{{#note}}\n{{{note}}}\n{{/note}}\n[Link️]({{{cubox_url}}})  \n\n{{/highlights}}\n{{/highlights.length}}\n\n{{{content}}}",
+  "contentTemplate": "# {{{title}}}\n\n{{#highlights.length}}\n## Annotations  \n\n{{#highlights}}\n> {{{text}}}  \n\n{{#note}}\n{{{note}}}\n{{/note}}\n[Link️]({{{cubox_url}}})  \n\n{{/highlights}}\n{{/highlights.length}}\n\n{{{content}}}",
   "highlightInContent": true,
   "dateFormat": "yyyy-MM-dd",
-  "lastSyncTime": 1751993777803,
+  "lastSyncTime": 1752046890237,
   "lastSyncCardId": "7342161841788815492",
   "lastCardUpdateTime": "2025-07-08T15:22:58.770+0800",
   "syncing": false

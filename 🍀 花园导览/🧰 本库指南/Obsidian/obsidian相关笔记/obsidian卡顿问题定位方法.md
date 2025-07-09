@@ -2,6 +2,7 @@
 date created: 2023-12-21
 date modified: 2024-11-21
 publish: true
+是否已review: true
 ---
 
 ## obsidian 卡顿问题定位方法

@@ -1,12 +1,13 @@
 ---
 date created: 2022-08-05
-date modified: 2023-03-14
+date modified: 2025-07-09
 tags:
   - 目录笔记
   - todo/某天
 title: § 本库obsidian使用说明书
 publish: true
 ---
+
 x:: [[» 本库tutorial编写工作流]]
 
 整理出给读者看的[[🧰 本库使用指南]]。
@@ -23,18 +24,6 @@ x:: [[» 本库tutorial编写工作流]]
 - [[∑ 本库obsidian基本配置及原因]]
 
 [[旧笔记如何迁移至obsidian等双链笔记]]
-
-网盘之于云笔记，就像文件夹之于MOC。
-
-流程图
-
-思维导图
-
-复杂表格及数据库
-
-数学公式
-
-- []因为[[File Cooker]]这个插件，计划重新思考Spaces文件夹的意义和用法。待刷新 #todo/某天
 
 ## obsidian和外部的联动。
 

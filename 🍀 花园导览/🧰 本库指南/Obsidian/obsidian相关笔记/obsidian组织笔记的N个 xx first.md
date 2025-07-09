@@ -10,7 +10,6 @@ publish: true
 - [[local first]]
 - [[folder first]]
 - [[dailynote first]]
-- [[material first]]
 - [[topic first]]
 	- 白板[[Canvas]]的可能应用场景之一
 - [[architect first]]
