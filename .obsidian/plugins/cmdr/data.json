@@ -55,6 +55,13 @@
       "name": "切换实时阅览/源码模式",
       "mode": "any",
       "color": "#9f00f5"
+    },
+    {
+      "id": "quartz-syncer:mark-toggle-publish-status",
+      "icon": "lucide-airplay",
+      "name": "Quartz Syncer: Toggle publication flag",
+      "mode": "any",
+      "color": "#ff0000"
     }
   ],
   "macros": [],
