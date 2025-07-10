@@ -12,7 +12,7 @@ x: [[base 使用技巧]]
 
 - [[📥 Inbox.base]]
 - [[Resources.base]]
-- [[Achieve.base]]
+- [[Archive.base]]
 - [[Areas.base]]
 - [[Projects.base]]
 

@@ -18,7 +18,7 @@ x:: [[P.A.R.A]], [[∑ Building a Second Brain 翻译和读书笔记]]
 
 [[Resources.base]]
 
-[[Achieve.base]]
+[[Archive.base]]
 
 当Cards中有某个project或者area或者resource足够多的卡片，或者其他明确的有一个专题、主题要做的场景，就可以创建para进行承载了。
 

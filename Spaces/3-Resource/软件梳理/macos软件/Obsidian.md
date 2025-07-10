@@ -1,6 +1,6 @@
 ---
 date created: 2022-06-09
-date modified: 2025-07-08
+date modified: 2025-07-10
 title: Obsidian
 tags:
   - 评论/少数派
@@ -18,6 +18,7 @@ icon: "[[icon-cc-image-Obsidian.png]]"
 是否已重装: true
 publish: true
 ---
+
 up:: [[笔记软件的选择]]  
 down:: [[∑ obsidian插件]]  
 jumps:: [[Spaces/3-Resource/软件梳理/macos软件/Notion]]  

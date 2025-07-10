@@ -6,7 +6,7 @@
   "displayIncomingFilesheader": true,
   "displayInlineReferencesLivePreview": true,
   "displayInlineReferencesMarkdown": true,
-  "displayInlineReferencesInSourceMode": true,
+  "displayInlineReferencesInSourceMode": false,
   "displayEmbedReferencesInGutter": false,
   "displayEmbedReferencesInGutterMobile": false,
   "displayPropertyReferences": true,

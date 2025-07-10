@@ -11369,6 +11369,16 @@
             "timeKey": "15:00",
             "w": 1,
             "c": 8
+          },
+          {
+            "timeKey": "17:05",
+            "w": -29,
+            "c": -50
+          },
+          {
+            "timeKey": "17:10",
+            "w": 1,
+            "c": 9
           }
         ],
         "id": 1051
@@ -11602,7 +11612,13 @@
         "filePath": "Cards/THE STARTUP CTO'S HANDBOOK.md",
         "wordCountStart": 68408,
         "charCountStart": 420507,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "20:15",
+            "w": 2,
+            "c": 14
+          }
+        ],
         "id": 1074
       },
       {
@@ -11628,6 +11644,558 @@
         "charCountStart": 943,
         "changes": [],
         "id": 1077
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Sources/AIGC/从浏览器输入一个网址到得到网站页面，中间发生了什么.md",
+        "wordCountStart": 1756,
+        "charCountStart": 3912,
+        "changes": [
+          {
+            "timeKey": "16:35",
+            "w": 14,
+            "c": 43
+          },
+          {
+            "timeKey": "17:00",
+            "w": 2,
+            "c": 13
+          },
+          {
+            "timeKey": "20:20",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1078
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Calendar/Daily notes/2025/2025-07-10.md",
+        "wordCountStart": 60,
+        "charCountStart": 147,
+        "changes": [
+          {
+            "timeKey": "17:00",
+            "w": 11,
+            "c": 5
+          },
+          {
+            "timeKey": "17:50",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1079
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/让cursor把各种流程用mermaid画一遍.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:00",
+            "w": 40,
+            "c": 118
+          },
+          {
+            "timeKey": "20:15",
+            "w": 84,
+            "c": 172
+          },
+          {
+            "timeKey": "20:20",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1080
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/最佳实践.md",
+        "wordCountStart": 405,
+        "charCountStart": 553,
+        "changes": [
+          {
+            "timeKey": "17:10",
+            "w": 2,
+            "c": 4
+          }
+        ],
+        "id": 1081
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/3-Resource/软件梳理/macos软件/Obsidian.md",
+        "wordCountStart": 381,
+        "charCountStart": 1062,
+        "changes": [
+          {
+            "timeKey": "17:10",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 1082
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/笔记软件的选择.md",
+        "wordCountStart": 601,
+        "charCountStart": 1033,
+        "changes": [
+          {
+            "timeKey": "17:10",
+            "w": 2,
+            "c": 14
+          },
+          {
+            "timeKey": "17:15",
+            "w": 0,
+            "c": -1
+          }
+        ],
+        "id": 1083
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/先鉴定你的做笔记风格和工作类型，再选一款app上车.md",
+        "wordCountStart": 266,
+        "charCountStart": 927,
+        "changes": [
+          {
+            "timeKey": "17:10",
+            "w": -45,
+            "c": -191
+          }
+        ],
+        "id": 1084
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/李雷和韩梅梅.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:15",
+            "w": 289,
+            "c": 547
+          }
+        ],
+        "id": 1085
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/知识管理/2022年前后，具有变革性的创新笔记软件类型.md",
+        "wordCountStart": 116,
+        "charCountStart": 258,
+        "changes": [
+          {
+            "timeKey": "17:15",
+            "w": 17,
+            "c": 48
+          },
+          {
+            "timeKey": "17:45",
+            "w": 34,
+            "c": 44
+          }
+        ],
+        "id": 1086
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/hepta-like笔记软件.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:15",
+            "w": 11,
+            "c": 67
+          },
+          {
+            "timeKey": "17:20",
+            "w": 1,
+            "c": 16
+          },
+          {
+            "timeKey": "17:40",
+            "w": 3,
+            "c": 29
+          }
+        ],
+        "id": 1087
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Calendar/Daily notes/2022/2022-07-14.md",
+        "wordCountStart": 536,
+        "charCountStart": 737,
+        "changes": [
+          {
+            "timeKey": "17:15",
+            "w": 26,
+            "c": 62
+          }
+        ],
+        "id": 1088
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/幸存者偏误.md",
+        "wordCountStart": 164,
+        "charCountStart": 253,
+        "changes": [
+          {
+            "timeKey": "17:15",
+            "w": 2,
+            "c": 5
+          }
+        ],
+        "id": 1089
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/🐤我命由我不由天.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:15",
+            "w": 25,
+            "c": 50
+          }
+        ],
+        "id": 1090
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/noteey.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:20",
+            "w": 12,
+            "c": 87
+          }
+        ],
+        "id": 1091
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/mefo.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:20",
+            "w": 14,
+            "c": 84
+          },
+          {
+            "timeKey": "17:35",
+            "w": 1,
+            "c": 5
+          }
+        ],
+        "id": 1092
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/flexnote.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:40",
+            "w": 22,
+            "c": 110
+          }
+        ],
+        "id": 1093
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/知识管理/roam-like笔记软件.md",
+        "wordCountStart": 90,
+        "charCountStart": 292,
+        "changes": [
+          {
+            "timeKey": "17:40",
+            "w": -3,
+            "c": 8
+          }
+        ],
+        "id": 1094
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/RemNote.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:40",
+            "w": 22,
+            "c": 86
+          }
+        ],
+        "id": 1095
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/知识管理/notion-like笔记软件.md",
+        "wordCountStart": 56,
+        "charCountStart": 232,
+        "changes": [
+          {
+            "timeKey": "17:45",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1096
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/folder first.md",
+        "wordCountStart": 48,
+        "charCountStart": 103,
+        "changes": [
+          {
+            "timeKey": "17:45",
+            "w": 9,
+            "c": 34
+          }
+        ],
+        "id": 1097
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/database.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:45",
+            "w": 114,
+            "c": 213
+          }
+        ],
+        "id": 1098
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/block.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "17:45",
+            "w": 37,
+            "c": 115
+          }
+        ],
+        "id": 1099
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/gemini-cli.md",
+        "wordCountStart": 227,
+        "charCountStart": 774,
+        "changes": [
+          {
+            "timeKey": "17:50",
+            "w": 36,
+            "c": 143
+          }
+        ],
+        "id": 1100
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "🍀 花园导览/🍀 花园导览.md",
+        "wordCountStart": 235,
+        "charCountStart": 555,
+        "changes": [],
+        "id": 1101
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "🍀 花园导览/🧰 本库指南/🏗 本库Roadmap.md",
+        "wordCountStart": 772,
+        "charCountStart": 1454,
+        "changes": [
+          {
+            "timeKey": "18:25",
+            "w": -116,
+            "c": -175
+          }
+        ],
+        "id": 1102
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/知识管理/常见笔记组织方法.md",
+        "wordCountStart": 175,
+        "charCountStart": 411,
+        "changes": [
+          {
+            "timeKey": "18:10",
+            "w": 3,
+            "c": -12
+          }
+        ],
+        "id": 1103
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/KG笔记法.md",
+        "wordCountStart": 44,
+        "charCountStart": 155,
+        "changes": [
+          {
+            "timeKey": "18:10",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1104
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "📥 Inbox/知识图谱.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "18:15",
+            "w": 55,
+            "c": 180
+          }
+        ],
+        "id": 1105
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/三元组.md",
+        "wordCountStart": 10,
+        "charCountStart": 60,
+        "changes": [],
+        "id": 1106
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/知识管理/PARA和MOC联用组织笔记.md",
+        "wordCountStart": 1618,
+        "charCountStart": 4071,
+        "changes": [
+          {
+            "timeKey": "18:15",
+            "w": -69,
+            "c": -384
+          },
+          {
+            "timeKey": "18:20",
+            "w": 1,
+            "c": 4
+          },
+          {
+            "timeKey": "18:25",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1107
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/THE STARTUP CTO'S HANDBOOK - Merged.md",
+        "wordCountStart": 166034,
+        "charCountStart": 527593,
+        "changes": [
+          {
+            "timeKey": "20:10",
+            "w": -10,
+            "c": -50
+          }
+        ],
+        "id": 1108
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Sources/AIGC/模型蒸馏，是什么意思，一般怎么操作 - Gemini.md",
+        "wordCountStart": 2916,
+        "charCountStart": 9495,
+        "changes": [
+          {
+            "timeKey": "20:20",
+            "w": -2916,
+            "c": -9495
+          }
+        ],
+        "id": 1109
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Sources/AIGC/kubectl 命令执行流程图.md",
+        "wordCountStart": 1412,
+        "charCountStart": 5526,
+        "changes": [
+          {
+            "timeKey": "20:20",
+            "w": 1,
+            "c": 31
+          }
+        ],
+        "id": 1110
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Sources/AIGC/docker 命令执行流程图.md",
+        "wordCountStart": 2033,
+        "charCountStart": 7408,
+        "changes": [
+          {
+            "timeKey": "20:20",
+            "w": 1,
+            "c": 31
+          }
+        ],
+        "id": 1111
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Sources/AIGC/istio 架构与命令执行流程图.md",
+        "wordCountStart": 2512,
+        "charCountStart": 9601,
+        "changes": [
+          {
+            "timeKey": "20:20",
+            "w": 1,
+            "c": 34
+          }
+        ],
+        "id": 1112
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Sources/AIGC/LLM训练全流程详解 - 从基础到DeepSeek创新.md",
+        "wordCountStart": 3993,
+        "charCountStart": 11432,
+        "changes": [
+          {
+            "timeKey": "20:20",
+            "w": -1,
+            "c": 32
+          }
+        ],
+        "id": 1113
       }
     ]
   }
