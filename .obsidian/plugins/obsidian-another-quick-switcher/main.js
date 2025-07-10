@@ -4741,6 +4741,14 @@ function getSinglePatternMatchingLocations(text, pattern) {
     }
   }));
 }
+function isValidRegex(pattern) {
+  try {
+    new RegExp(pattern);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
 
 // src/app-helper.ts
 function isFrontMatterLinkCache(x) {
@@ -8820,9 +8828,31 @@ async function rg(cmd, ...args) {
     (0, import_child_process.execFile)(
       cmd,
       ["--json", ...args],
-      { maxBuffer: 100 * 1024 * 1024 },
-      (_2, stdout, _stderr) => {
-        const results = stdout.split("\n").filter((x) => x).map((x) => JSON.parse(x)).filter((x) => x.type === "match");
+      { maxBuffer: 1024 * 1024 * 1024 },
+      (error, stdout, stderr) => {
+        if (error) {
+          if (error.message.includes("regex parse error")) {
+            resolve({
+              type: "error",
+              errorType: "regex_parse_error",
+              message: error.message
+            });
+            return;
+          }
+          console.error("ripgrep error:", error);
+          resolve([]);
+          return;
+        }
+        const results = stdout.split("\n").filter((x) => x).map((x) => {
+          try {
+            return JSON.parse(x);
+          } catch (e) {
+            console.warn("JSON parse error for line:", x);
+            return null;
+          }
+        }).filter(
+          (x) => x !== null && x.type === "match"
+        );
         resolve(results);
       }
     );
@@ -8838,8 +8868,13 @@ async function rgFiles(cmd, queries, searchPath, extensions) {
     (0, import_child_process.execFile)(
       cmd,
       filesArgs,
-      { maxBuffer: 100 * 1024 * 1024 },
-      (_2, stdout, _stderr) => {
+      { maxBuffer: 1024 * 1024 * 1024 },
+      (error, stdout, stderr) => {
+        if (error) {
+          console.error("ripgrep files error:", error);
+          resolve([]);
+          return;
+        }
         let files = stdout.split("\n").filter((x) => x);
         for (const query of queries) {
           if (!query.trim()) continue;
@@ -8998,20 +9033,31 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
     this.navigate(this.markClosed);
   }
   async searchSuggestions(query) {
-    var _a;
+    var _a, _b, _c, _d;
     const start = performance.now();
-    (_a = this.countInputEl) == null ? void 0 : _a.remove();
-    this.countInputEl = createDiv({
-      text: "searching...",
-      cls: "another-quick-switcher__grep__count-input"
-    });
-    this.clonedInputEl.before(this.countInputEl);
     const absolutePathFromRoot = normalizeRelativePath(
       this.basePath,
       this.appHelper.getCurrentDirPath()
     );
     const queries = smartWhitespaceSplit(query.trim());
     let rgResults;
+    for (const singleQuery of queries) {
+      if (!isValidRegex(singleQuery)) {
+        (_a = this.countInputEl) == null ? void 0 : _a.remove();
+        this.countInputEl = createDiv({
+          text: `Invalid regex pattern: ${singleQuery}`,
+          cls: "another-quick-switcher__grep__count-input another-quick-switcher__grep__count-input--error"
+        });
+        this.clonedInputEl.before(this.countInputEl);
+        return [];
+      }
+    }
+    (_b = this.countInputEl) == null ? void 0 : _b.remove();
+    this.countInputEl = createDiv({
+      text: "searching...",
+      cls: "another-quick-switcher__grep__count-input"
+    });
+    this.clonedInputEl.before(this.countInputEl);
     if (queries.length > 1) {
       const allResults = [];
       for (const singleQuery of queries) {
@@ -9025,7 +9071,17 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
             `${this.vaultRootPath}/${absolutePathFromRoot}`
           ].filter((x) => x)
         );
-        allResults.push(results);
+        if (Array.isArray(results)) {
+          allResults.push(results);
+        } else if (results.type === "error" && results.errorType === "regex_parse_error") {
+          (_c = this.countInputEl) == null ? void 0 : _c.remove();
+          this.countInputEl = createDiv({
+            text: `Invalid regex pattern: ${singleQuery}`,
+            cls: "another-quick-switcher__grep__count-input another-quick-switcher__grep__count-input--error"
+          });
+          this.clonedInputEl.before(this.countInputEl);
+          return [];
+        }
       }
       rgResults = mergeAndFilterResults(allResults);
     } else {
@@ -9037,7 +9093,20 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
         singleQuery,
         `${this.vaultRootPath}/${absolutePathFromRoot}`
       ].filter((x) => x);
-      rgResults = await rg(this.settings.ripgrepCommand, ...rgArgs);
+      const results = await rg(this.settings.ripgrepCommand, ...rgArgs);
+      if (Array.isArray(results)) {
+        rgResults = results;
+      } else if (results.type === "error" && results.errorType === "regex_parse_error") {
+        (_d = this.countInputEl) == null ? void 0 : _d.remove();
+        this.countInputEl = createDiv({
+          text: `Invalid regex pattern: ${singleQuery}`,
+          cls: "another-quick-switcher__grep__count-input another-quick-switcher__grep__count-input--error"
+        });
+        this.clonedInputEl.before(this.countInputEl);
+        return [];
+      } else {
+        rgResults = [];
+      }
     }
     const fileResults = this.settings.includeFilenameInGrepSearch ? await rgFiles(
       this.settings.ripgrepCommand,
@@ -9121,15 +9190,19 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
     return fileItems.concat(rgItems).map((x, order) => ({ ...x, order }));
   }
   async getSuggestions(query) {
-    var _a;
+    var _a, _b;
     if (query) {
       this.suggestions = await this.searchSuggestions(query);
-      (_a = this.countInputEl) == null ? void 0 : _a.remove();
-      this.countInputEl = createDiv({
-        text: `${Math.min(this.suggestions.length, this.limit)} / ${this.suggestions.length}`,
-        cls: "another-quick-switcher__grep__count-input"
-      });
-      this.clonedInputEl.before(this.countInputEl);
+      if (!((_a = this.countInputEl) == null ? void 0 : _a.classList.contains(
+        "another-quick-switcher__grep__count-input--error"
+      ))) {
+        (_b = this.countInputEl) == null ? void 0 : _b.remove();
+        this.countInputEl = createDiv({
+          text: `${Math.min(this.suggestions.length, this.limit)} / ${this.suggestions.length}`,
+          cls: "another-quick-switcher__grep__count-input"
+        });
+        this.clonedInputEl.before(this.countInputEl);
+      }
     }
     return this.suggestions;
   }
@@ -9278,6 +9351,53 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
       this.clonedInputEl.focus();
     }
   }
+  validateRegexInput() {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j;
+    const query = (_b = (_a = this.clonedInputEl) == null ? void 0 : _a.value) == null ? void 0 : _b.trim();
+    if (!query) {
+      (_c = this.clonedInputEl) == null ? void 0 : _c.classList.remove(
+        "another-quick-switcher__grep__input--invalid"
+      );
+      if ((_d = this.countInputEl) == null ? void 0 : _d.classList.contains(
+        "another-quick-switcher__grep__count-input--error"
+      )) {
+        (_e = this.countInputEl) == null ? void 0 : _e.remove();
+        this.countInputEl = void 0;
+      }
+      return;
+    }
+    const queries = smartWhitespaceSplit(query);
+    let hasInvalidRegex = false;
+    let invalidQuery = "";
+    for (const singleQuery of queries) {
+      if (!isValidRegex(singleQuery)) {
+        hasInvalidRegex = true;
+        invalidQuery = singleQuery;
+        break;
+      }
+    }
+    if (hasInvalidRegex) {
+      (_f = this.clonedInputEl) == null ? void 0 : _f.classList.add(
+        "another-quick-switcher__grep__input--invalid"
+      );
+      (_g = this.countInputEl) == null ? void 0 : _g.remove();
+      this.countInputEl = createDiv({
+        text: `Invalid regex pattern: ${invalidQuery}`,
+        cls: "another-quick-switcher__grep__count-input another-quick-switcher__grep__count-input--error"
+      });
+      this.clonedInputEl.before(this.countInputEl);
+    } else {
+      (_h = this.clonedInputEl) == null ? void 0 : _h.classList.remove(
+        "another-quick-switcher__grep__input--invalid"
+      );
+      if ((_i = this.countInputEl) == null ? void 0 : _i.classList.contains(
+        "another-quick-switcher__grep__count-input--error"
+      )) {
+        (_j = this.countInputEl) == null ? void 0 : _j.remove();
+        this.countInputEl = void 0;
+      }
+    }
+  }
   registerKeys(key, handler) {
     const hotkeys = this.settings.hotkeys.grep[key];
     for (const x of hotkeys) {
@@ -9336,11 +9456,20 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
         () => {
           this.currentQuery = this.clonedInputEl.value;
           this.inputEl.value = this.currentQuery;
+          this.validateRegexInput();
           this.inputEl.dispatchEvent(new Event("input"));
         },
         this.settings.grepSearchDelayMilliSeconds,
         true
       );
+      this.clonedInputEl.addEventListener(
+        "input",
+        this.clonedInputElInputEventListener
+      );
+    } else {
+      this.clonedInputElInputEventListener = () => {
+        this.validateRegexInput();
+      };
       this.clonedInputEl.addEventListener(
         "input",
         this.clonedInputElInputEventListener

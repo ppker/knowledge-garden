@@ -6374,7 +6374,7 @@
       },
       {
         "date": "2025-07-06",
-        "filePath": "📥 Inbox管理系统配置指南.md",
+        "filePath": "📥 Inbox/📥 Inbox管理系统配置指南.md",
         "wordCountStart": 1312,
         "charCountStart": 3512,
         "changes": [],
@@ -6678,7 +6678,7 @@
       },
       {
         "date": "2025-07-06",
-        "filePath": "🚀 Inbox管理系统-手动配置指南.md",
+        "filePath": "📥 Inbox/🚀 Inbox管理系统-手动配置指南.md",
         "wordCountStart": 1205,
         "charCountStart": 3168,
         "changes": [],
@@ -8361,7 +8361,23 @@
         "filePath": "README.md",
         "wordCountStart": 844,
         "charCountStart": 2158,
-        "changes": [],
+        "changes": [
+          {
+            "timeKey": "20:00",
+            "w": 3,
+            "c": 29
+          },
+          {
+            "timeKey": "20:05",
+            "w": 2,
+            "c": 43
+          },
+          {
+            "timeKey": "20:10",
+            "w": 3,
+            "c": 43
+          }
+        ],
         "id": 810
       },
       {
@@ -9349,7 +9365,7 @@
       },
       {
         "date": "2025-07-09",
-        "filePath": "lineage卡片生成prompt.md",
+        "filePath": "Extras/Prompts/Obsidian/lineage卡片生成prompt.md",
         "wordCountStart": 398,
         "charCountStart": 800,
         "changes": [
@@ -9357,6 +9373,11 @@
             "timeKey": "13:00",
             "w": 33,
             "c": 77
+          },
+          {
+            "timeKey": "19:55",
+            "w": 2,
+            "c": 22
           }
         ],
         "id": 894
@@ -10059,7 +10080,7 @@
       },
       {
         "date": "2025-07-09",
-        "filePath": "文件夹和标签.md",
+        "filePath": "🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签.md",
         "wordCountStart": 6,
         "charCountStart": 10,
         "changes": [
@@ -11043,6 +11064,570 @@
           }
         ],
         "id": 1021
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/ChatGPT.md",
+        "wordCountStart": 102,
+        "charCountStart": 365,
+        "changes": [
+          {
+            "timeKey": "18:50",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1022
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Cards/最佳实践.md",
+        "wordCountStart": 403,
+        "charCountStart": 539,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1023
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Cards/mvp.md",
+        "wordCountStart": 266,
+        "charCountStart": 433,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1024
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Cards/快速试错.md",
+        "wordCountStart": 12,
+        "charCountStart": 85,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 2,
+            "c": 11
+          }
+        ],
+        "id": 1025
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Cards/PMF.md",
+        "wordCountStart": 517,
+        "charCountStart": 738,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1026
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Sources/Books/微信读书同步/经济理财/精益创业-埃里克·莱斯.md",
+        "wordCountStart": 355,
+        "charCountStart": 932,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 2,
+            "c": -23
+          }
+        ],
+        "id": 1027
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/3-Resource/软件梳理/macos软件/VSCode.md",
+        "wordCountStart": 126,
+        "charCountStart": 384,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 14,
+            "c": 45
+          }
+        ],
+        "id": 1028
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/3-Resource/软件梳理/macos软件/Cursor.md",
+        "wordCountStart": 334,
+        "charCountStart": 1658,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1029
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Spaces/3-Resource/VSCode插件/∑ VSCode插件.md",
+        "wordCountStart": 293,
+        "charCountStart": 1191,
+        "changes": [
+          {
+            "timeKey": "18:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1030
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "📥 Inbox/README_批量添加publish字段.md",
+        "wordCountStart": 539,
+        "charCountStart": 1455,
+        "changes": [],
+        "id": 1031
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Cards/🌱 数字花园增长分析报告.md",
+        "wordCountStart": 1111,
+        "charCountStart": 2537,
+        "changes": [
+          {
+            "timeKey": "19:55",
+            "w": 0,
+            "c": 25
+          }
+        ],
+        "id": 1032
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Atlas/Draws/Drawing 2024-05-16 02.11.00.excalidraw.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1033
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Atlas/Draws/数字时代如何更好地工作与生活 - 图.md",
+        "wordCountStart": 979,
+        "charCountStart": 28594,
+        "changes": [],
+        "id": 1034
+      },
+      {
+        "date": "2025-07-09",
+        "filePath": "Atlas/Draws/README 中的头图 - 图.md",
+        "wordCountStart": 200,
+        "charCountStart": 6543,
+        "changes": [],
+        "id": 1035
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Calendar/Daily notes/2025_2025-07-09 (4).md",
+        "wordCountStart": 3,
+        "charCountStart": 9,
+        "changes": [],
+        "id": 1036
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "AboutTheGarden.md",
+        "wordCountStart": 477,
+        "charCountStart": 982,
+        "changes": [],
+        "id": 1037
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/思维工具与模块/思考的过程容器.md",
+        "wordCountStart": 194,
+        "charCountStart": 326,
+        "changes": [
+          {
+            "timeKey": "00:55",
+            "w": 2,
+            "c": 3
+          }
+        ],
+        "id": 1038
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/上下文.md",
+        "wordCountStart": 71,
+        "charCountStart": 170,
+        "changes": [
+          {
+            "timeKey": "00:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1039
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/context 切换.md",
+        "wordCountStart": 749,
+        "charCountStart": 1214,
+        "changes": [
+          {
+            "timeKey": "00:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1040
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/反向链接.md",
+        "wordCountStart": 207,
+        "charCountStart": 523,
+        "changes": [
+          {
+            "timeKey": "00:55",
+            "w": 2,
+            "c": -6
+          }
+        ],
+        "id": 1041
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/正向链接.md",
+        "wordCountStart": 56,
+        "charCountStart": 123,
+        "changes": [
+          {
+            "timeKey": "00:55",
+            "w": 2,
+            "c": 14
+          }
+        ],
+        "id": 1042
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/知识管理/markdown 中如何界定一个块block.md",
+        "wordCountStart": 156,
+        "charCountStart": 479,
+        "changes": [
+          {
+            "timeKey": "00:55",
+            "w": 2,
+            "c": -20
+          }
+        ],
+        "id": 1043
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/PPV人生管理系统/Vaults - 知识库/工具与服务/AI工具库/chatGPT相关工具、项目和服务/无标题 6.md",
+        "wordCountStart": 18,
+        "charCountStart": 88,
+        "changes": [],
+        "id": 1049
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/PPV人生管理系统/Vaults - 知识库/工具与服务/AI工具库/chatGPT相关工具、项目和服务/chatGPT相关工具、项目和服务.md",
+        "wordCountStart": 428,
+        "charCountStart": 1367,
+        "changes": [
+          {
+            "timeKey": "11:45",
+            "w": 0,
+            "c": 1
+          }
+        ],
+        "id": 1050
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "README.md",
+        "wordCountStart": 852,
+        "charCountStart": 2273,
+        "changes": [
+          {
+            "timeKey": "15:00",
+            "w": 1,
+            "c": 8
+          }
+        ],
+        "id": 1051
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/1-Project/ChatGPT和LLM/ChatGPT.md",
+        "wordCountStart": 104,
+        "charCountStart": 379,
+        "changes": [],
+        "id": 1052
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "🍀 花园导览/🧰 本库指南/🌏 本库发布指南.md",
+        "wordCountStart": 631,
+        "charCountStart": 1130,
+        "changes": [],
+        "id": 1053
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/_ bases看板.canvas",
+        "wordCountStart": 431,
+        "charCountStart": 2965,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": -431,
+            "c": -2965
+          }
+        ],
+        "id": 1054
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/_ bases看板.canvas",
+        "wordCountStart": 431,
+        "charCountStart": 2965,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": -431,
+            "c": -2965
+          }
+        ],
+        "id": 1055
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/App软件管理.base",
+        "wordCountStart": 353,
+        "charCountStart": 2352,
+        "changes": [],
+        "id": 1056
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/_ About Bases.md",
+        "wordCountStart": 206,
+        "charCountStart": 383,
+        "changes": [
+          {
+            "timeKey": "15:20",
+            "w": 1,
+            "c": 13
+          }
+        ],
+        "id": 1057
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/∑ BASE.md",
+        "wordCountStart": 192,
+        "charCountStart": 781,
+        "changes": [
+          {
+            "timeKey": "16:00",
+            "w": 50,
+            "c": 68
+          }
+        ],
+        "id": 1058
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/∑ All Bases.base",
+        "wordCountStart": 21,
+        "charCountStart": 174,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": -21,
+            "c": -174
+          }
+        ],
+        "id": 1059
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/AI 产品和公司.base",
+        "wordCountStart": 86,
+        "charCountStart": 579,
+        "changes": [],
+        "id": 1060
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/3-Resource/软件梳理/macos软件/Cursor.md",
+        "wordCountStart": 336,
+        "charCountStart": 1672,
+        "changes": [],
+        "id": 1061
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Spaces/2-Area/windows高效使用/windows系统重装.md",
+        "wordCountStart": 288,
+        "charCountStart": 779,
+        "changes": [],
+        "id": 1062
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/canvas管理.base",
+        "wordCountStart": 56,
+        "charCountStart": 543,
+        "changes": [],
+        "id": 1063
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/chrome插件.base",
+        "wordCountStart": 33,
+        "charCountStart": 216,
+        "changes": [],
+        "id": 1064
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/cubox管理.base",
+        "wordCountStart": 12,
+        "charCountStart": 106,
+        "changes": [
+          {
+            "timeKey": "15:25",
+            "w": -12,
+            "c": -106
+          }
+        ],
+        "id": 1065
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/GithubStars.base",
+        "wordCountStart": 57,
+        "charCountStart": 650,
+        "changes": [],
+        "id": 1066
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/icon list.base",
+        "wordCountStart": 24,
+        "charCountStart": 200,
+        "changes": [],
+        "id": 1067
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/Inbox管理.base",
+        "wordCountStart": 215,
+        "charCountStart": 1263,
+        "changes": [
+          {
+            "timeKey": "15:50",
+            "w": -215,
+            "c": -1263
+          }
+        ],
+        "id": 1068
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/linux常用命令行.base",
+        "wordCountStart": 16,
+        "charCountStart": 128,
+        "changes": [],
+        "id": 1069
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/MOC文件汇总管理.base",
+        "wordCountStart": 22,
+        "charCountStart": 161,
+        "changes": [],
+        "id": 1070
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/workflow汇总.base",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 1071
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/Untitled.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [
+          {
+            "timeKey": "15:55",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 1072
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/全库ob文件.base",
+        "wordCountStart": 41,
+        "charCountStart": 377,
+        "changes": [],
+        "id": 1073
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/THE STARTUP CTO'S HANDBOOK.md",
+        "wordCountStart": 68408,
+        "charCountStart": 420507,
+        "changes": [],
+        "id": 1074
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/好用网站管理.base",
+        "wordCountStart": 36,
+        "charCountStart": 280,
+        "changes": [],
+        "id": 1075
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Atlas/Bases/webclipping and cubox.base",
+        "wordCountStart": 35,
+        "charCountStart": 331,
+        "changes": [],
+        "id": 1076
+      },
+      {
+        "date": "2025-07-10",
+        "filePath": "Cards/base 使用技巧.md",
+        "wordCountStart": 254,
+        "charCountStart": 943,
+        "changes": [],
+        "id": 1077
       }
     ]
   }

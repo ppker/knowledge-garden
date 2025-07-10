@@ -9,14 +9,14 @@ publish: true
 ---
 
 <h1 align="center">oldwinterの数字花园</h1>
-<img src="https://img.oldwinter.top/202208211431065.svg">
+<img src="https://pub-pic.oldwinter.top/2025/07/7b98f18cfd7da449094dc1496f60d26b.svg">
 <p align="center">
 	<a href="https://garden.oldwinter.top/README">主发布站</a> |
 	<a href="https://github.com/oldwinter/knowledge-garden">源代码仓</a>
 </p>
 
 > [!TIP] 重大更新💡  
-> 迎接AI时代，本库发布 v2.0 版本，包含了大量使用[[Spaces/1-Project/ChatGPT和LLM/ChatGPT]]、[[Spaces/1-Project/ChatGPT和LLM/Gemini|Gemini]]、[[DeepSeek]]等应用的笔记，请到 release 中下载。
+> 迎接AI时代，本库发布 v2.0 版本，包含了大量使用[[Spaces/1-Project/ChatGPT和LLM/ChatGPT|ChatGPT]]、[[Spaces/1-Project/ChatGPT和LLM/Gemini|Gemini]]、[[DeepSeek]]等应用的笔记，请到 release 中下载。
 
 ## 这是什么
 
@@ -34,9 +34,9 @@ publish: true
 
 - [[ACCESS 笔记组织法]]
 
-![](https://img.oldwinter.top/白.png)
+![](https://pub-pic.oldwinter.top/2025/07/a3d73e67f8555a7ada5912b953fd4f33.png)
 
-![](https://img.oldwinter.top/黑.png)
+![](https://pub-pic.oldwinter.top/2025/07/144bd1681e7a1dcead3823771493be8d.png)
 
 ## 贡献与交流
 
