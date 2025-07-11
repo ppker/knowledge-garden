@@ -6,7 +6,7 @@ publish: true
 ---
 - Recall one or more keywords in the title. Find it through cmd+o.
 	- This means that when writing notes, you should express the core of the note as completely as possible. It is better to say more than less. You can add aliases metadata to increase the possibility of being searched later.
-- Keyword search in the body. Search with the built-in cmd+shift+f. Or the [[Cards/Omnisearch]] plugin.
+- Keyword search in the body. Search with the built-in cmd+shift+f. Or the [[Omnisearch]] plugin.
 - Recall the location of the note and find it level by level along the directory structure.
 	- Recall the possible sources of the note, such as articles, books, videos, etc., and then go to the sources folder to find them.
 	- Recall the [[P.A.R.A]] that the note may belong to, and go to the spaces folder to find it.

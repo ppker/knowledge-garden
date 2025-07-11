@@ -16,7 +16,7 @@ up:: [[🧰 Library Usage Guide]]
 - cmd + t: call out the tab quick switcher panel
 	- New: Requires installation of [[Quick Switcher++]]. The logic of this command is different from that of the cmd + o command in that this command opens the file in a new tab page.
 - cmd + alt + f: call out the full-text search panel of the entire library
-	- Replaced with the [[Cards/Omnisearch]] plugin, shortcut key cmd + option + f. Except that Chinese phrases composed of whole sentences are not highlighted, and English double quotation marks " must be added, for example, search for `"whole sentences are not highlighted"`. In other aspects, it is better than the built-in search.
+	- Replaced with the [[Omnisearch]] plugin, shortcut key cmd + option + f. Except that Chinese phrases composed of whole sentences are not highlighted, and English double quotation marks " must be added, for example, search for `"whole sentences are not highlighted"`. In other aspects, it is better than the built-in search.
 - control + tab: [[Switch recent tabs]]
 	- New: Requires installation of [[Tab Switcher]] plugin and manual configuration of shortcut keys. After using this shortcut key, the sense of happiness is overwhelming. [[Arc Browser]] and [[Spaces/3-Resource/Software-Sorting/macos-software/VSCode]] both have this shortcut key, which greatly improves efficiency. Try it more and you will feel the benefits I said.
 	- It complements the [[Quick Switcher++]] plugin.
@@ -29,7 +29,7 @@ up:: [[🧰 Library Usage Guide]]
 
 ## **Daily review flow**
 
-- cmd + shift + 0: open [[Cards/Spaced Repetition]] note review
+- cmd + shift + 0: open [[Spaced Repetition]] note review
 - cmd + shift + 1: mark as simple
 - cmd + shift + 2: mark as difficult
 

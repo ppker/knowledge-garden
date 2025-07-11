@@ -10,7 +10,7 @@ publish: true
 - Command palette
 	- Switched to [[Cards/Better Command Palette]].
 - Templates
-	- Switched to [[Cards/Templater]].
+	- Switched to [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Templater]].
 - Outline
 	- Switched to .
 - Sync

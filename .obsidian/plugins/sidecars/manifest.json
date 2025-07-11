@@ -1,0 +1,11 @@
+{
+	"id": "sidecars",
+	"name": "Sidecars",
+	"version": "0.7.3",
+	"minAppVersion": "1.8.10",
+	"description": "Automated management of 'sidecar' companion notes for attachments and other files.",
+	"author": "Albert O'Shea",
+	"authorUrl": "https://github.com/Alb-O",
+	"fundingUrl": "https://github.com/sponsors/Alb-O",
+	"isDesktopOnly": false
+}

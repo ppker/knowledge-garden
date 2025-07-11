@@ -11,7 +11,7 @@ publish: true
 - Note composer
 	- See [[How to merge and combine two quoted pages in obsidian]].
 - Tag pane
-	- I'm used to writing tags in the [[frontmatter]] area to manage file status and special files. This usage prevents tags from expanding too much and can also work with [[Cards/Dataview]].
+	- I'm used to writing tags in the [[frontmatter]] area to manage file status and special files. This usage prevents tags from expanding too much and can also work with [[Dataview]].
 - Outgoing links
 	- Rarely used. But I always feel that something is missing if I don't turn on this function.
 - Backlinks
@@ -39,7 +39,7 @@ publish: true
 ## Not enabled
 
 - Random note
-	- I haven't used it yet. [[Active review]] is actually better with [[Cards/Spaced Repetition]]. I feel that this random note function is too random, and the rules and results are uncontrollable, so I don't use it.
+	- I haven't used it yet. [[Active review]] is actually better with [[Spaced Repetition]]. I feel that this random note function is too random, and the rules and results are uncontrollable, so I don't use it.
 - Audio recorder
 	- Mobile phones, MacOS and Windows all have their own recording software, which can be quickly opened when needed. In addition, using [[Feishu Memo]] and other software that directly supports transcription and translation of recording files, there is no need to use this simple function that can only record.
 - Zettelkasten prefixer
