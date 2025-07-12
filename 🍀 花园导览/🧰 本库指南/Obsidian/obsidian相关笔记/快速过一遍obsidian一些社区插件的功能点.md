@@ -9,7 +9,7 @@ publish: true
 	- cmd t ，快速切换或打开md文档
 - [[Advanced URL]]
 	- 外部调用obsidian的笔记或功能
-- [[Cards/Auto Link Title]]
+- [[Auto Link Title]]
 	- 自动给url生成标题
 - [[Better Command Pallete]]
 	- 增强型cmd p
@@ -21,9 +21,9 @@ publish: true
 	- 自定义各个页面的icon
 - [[Cards/Daily Note Outline]]
 	- 平铺的Dailynote，weeklynote
-- [[Cards/Dataview]]
+- [[Dataview]]
 	- 类似mysql语句根据properties批量查询文档
-- [[Cards/Excalidraw]]
+- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]
 	- canvas插件的强化版本
 - [[Link Favicons]]
 	- 网页url前面自动加上网站的icon
@@ -39,9 +39,9 @@ publish: true
 	- 近期打开的文件
 - [[Share Note]]
 	- 分享当前笔记到online
-- [[Cards/Smart Connections]]
+- [[Spaces/2-Area/计算机知识/Smart Connections]]
 	- ai搜索笔记
-- [[Cards/Sortable]]
+- [[Sortable]]
 	- 表格排序
 - [[Supercharged Links]]
 	- 针对tags美化连接。

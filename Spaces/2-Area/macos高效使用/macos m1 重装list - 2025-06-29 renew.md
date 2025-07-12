@@ -18,12 +18,12 @@ publish: true
 	- 目前还不支持profile同步，所以需要重新手动弄一遍插件和账号登录等等。
 	- [[arc浏览器插件重装list]]
 - [[夸克网盘]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Notion]]
+- [[Obsidian]]
+- [[Notion]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Bob]]
-- [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
+- [[滴答清单]]
 - [[Cursor]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
+- [[Raycast]]
 - [[Clash Verge]]
 - [[Warp]]
 - [[Ice]]
@@ -222,7 +222,7 @@ views:
 
 ### 手动导出导入
 
-- [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]，等app装完了再导入。
+- [[Raycast]]，等app装完了再导入。
 
 ### 其他云同步
 

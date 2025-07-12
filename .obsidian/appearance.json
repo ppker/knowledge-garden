@@ -21,7 +21,7 @@
   "textFontFamily": "LXGW WenKai GB Screen,霞鹜文楷",
   "interfaceFontFamily": "LXGW WenKai GB Screen,霞鹜文楷",
   "monospaceFontFamily": "LXGW WenKai Mono GB Screen,霞鹜文楷",
-  "baseFontSize": 16,
+  "baseFontSize": 15,
   "baseFontSizeAction": false,
   "showRibbon": false
 }

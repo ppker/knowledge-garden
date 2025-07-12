@@ -18,7 +18,7 @@ publish: true
 
 ### 效率工具
 
-- ! [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
+- ! [[Raycast]]
 	- [[Raycast Snippets]]
 	- [[Raycast Clipboard]]
 	- [[Raycast Quicklinks]]
@@ -52,7 +52,7 @@ publish: true
 - ! [[OrbStack]]
 - ! [[Proxyman]]
 - ! [[Goland]]
-- [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]
+- [[VSCode]]
 - [[Trae]]
 - [[Windsurf]]
 - [[iTerm]]
@@ -112,10 +112,10 @@ publish: true
 
 ### 笔记与知识管理
 
-- ! [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]
-- ! [[Spaces/3-Resource/软件梳理/macos软件/Notion]]
+- ! [[Obsidian]]
+- ! [[Notion]]
 - ! [[Spaces/3-Resource/软件梳理/macos软件/Folo]]
-- ! [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
+- ! [[滴答清单]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Cubox]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Logseq]]
 - [[Anki]]
@@ -170,7 +170,7 @@ publish: true
 
 ### 邮件与通讯
 
-- ! [[Spaces/3-Resource/软件梳理/macos软件/Telegram]]
+- ! [[Telegram]]
 - [[微信]]
 - [[Bilibili]]
 - [[Presentify]]

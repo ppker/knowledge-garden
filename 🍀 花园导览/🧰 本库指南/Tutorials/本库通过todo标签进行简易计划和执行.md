@@ -9,7 +9,7 @@ tags:
   - todo/持续迭代
 publish: true
 ---
-x:: [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
+x:: [[滴答清单]]
 
 todo标签规划：
 

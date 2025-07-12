@@ -6,7 +6,7 @@ PARA: Resources
 publish: true
 ---
 
-[[Spaces/3-Resource/软件梳理/macos软件/VSCode]]
+[[VSCode]]
 
 ## 通用
 

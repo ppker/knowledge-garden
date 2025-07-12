@@ -1,16 +1,5 @@
 {
   "documents": {
-    "Sources/Books/读书笔记/《影响力》Lineage笔记.md": {
-      "documentFormat": "sections",
-      "viewType": "markdown",
-      "activeSection": "1.3.4",
-      "pinnedSections": {
-        "sections": []
-      },
-      "outline": {
-        "collapsedSections": []
-      }
-    },
     "🍀 花园导览/Lineage 花园导览.md": {
       "documentFormat": "sections",
       "viewType": "markdown",
@@ -34,6 +23,17 @@
           "2.2"
         ],
         "activeSection": "2.2"
+      },
+      "outline": {
+        "collapsedSections": []
+      }
+    },
+    "Atlas/Lineages/《影响力》Lineage笔记.md": {
+      "documentFormat": "sections",
+      "viewType": "markdown",
+      "activeSection": "1.3.4",
+      "pinnedSections": {
+        "sections": []
       },
       "outline": {
         "collapsedSections": []

@@ -35,7 +35,7 @@ publish: true
 
 
 ##
-最近新出的[[ghostty]]，有空试试好使不
+最近新出的[[Spaces/2-Area/计算机知识/ghostty]]，有空试试好使不
 
 ![Pasted image 20240713181946](https://pub-pic.oldwinter.top/2025/06/dc4788ce9c6dd1b53fc4b406154a6cc9.png)
 
@@ -48,7 +48,7 @@ publish: true
 
 主打AI智能提示的命令行终端工具。目前用起来感觉非常不错。
 
-例如，输入 # 批量替换，就能给出sed完整命令。可以算是[[Spaces/1-Project/ChatGPT和LLM/ChatGPT]]的细分领域了。
+例如，输入 # 批量替换，就能给出sed完整命令。可以算是[[ChatGPT]]的细分领域了。
 
 ![image.png](https://img.oldwinter.top/202302151815008.png)
 

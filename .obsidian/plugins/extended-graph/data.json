@@ -73,31 +73,36 @@
         {
           "type": "Atlas",
           "color": "#ff00ff",
-          "recursive": false
+          "recursive": true
         },
         {
           "type": "Calendar",
           "color": "#00ffff",
-          "recursive": false
+          "recursive": true
         },
         {
           "type": "Cards",
           "color": "#ff0000",
-          "recursive": false
+          "recursive": true
         },
         {
           "type": "Spaces",
           "color": "#0000ff",
-          "recursive": false
+          "recursive": true
         },
         {
           "type": "Sources",
           "color": "#00ff04",
-          "recursive": false
+          "recursive": true
+        },
+        {
+          "type": "Extras",
+          "color": "#ffff00",
+          "recursive": true
         }
       ],
       "unselected": [],
-      "noneType": ".",
+      "noneType": "",
       "showOnGraph": true,
       "enableByDefault": false,
       "excludeRegex": {
@@ -125,27 +130,24 @@
     }
   },
   "backupGraphOptions": {
-    "collapse-filter": true,
-    "localJumps": 1,
-    "localBacklinks": true,
-    "localForelinks": true,
-    "localInterlinks": false,
+    "collapse-filter": false,
     "showTags": false,
     "showAttachments": false,
     "hideUnresolved": false,
-    "collapse-color-groups": true,
+    "showOrphans": true,
+    "collapse-color-groups": false,
     "colorGroups": [],
-    "collapse-display": true,
+    "collapse-display": false,
     "showArrow": false,
     "textFadeMultiplier": 0,
-    "nodeSizeMultiplier": 5,
+    "nodeSizeMultiplier": 1,
     "lineSizeMultiplier": 1,
-    "collapse-forces": true,
+    "collapse-forces": false,
     "centerStrength": 0.518713248970312,
     "repelStrength": 10,
     "linkStrength": 1,
     "linkDistance": 250,
-    "scale": 0.40902898760401085,
+    "scale": 0.042846948939952584,
     "close": true
   },
   "states": [
@@ -156,13 +158,10 @@
         "colorGroups": [],
         "hideUnresolved": false,
         "showAttachments": false,
+        "showOrphans": true,
         "showTags": false,
-        "localBacklinks": true,
-        "localForelinks": true,
-        "localInterlinks": false,
-        "localJumps": 1,
         "lineSizeMultiplier": 1,
-        "nodeSizeMultiplier": 5,
+        "nodeSizeMultiplier": 1,
         "showArrow": false,
         "textFadeMultiplier": 0,
         "centerStrength": 0.518713248970312,
@@ -177,7 +176,11 @@
       },
       "pinNodes": {},
       "hiddenLegendRows": [],
-      "collapsedLegendRows": [],
+      "collapsedLegendRows": [
+        "tag",
+        "PARA",
+        "link"
+      ],
       "logicTypes": {
         "tag": "OR",
         "link": "OR",
@@ -244,7 +247,7 @@
   "linksColorColormap": "YlOrRd",
   "linksColorFunction": "default",
   "zoomFactor": 2,
-  "maxNodes": 2000,
+  "maxNodes": 20000,
   "delay": 500,
   "revertAction": true,
   "enableCSS": false,
@@ -360,8 +363,8 @@
   "useParentIcon": false,
   "horizontalLegend": true,
   "useRadialMenu": false,
-  "collapseState": false,
-  "collapseLegend": true,
+  "collapseState": true,
+  "collapseLegend": false,
   "resetAfterChanges": false,
   "collapsedSettings": {
     "automation": true,
@@ -369,8 +372,8 @@
     "properties": true,
     "links": true,
     "arrows": true,
-    "folders": true,
-    "images": false,
+    "folders": false,
+    "images": true,
     "icons": true,
     "focus": false,
     "shapes": false,

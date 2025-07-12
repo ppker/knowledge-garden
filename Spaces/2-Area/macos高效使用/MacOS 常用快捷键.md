@@ -23,7 +23,7 @@ publish: true
 
 ### 自定义
 
-- cmd + space： 呼出 [[Spaces/3-Resource/软件梳理/macos软件/Raycast]] 命令行
+- cmd + space： 呼出 [[Raycast]] 命令行
 - option + space： 呼出 chat ai
 - cmd + option + l： 锁定电脑，通过 raycast 配置
 - cmd + option + x ： 历史剪切板
@@ -39,10 +39,10 @@ publish: true
 
 | 软件                    | 功能          | 快捷键                | 频率  | 是否已完全习惯 |
 | --------------------- | ----------- | ------------------ | --- | ------- |
-| alfred or [[Spaces/3-Resource/软件梳理/macos软件/Raycast]] | 打开全局快捷命令悬浮窗 | cmd + space        | 极高  | 是       |
+| alfred or [[Raycast]] | 打开全局快捷命令悬浮窗 | cmd + space        | 极高  | 是       |
 | [[Spaces/3-Resource/软件梳理/macos软件/Bob]]               | 选取文本翻译      | option + shift + b | 高   |         |
 | bob                   | 打开翻译悬浮窗     | option + b         | 高   |         |
-| [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]              | 打开滴答任务添加悬浮窗 | control + space    | 高   |         |
+| [[滴答清单]]              | 打开滴答任务添加悬浮窗 | control + space    | 高   |         |
 | [[搜狗输入法]]             | 语音输入        | option + option    | 低   |         |
 | 常用软件自己配置              | 隐藏/打开左侧栏    | cmd + shift + s    |     |         |
 | 常用软件自己配置              | 隐藏打开右侧栏     | cmd + shift + d    |     |         |

@@ -5,6 +5,8 @@ date created: 2025-04-04
 date modified: 2025-06-27
 publish: true
 ---
+![[A.Obsidian-ABCDE预制仓库模版 7.3(阿泽小朋友更新).zip]]
+
 
 ## 2025-06-27 cursor整理
 

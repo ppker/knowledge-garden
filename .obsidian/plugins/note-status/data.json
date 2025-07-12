@@ -1,0 +1,29 @@
+{
+  "statusColors": {
+    "active": "var(--text-success)",
+    "onHold": "var(--text-warning)",
+    "completed": "var(--text-accent)",
+    "dropped": "var(--text-error)",
+    "unknown": "var(--text-muted)",
+    "inProgress": "#2196F3"
+  },
+  "showStatusBar": false,
+  "autoHideStatusBar": true,
+  "customStatuses": [],
+  "showStatusIconsInExplorer": true,
+  "hideUnknownStatusInExplorer": false,
+  "collapsedStatuses": {},
+  "compactView": false,
+  "enabledTemplates": [
+    "minimal"
+  ],
+  "useCustomStatusesOnly": false,
+  "useMultipleStatuses": true,
+  "tagPrefix": "obsidian-note-status",
+  "strictStatuses": false,
+  "excludeUnknownStatus": true,
+  "quickStatusCommands": [
+    "active",
+    "completed"
+  ]
+}

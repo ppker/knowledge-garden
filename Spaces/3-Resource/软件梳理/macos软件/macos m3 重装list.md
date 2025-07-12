@@ -24,14 +24,14 @@ publish: true
 	- 2024-11-21 大概率要停止开发新功能，换成最合适的平替 [[Zen Browser]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/阿里云盘]]
 - [x] [[夸克网盘]]
-- [x] [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]
-- [x] [[Spaces/3-Resource/软件梳理/macos软件/Notion]]
+- [x] [[Obsidian]]
+- [x] [[Notion]]
 	- [x] [[飞书]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Bob]]
-- [x] [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
-- [x] [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]
+- [x] [[滴答清单]]
+- [x] [[VSCode]]
 	- [x] [[Cursor]] ，[[AI Native]] 软件
-- [x] [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
+- [x] [[Raycast]]
 - [x] [[Clash Pro]]
 	- [x] [[Clash Verge]] 还在继续维护
 	- [x] [[Surge]] 🛫 2025-05-12
@@ -119,7 +119,7 @@ keyboardholder		tencent-meeting
 - orbstack
 	- brew install orbstack
 - applite
-- [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]
+- [[VSCode]]
 	- brew install --cask visual-studio-code
 - arc
 	- brew install --cask arc
@@ -184,7 +184,7 @@ keyboardholder		tencent-meeting
 	- 翻墙后，打开增强模式，以后将通畅无阻。
 - [[Arc浏览器]]
 	- 比 chrome 浏览器进行了非常多的创新，值得一试。
-- [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
+- [[Raycast]]
 	- 必学，效率神器。
 - [[BetterAndBetter]]
 	- 配置 3 指，4 指手势后，你将放弃鼠标，彻底爱上触摸板。

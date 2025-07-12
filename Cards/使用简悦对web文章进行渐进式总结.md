@@ -24,7 +24,7 @@ publish: true
 - aa进阅读模式
 - dd直接丢到稍后读
 - sr进入控制模式，而后`,`打开快捷键列表，`an`进入标注模式
-- 简悦的稍后读，可以存成edge的应用，然后用[[Spaces/3-Resource/软件梳理/macos软件/Raycast]]快速调用打开。
+- 简悦的稍后读，可以存成edge的应用，然后用[[Raycast]]快速调用打开。
 
 稍后读的文件是html文件，剪藏至ob的均是md文件。
 

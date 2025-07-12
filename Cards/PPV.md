@@ -82,3 +82,11 @@ PPV就像一个人生经营系统。相比于[[P.A.R.A]]，更容易融入[[GTD]
 	- Annual review
 	- Accomplishments and takeaway
 	- Feedback
+
+[[∑ Pillars - 经营领域]]
+
+[[Pipelines - 行动管道]]
+
+[[Vaults - 知识库]]
+
+[[Cycle - 检视回顾]]

@@ -1,9 +1,10 @@
 ---
 date created: 2022-09-02
-date modified: 2023-03-14
+date modified: 2025-07-12
 title: 本库不建议在obsidian中搞美化和排版
 publish: true
 ---
+
 很多朋友可能是第一次接触[[markdown]]。也会在使用过程中发现各种word能轻易实现，但是markdown却做不到的排版格式。于是开始寻找解决方案，往md文件中，先是加入了html，又不满足，再加入了css。最后实现出了跟word一样的排版效果，却花了比word还要多得多的额外时间。
 
 一个算不上冷知识的冷知识：html中的m，其实是markup。使用markdown的初衷，就是让标记格式的语法down下来，而不是up上去。而我们却一方面又选择使用markdown，又一方面想尽办法，将其标记语法up上去。这是不是一个非常搞笑的事情呢？

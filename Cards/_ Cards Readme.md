@@ -3,7 +3,6 @@ date created: 2022-06-22
 date modified: 2025-07-09
 tags:
   - workflow
-  - 本库教程
 title: About Cards
 publish: true
 是否已review: true
@@ -33,16 +32,10 @@ up:: [[ACCESS 笔记组织法]]
 
 一些临时的，pending的又不舍得删除的笔记先放到Pending文件夹里，等以后再处理。
 
-## 原文解释
+使用cursor的处理提示词，注意这里只是为了让cards不要堆积太多文件显得卡顿，所以象征性地给他们一个文件夹：
 
-The cards folder is one of my favorite places because it has*umami*. Apparently umami is one of the five basic tastes. There are: Sweetness, Sourness, Saltiness, Bitterness—and that oddball Umami.
+整理出来以后，用[[file cooker]]处理一下，将他们分到10个文件夹中。
 
-Umami is hard to describe but you know when it's there. The same is true of this folder's contents. It's a mixture of insights and ideas, concepts and connections, all mingling together to create that mysterious full mouthfeel that magnificently completes any meal for the mind.
-
-So, what are "cards"? Anything that is a bit of knowledge that you might call a "thing" or a "statement about things".
-
-Yes, the definition is not rigid, but it works.
-
-Over time, you may have a few subfolders here too. I have a "People" subfolder. If I was an amateur chef with a growing number of recipe notes, I'd put a "Recipes" folder here. If I was making building a personal library of important exercises, I'd likely make an "Exercises" folder.
-
-[[Information that crosses our attentional filter becomes knowledge]].
+```
+按照某种较大的分类表中，将这些卡片分成10个大类。每个大类的md文件中，用[[]]语法引用这些从属cards文件，注意不要改动文件名字，也不要挪动他们的位置。
+```

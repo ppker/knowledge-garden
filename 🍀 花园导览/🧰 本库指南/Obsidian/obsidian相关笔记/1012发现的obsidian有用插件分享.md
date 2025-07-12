@@ -13,5 +13,5 @@ publish: true
 	- 搜索面板和反向链接面板，呈现更结构化的结果。
 	- ![Pasted image 20231012111502](https://pub-pic.oldwinter.top/2025/06/d2289b84be7d34e6b16d81f5005c4956.png)
 - [[Cards/Daily Note Outline]]
-	- 对于[[» Daily notes工作流]]，可以开箱即用了，不用再自己配置[[Cards/Templater]]和[[Cards/Dataview]]插件。
+	- 对于[[» Daily notes工作流]]，可以开箱即用了，不用再自己配置[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Templater]]和[[Dataview]]插件。
 	- ![Pasted image 20231012111753](https://pub-pic.oldwinter.top/2025/06/93b5785d8c9ea4baab1f566f40edaca7.png)

@@ -2,7 +2,7 @@
 uid: f6222587-a8d0-46c3-8e30-7a7f385e095f
 title: 🤖 如何用好AIGC工具
 date created: 2023-03-16
-date modified: 2025-07-08
+date modified: 2025-07-11
 publish: true
 ---
 
@@ -12,20 +12,30 @@ publish: true
 2. 快速，方便提供足够上下文 。[[Cursor]]快速@引用已有文件。
 3. 提示词说清楚需求。[[∑ MOC - prompts 提示词管理]]
 
+## 模型视角，我的产品选择
+
+[[模型使用时间占比毛估估-每月更新]]
+
 ## chatbot 类型
+
+>
 
 - 本地
 	- [[Cherry Studio]]
 - 网页
+	- [[lobe-chat]]
+	- [[ChatGPT|ChatGPT]]
 
 ## copilot 类型
 
 - [[raycast ai]]
 - [[Warp]]
-- [[Cursor]] or [[Github Copilot Chat]]
 - [[Arc浏览器]]
+	- 逐步得换成[[Dia 浏览器]]了。
 
 ## agent 类型
 
-- [[Spaces/1-Project/求职/Dify]]
+- [[Spaces/1-Project/AI Agent 开发/Dify|Dify]]
 - [[n8n]]
+- [[Cursor]]
+- [[fellou浏览器]]

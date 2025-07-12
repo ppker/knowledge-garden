@@ -32,18 +32,18 @@ publish: true
 | W   | [[Warp]]        | Raycast |                                          |
 | E   | [[企业微信]]        | Raycast | Enterprise 企业                            |
 | R   |                 | Raycast |                                          |
-| T   | [[Spaces/3-Resource/软件梳理/macos软件/Telegram]]    | Raycast |                                          |
+| T   | [[Telegram]]    | Raycast |                                          |
 | Y   | [[Proxyman]]    | Raycast | 取 Y 字母的象形意思，一分为二，分叉，代表 proxy             |
 | U   | home 文件夹        |         |                                          |
 | I   |       | Raycast | I 即为 Information，也做为 Input，和 O 做为输出，天生一对 |
-| O   | [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]    |         | O 即为 Output， 做为输出                        |
+| O   | [[Obsidian]]    |         | O 即为 Output， 做为输出                        |
 | P   | 滴答清单开启/暂停专注     | 软件内     | [[番茄工作法]]，Potato                         |
 |     |                 |         |                                          |
 | A   | [[Arc浏览器\|Arc]] | Raycast |                                          |
 | S   | 系统设置 - 隐私与安全    | Raycast | Security 安全                              |
-| D   | [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]        | Raycast |                                          |
+| D   | [[滴答清单]]        | Raycast |                                          |
 | F   | [[Finder]]      | Raycast |                                          |
-| G   | [[Spaces/1-Project/ChatGPT和LLM/ChatGPT]]     | Raycast | ChatGPT 主窗体。快捷唤出用 option + 空格            |
+| G   | [[ChatGPT]]     | Raycast | ChatGPT 主窗体。快捷唤出用 option + 空格            |
 | H   | 不知道被什么占用        |         |                                          |
 | J   | 下载文件夹           |         |                                          |
 | K   | [[夸克网盘]]        | Raycast |                                          |
@@ -54,7 +54,7 @@ publish: true
 | C   | [[Cursor]]      | Raycast |                                          |
 | V   |                 |         |                                          |
 | B   | [[Spaces/3-Resource/软件梳理/macos软件/Bob]] 快捷查词    | 软件内     |                                          |
-| N   | [[Spaces/3-Resource/软件梳理/macos软件/Notion]]      | Raycast |                                          |
+| N   | [[Notion]]      | Raycast |                                          |
 | M   | [[Spotify]]     | Raycast | Music                                    |
 | ,   |                 |         |                                          |
 

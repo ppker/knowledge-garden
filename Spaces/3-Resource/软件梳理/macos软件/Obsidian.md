@@ -21,7 +21,7 @@ publish: true
 
 up:: [[笔记软件的选择]]  
 down:: [[∑ obsidian插件]]  
-jumps:: [[Spaces/3-Resource/软件梳理/macos软件/Notion]]  
+jumps:: [[Notion]]  
 
 [[本库使用时遵守的核心原则]]
 

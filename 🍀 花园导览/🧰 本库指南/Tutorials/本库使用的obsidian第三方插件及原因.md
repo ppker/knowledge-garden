@@ -1,9 +1,10 @@
 ---
 date created: 2022-08-09
-date modified: 2023-03-14
+date modified: 2025-07-10
 title: 本库使用的obsidian第三方插件及原因
 publish: true
 ---
+
 up:: [[∑ obsidian插件]]  
 x:: [[2022年7月，obsidian 依然必装的 10 个插件]]
 
@@ -18,31 +19,29 @@ x:: [[2022年7月，obsidian 依然必装的 10 个插件]]
 - [[Cards/Better Command Palette]]
 - [[clear unused images]]
 - [[Commander]]
-- [[Cards/Dataview]]
+- [[Dataview]]
 - [[Spaces/0-Work/Cards/excalibrain]]
-- [[Cards/Excalidraw]]
+- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]
 - [[File Cooker]]
 - [[Find orphaned files and broken links]]
 - [[Focus and Highlight]]
-
 - [[Local images]]
-
 - [[longform]]
-- [[note-refactor]]
-- [[Cards/Omnisearch]]
+- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Note Refactor]]
+- [[Omnisearch]]
 - [[Outliner]]
 - [[Pane Relief]]
 - [[quick explorer]]
 - [[Remotely Save]]
-- [[Cards/Settings Search]]
+- [[Settings Search]]
 - [[Shell commands]]
 - [[sliding panes - andy mode]]
-- [[Cards/Sortable]]
-- [[Cards/Spaced Repetition]]
-- [[Cards/Style Settings]]
+- [[Sortable]]
+- [[Spaced Repetition]]
+- [[Style Settings]]
 - [[Supercharged Links]]
-- [[Cards/Tag Wrangler]]
-- [[Cards/Templater]]
+- [[Tag Wrangler]]
+- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Templater]]
 - [[Various Complements]]
-- [[Weread Plugin]]
+- [[Weread]]
 - [[Word Splitting for Simplified Chinese in Edit Mode]]

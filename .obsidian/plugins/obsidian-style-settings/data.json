@@ -240,9 +240,10 @@
   "V1-Willemstad-UI@@nav-title-margin": 2,
   "V1-Willemstad-UI@@ssopt-status-bar-float-not": false,
   "V1-Willemstad-UI@@ssopt-status-bar-size": "default",
-  "V1-Willemstad-UI@@status-bar-align": "ssopt-status-bar-right",
+  "V1-Willemstad-UI@@status-bar-align": "default",
   "supercharged-links@@a814-4637-before": "🔌 ",
   "supercharged-links@@a814-4637-background-color": "#B100A8",
   "supercharged-links@@c-a814-4637-use-background": true,
-  "supercharged-links@@01f9-c3f3-after": " 🏹"
+  "supercharged-links@@01f9-c3f3-after": " 🏹",
+  "V1-Willemstad-UI@@ssopt-status-bar-shift-workspace": false
 }

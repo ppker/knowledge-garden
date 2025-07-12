@@ -18,7 +18,7 @@ publish: true
 	- [[用markdown来做笔记，不搞花里胡哨]]
 	- [[MOC：可以抛弃文件夹式和标签式分类法了]]
 	- [[常青笔记]]
-	- [[Cards/Spaced Repetition]]主动和被动。制卡复习是主动。建立双链是被动。
+	- [[Spaced Repetition]]主动和被动。制卡复习是主动。建立双链是被动。
 ---
 
 - 实践：

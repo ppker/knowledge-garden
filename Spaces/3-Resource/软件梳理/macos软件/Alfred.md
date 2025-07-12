@@ -36,9 +36,9 @@ publish: true
 
 笔记：[[Onenote]]
 
-todo：[[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
+todo：[[滴答清单]]
 
-个人创作：[[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]
+个人创作：[[Obsidian]]
 
 文件：本地文件
 
