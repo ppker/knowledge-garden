@@ -1,18 +1,17 @@
 ---
-tags:
+tags: []
 date created: 2024-07-11
-date modified: 2024-12-23
+date modified: 2025-07-13
 publish: true
 ---
-其实现在有非常多都支持 brew cask 安装，后面记得尝试。
 
+其实现在有非常多都支持 brew cask 安装，后面记得尝试。
 
 > 要注意，有 arm 或通用版本，则尽量不要使用 intel 版本，卡顿且耗电。
 
 ## 前置模块
 
 - [[Homebrew]]
-- [[Obsidian Git|Obsidian Git]]
 - [[Xcode Command Line Tools]]
 
 ## 个人必装
@@ -86,6 +85,7 @@ publish: true
 ### 可以通过 homebrew 一键安装
 
 2025-04-03 ：brew list 备份
+
 ```
 brew list --cask
 adrive			ngrok

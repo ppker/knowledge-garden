@@ -156,16 +156,6 @@
       "key": "O"
     }
   ],
-  "workspace:new-tab": [],
-  "darlal-switcher-plus:switcher-plus:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "P"
-    }
-  ],
-  "command-palette:open": [],
   "obsidian-advanced-slides:reload-advanced-slides-preview": [],
   "obsidian-advanced-slides:open-advanced-slides-preview": [],
   "pane-relief:go-1st": [],
@@ -203,15 +193,6 @@
       "key": "F"
     }
   ],
-  "bookmarks:bookmark-current-view": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "K"
-    }
-  ],
   "note-refactor-obsidian:app:extract-selection-content-only": [],
   "obsidian-advanced-uri:copy-uri-block": [
     {
@@ -223,7 +204,6 @@
     }
   ],
   "workspace:previous-tab": [],
-  "workspace:next-tab": [],
   "float-search:search-obsidian-globally": [
     {
       "modifiers": [
@@ -233,16 +213,7 @@
       "key": "F"
     }
   ],
-  "app:delete-file": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Backspace"
-    }
-  ],
   "app:open-help": [],
-  "workspace:close-window": [],
   "tab-selector:go-to-previous-tab": [
     {
       "modifiers": [
@@ -277,15 +248,6 @@
       "key": "ArrowUp"
     }
   ],
-  "editor:table-row-down": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
   "smart-composer:add-selection-to-chat": [
     {
       "modifiers": [
@@ -295,8 +257,6 @@
       "key": "L"
     }
   ],
-  "file-explorer:new-file-in-new-pane": [],
-  "editor:insert-link": [],
   "obsidian-command-alias-plugin:alias:1741506797019": [
     {
       "modifiers": [
@@ -306,42 +266,6 @@
     }
   ],
   "editor:toggle-checklist-status": [],
-  "editor:focus-top": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "ArrowUp"
-    }
-  ],
-  "editor:focus-bottom": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
-  "editor:focus-left": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "ArrowLeft"
-    }
-  ],
-  "editor:focus-right": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Shift"
-      ],
-      "key": "ArrowRight"
-    }
-  ],
   "editor:delete-paragraph": [
     {
       "modifiers": [
@@ -351,23 +275,6 @@
     }
   ],
   "obsidian-another-quick-switcher:grep": [],
-  "darlal-switcher-plus:switcher-plus:open-commands": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "P"
-    }
-  ],
-  "darlal-switcher-plus:switcher-plus:open-headings": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "T"
-    }
-  ],
   "darlal-switcher-plus:switcher-plus:open-symbols": [
     {
       "modifiers": [
@@ -420,6 +327,42 @@
         "Shift"
       ],
       "key": "M"
+    }
+  ],
+  "app:delete-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Backspace"
+    }
+  ],
+  "workspace:next-tab": [],
+  "editor:insert-link": [],
+  "workspace:new-tab": [],
+  "editor:table-row-down": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "darlal-switcher-plus:switcher-plus:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "darlal-switcher-plus:switcher-plus:open-commands": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
     }
   ]
 }

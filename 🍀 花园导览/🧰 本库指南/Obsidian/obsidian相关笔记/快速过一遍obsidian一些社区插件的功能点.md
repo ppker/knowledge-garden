@@ -23,7 +23,7 @@ publish: true
 	- 平铺的Dailynote，weeklynote
 - [[Dataview]]
 	- 类似mysql语句根据properties批量查询文档
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]
+- [[excalidraw]]
 	- canvas插件的强化版本
 - [[Link Favicons]]
 	- 网页url前面自动加上网站的icon

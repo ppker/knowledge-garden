@@ -3,7 +3,7 @@ tags:
   - MOC
   - AI生成
 date created: 2025-07-09
-date modified: 2025-07-09
+date modified: 2025-07-13
 publish: true
 ---
 
@@ -16,6 +16,7 @@ publish: true
 从这里开始了解 Obsidian 的核心价值、设计哲学以及它如何成为强大的第二大脑工具。
 
 ### 为什么选择 Obsidian
+
 - [[obsidian入门]]：初学者的起点，了解基本概念。
 - [[obsidian的使用感受]]：深入探讨使用的体验和快感。
 - [[obsidian让我爱不释手的功能和细节]]：是什么让 Obsidian 如此特别。
@@ -24,6 +25,7 @@ publish: true
 - [[Obsidian做为大二大脑工具的评分]]：一个直观的评分。
 
 ### 核心理念与方法论
+
 - [[如何通过obsidian打造自己的第二大脑]]：将 CODE 方法论与 Obsidian 结合。
 - [[obsidian的不同人的用法]]：从编辑器到人生操作系统的进阶之路。
 - [[obsidian组织笔记的N个 xx first]]：探讨不同的笔记组织哲学，如 `link-first`, `local-first`。
@@ -33,16 +35,19 @@ publish: true
 掌握 Obsidian 的核心功能是高效使用的关键。
 
 ### 笔记组织
+
 - [[obsidian组织笔记的5个要素]]：全面解析文件夹、标签、链接、Dataview、文件的综合运用。
 - [[文件夹和标签]]：深入辨析两种组织方式的区别与联系。
 
 ### 搜索
+
 - [[obsidian 搜索技巧]]：官方搜索语法详解。
 - [[obsidian的中括号搜索的技巧]]：利用 `[[` 进行快速导航和搜索。
 - [[Obsidian 搜索系统搭建]]：构建个人搜索策略。
 - [[obsidian笔记搜索与计算机缓存类比]]：一个有趣的类比，帮助理解搜索层级。
 
 ### 可视化
+
 - [[Obsidian graph]]：关系图谱的视觉展示。
 - [[obsidian 图谱自定义css]]：个性化你的关系图谱。
 - [[obsidian canvas]]：Canvas 功能的入口。
@@ -50,6 +55,7 @@ publish: true
 - [[obsidian canvas当前的致命缺陷]]：了解 Canvas 目前的局限性。
 
 ### 编辑与格式
+
 - [[Obsidian 使用 latex语法]]：在笔记中优雅地展示数学公式。
 - [[Obsidian 嵌入 bilibili 的iframe视频的方法]]：丰富你的笔记内容。
 - [[vscode代码编辑和obsidian文本编辑快捷键 - 触发快捷键]]：统一快捷键，提升效率。
@@ -59,6 +65,7 @@ publish: true
 将 Obsidian融入日常工作流，并与其他工具高效联动。
 
 ### 通用工作流与技巧
+
 - [[obsidian中2个均被引用过的页面如何重组合并]]：使用 Note Composer 插件进行笔记重构。
 - [[本库obsidian如何批量重命名文件]] & [[obsidian 笔记文件批量重命名 - 千万别在外部用脚本实施]]：安全高效地进行批量重命名。
 - [[obsidian做presentation展示的方法技巧]]：将你的笔记变成演示文稿。
@@ -66,6 +73,7 @@ publish: true
 - [[obsidian 高级使用技巧]]：发掘隐藏的强大功能。
 
 ### 与其他工具联动
+
 - [[如何使用Cursor管理Obsidian知识库]] & [[这才是真的AI Agent：使用Cursor对Obsidian进行一键批量智能操作]]：利用 Cursor 的 AI 能力赋能你的知识库。
 - [[vscode打开Obsidian笔记库的好处和作用]] & [[vscode和obsidian的习惯映射]]：将最好的编辑器与最好的笔记软件结合。
 - [[obsidian与alfred联动]] & [[alfred插件 - shimmering-obsidian]]：通过 Alfred 极速访问你的笔记。
@@ -73,11 +81,13 @@ publish: true
 - [[obsidian2cursor]]：关于开发 Obsidian 到 Cursor 插件的思考。
 
 ### 性能与调试
+
 - [[如何提高Obsidian的启动速度？]]：详细的启动优化指南。
 - [[obsidian卡顿问题定位方法]]：定位并解决性能瓶颈。
 - [[obsidian插件中可能造成编辑卡顿的疑似插件]]：一份需要留意的插件清单。
 
 ### 特定场景
+
 - [[obsidian如何做短课程笔记]]：针对短课程的笔记方法。
 - [[obsidian如何做英文阅读笔记]]：英文阅读与笔记的最佳实践。
 - [[Obsidian 不适合做什么以及其补足配合的软件]]：了解工具的边界，并选择合适的补充工具。
@@ -87,22 +97,26 @@ publish: true
 插件是 Obsidian 的灵魂，定制化让它真正成为你的专属工具。
 
 ### 插件推荐与分享
+
 - [[1012发现的obsidian有用插件分享]]：一些实用插件的介绍。
 - [[写给大家的2025 Obsidian插件推荐指南]]：最新的插件推荐。
 - [[快速过一遍obsidian一些社区插件的功能点]]：快速了解常用插件的核心功能。
 - [[flashcards-obsidian]]：与 Anki 结合，实现间隔重复。
 
 ### 主题与外观
+
 - [[obsidian - shimmering 主题]]：一个极简主义主题的介绍。
 - [[obsidian icon替换]]：个性化你的应用图标。
 
 ### 发布与同步
+
 - [[obsidian sync 同步]]：官方与第三方同步方案对比。
 - [[obsidian publish 发布]]：多种发布方案的探索。
 - [[obsidian publish 发布 主题定制]]：定制你的发布站点外观。
 - [[obsidian md文档导入到其他docx企业微信文档等地方的方法]] & [[obsidian 从md导出成pdf以及word]]：将笔记导出为其他格式。
 
 ### 开发
+
 - [[obsidian插件开发]]：开始你的插件开发之旅。
 
 ## 5. 资源与计划 (Resources & Plans)

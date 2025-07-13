@@ -28,7 +28,7 @@ publish: true
 			- 社区插件实现[[Anki]]复习系统。以及强大社区引发的各种奇妙增强，带来[[渐进式学习]]的感觉。
 				- [[Anki]]集成
 				- [[Outliner]]大纲笔记
-				- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]可视化笔记
+				- [[excalidraw]]可视化笔记
 			- [[local first]]，源文件以 md 和 json 的文件，全部暴露给我们，满满安全感，并且文件切换，搜索均是本地进行，完全 0 延迟。
 	- 缺点及解决方案
 		- 缺点

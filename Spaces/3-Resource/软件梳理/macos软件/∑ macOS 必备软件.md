@@ -5,6 +5,8 @@ title: ∑ mac必备软件
 publish: true
 ---
 
+[[2025年我的macOS软件天梯榜.canvas]]
+
 ## 2025-04-03整理
 
 之前： [[macos m3 重装list#发给老妹 5 星级推荐：]]

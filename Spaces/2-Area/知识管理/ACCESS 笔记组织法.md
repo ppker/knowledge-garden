@@ -8,6 +8,8 @@ publish: true
 > [!NOTE] Title
 > 虽然[[Nick Milo]]这几年又更新了什么ACE笔记组织法，但我觉得可能更多地是他出于出课程卖课的需求，我用ACCESS感觉已经足够，不想也不需要再做大调整了。
 
+[[ACCESS 笔记组织法-竖向.canvas|ACCESS 笔记组织法-竖向]]
+
 [Folders or Links? The ACCESS Approach - YouTube](https://www.youtube.com/watch?v=p0zWJ-TLghw)
 
 出自 [[LYT 笔记框架]]，根据自身情况，做了小小的改变。我的理解和使用方法如下：
@@ -43,7 +45,7 @@ ACCESS 基于传统 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相�
 	- 我理解为[[永久笔记]]。把闪念笔记整理后的东西都放这，不做文件夹的分类了，累死了，也是我从[[PARA和MOC联用组织笔记]]转到[[ACCESS 笔记组织法]]的根本原因。
 - Extras
 	- 翻译：让支撑材料方便被引用。比如文件、图片、照片和模板等。
-	- Draws，放[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]的图。
+	- Draws，放[[excalidraw]]的图。
 	- Media，放资源文件。
 	- Template，放各种[[模板与套路]]。
 - Sources

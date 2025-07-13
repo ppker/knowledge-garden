@@ -1,0 +1,664 @@
+{
+  "PERSISTENCE": false,
+  "FILTER_TAG": "",
+  "FILTER_GROUP": "",
+  "FILTER_DELAY": "",
+  "LANGUAGE": "zh-cn",
+  "CENTER": false,
+  "ITEM_STYLE": "alwaysExpand",
+  "GROUP_STYLE": "a",
+  "TAG_STYLE": "b",
+  "DELAY": false,
+  "FADE_OUT_DISABLED_PLUGINS": true,
+  "COMMAND_ITEM": true,
+  "COMMAND_GROUP": true,
+  "GROUPS": [
+    {
+      "id": "default",
+      "name": "必开",
+      "color": "#A079FF"
+    },
+    {
+      "id": "高频",
+      "name": "高频",
+      "color": "#3bba83"
+    },
+    {
+      "id": "经常",
+      "name": "经常",
+      "color": "#ffd375"
+    },
+    {
+      "id": "探索",
+      "name": "探索",
+      "color": "#ffc2c2"
+    }
+  ],
+  "TAGS": [
+    {
+      "id": "default",
+      "name": "默认标签",
+      "color": "#A079FF"
+    }
+  ],
+  "DELAYS": [
+    {
+      "id": "default",
+      "name": "默认延迟",
+      "time": 10
+    }
+  ],
+  "Plugins": [
+    {
+      "id": "advanced-canvas",
+      "name": "Advanced Canvas",
+      "desc": "Supercharge your canvas experience! Create presentations, flowcharts and more!",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "awesome-image",
+      "name": "Awesome Image",
+      "desc": "One-stop solution for image management.",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "backlink-settings",
+      "name": "Backlink Settings",
+      "desc": "Allow saving default settings for the backlinks / \"Linked mentions\" pane at the bottom of notes.",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "better-export-pdf",
+      "name": "Better Export PDF",
+      "desc": "Export your notes to PDF, support export preview, add bookmarks outline and header/footer.",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "better-search-views",
+      "name": "Better Search Views",
+      "desc": "Outliner-like breadcrumb trees for search, backlinks and embedded queries ",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "cmdr",
+      "name": "Commander",
+      "desc": "Customize your workspace by adding commands everywhere, create Macros and supercharge your mobile toolbar.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "colored-tags-wrangler",
+      "name": "Colored Tags Wrangler",
+      "desc": "Assign colors to tags. Has integrations with other plugins, like Kanban.",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "components",
+      "name": "Components",
+      "desc": "create component for your obsidian",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "copy-path",
+      "name": "Copy Path",
+      "desc": "Adds context menu actions for copying the full/vault-relative path of files and folders.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "copy-url-in-preview",
+      "name": "Image Context Menus",
+      "desc": "Copy to clipboard, Open in default app, Show in system explorer, Reveal file in navigation, Open in new tab context menus for images.",
+      "group": "",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "cubox-sync",
+      "name": "Cubox",
+      "desc": "Sync your Cubox articles & annotations",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "cycle-through-panes",
+      "name": "Tab Switcher",
+      "desc": "Switch your tabs with Ctrl + Tab in recently used order like in a browser.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "daily-note-calendar",
+      "name": "Daily notes calendar",
+      "desc": "Navigate your Obsidian Vault using a calendar view.",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "darlal-switcher-plus",
+      "name": "Quick Switcher++",
+      "desc": "Enhanced Quick Switcher, search open panels, and symbols.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "datacore",
+      "name": "Datacore",
+      "desc": "Reactive data engine for Obsidian.md.",
+      "group": "",
+      "tags": [],
+      "enabled": false,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "dataview",
+      "name": "Dataview",
+      "desc": "Complex data views for the data-obsessed.",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "diagram-zoom-drag",
+      "name": "Diagram Zoom Drag",
+      "desc": "Add zoom and drag functionality to diagrams from Mermaid, Plantuml, Graphviz, Gravizo and so on",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "extended-graph",
+      "name": "Extended Graph",
+      "desc": "Extends the features of the core Graph view, display images, manage states, remove links, change node shapes, and more.",
+      "group": "",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "folder-notes",
+      "name": "Folder notes",
+      "desc": "Create notes within folders that can be accessed without collapsing the folder, similar to the functionality offered in Notion.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "hotkey-helper",
+      "name": "Hotkey Helper",
+      "desc": "Easily see and access any plugin's settings or hotkey assignments (and conflicts) from the Community Plugins tab",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "keep-the-rhythm",
+      "name": "Keep the Rhythm",
+      "desc": "Visualize and track your writing habit!",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "lineage",
+      "name": "Lineage",
+      "desc": "Edit Markdown in a keyboard-centric Miller columns interface. Inspired by Gingko Writer.",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "link-favicon",
+      "name": "Link Favicons",
+      "desc": "See the favicon for a linked website. ",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "media-extended",
+      "name": "Media Extended",
+      "desc": "Media(Video/Audio) Playback Enhancement for Obsidian.md",
+      "group": "",
+      "tags": [],
+      "enabled": false,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "note-refactor-obsidian",
+      "name": "Note Refactor",
+      "desc": "Extract note content into new notes and split notes",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "note-toolbar",
+      "name": "Note Toolbar",
+      "desc": "Add customizable toolbars to your notes.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-advanced-uri",
+      "name": "Advanced URI",
+      "desc": "Advanced modes for Obsidian URI",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-another-quick-switcher",
+      "name": "Another Quick Switcher",
+      "desc": "This is an Obsidian plugin which is another choice of Quick switcher.",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-auto-link-title",
+      "name": "Auto Link Title",
+      "desc": "This plugin automatically fetches the titles of links from the web",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-command-alias-plugin",
+      "name": "Command Alias",
+      "desc": "This plugin gives aliases to Obsidian commands.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-content-protection",
+      "name": "Content Protection",
+      "desc": "认准闲鱼：阿泽小朋友",
+      "group": "",
+      "tags": [],
+      "enabled": false,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-douban-plugin",
+      "name": "Douban",
+      "desc": "This is a plugin that can import movies/books/musics/notes/games info data from Douban for Obsidian .",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-excalidraw-plugin",
+      "name": "Excalidraw",
+      "desc": "An Obsidian plugin to edit and view Excalidraw drawings",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-export-image",
+      "name": "Export Image plugin",
+      "desc": "Easily convert your article to image.",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-file-cooker",
+      "name": "File Cooker",
+      "desc": "Deal multi notes from Search results、current file、Dataview query string...",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-image-auto-upload-plugin",
+      "name": "Image auto upload",
+      "desc": "This plugin uploads images from your clipboard by PicGo",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-image-toolkit",
+      "name": "Image Toolkit",
+      "desc": "This plugin provides some image viewing toolkit.",
+      "group": "",
+      "tags": [],
+      "enabled": false,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-linter",
+      "name": "Linter",
+      "desc": "Formats and styles your notes. It can be used to format YAML tags, aliases, arrays, and metadata; footnotes; headings; spacing; math blocks; regular markdown contents like list, italics, and bold styles; and more with the use of custom rule options as well.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-list-callouts",
+      "name": "List Callouts",
+      "desc": "Create simple callouts in lists.",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-sortable",
+      "name": "Sortable",
+      "desc": "Wiki-like table sorting.",
+      "group": "",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-spaced-repetition",
+      "name": "Spaced Repetition",
+      "desc": "Fight the forgetting curve by reviewing flashcards & entire notes.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-style-settings",
+      "name": "Style Settings",
+      "desc": "Offers controls for adjusting theme, plugin, and snippet CSS variables.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian-weread-plugin",
+      "name": "Weread",
+      "desc": "This is obsidian plugin for Tencent weread.",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian42-brat",
+      "name": "BRAT",
+      "desc": "Easily install a beta version of a plugin for testing.",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "obsidian42-strange-new-worlds",
+      "name": "Strange New Worlds",
+      "desc": "Help see how your vault is interconnected with visual indicators.",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "pane-relief",
+      "name": "Pane Relief",
+      "desc": "Per-tab history, hotkeys for pane/tab movement, navigation, sliding workspace, and more",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "pdf-plus",
+      "name": "PDF++",
+      "desc": "The most Obsidian-native PDF annotation tool ever.",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "periodic-notes",
+      "name": "Periodic Notes",
+      "desc": "Create/manage your daily, weekly, and monthly notes",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "pixel-perfect-image",
+      "name": "Pixel Perfect Image",
+      "desc": "Pixel perfect 100% image resizing, copy to clipboard, show image in Finder/Explorer, edit image in external editor, and much more.",
+      "group": "",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "plugins-annotations",
+      "name": "Plugins Annotations",
+      "desc": "Allows adding personal comments to each installed plugin.",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "power-mode",
+      "name": "POWER MODE",
+      "desc": "Active POWER MODE!!!!",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "quartz-syncer",
+      "name": "Quartz Syncer",
+      "desc": "Manage and publish your notes to Quartz, the fast, batteries-included static-site generator.",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "quickadd",
+      "name": "QuickAdd",
+      "desc": "Quickly add new pages or content to your vault.",
+      "group": "",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "recent-notes",
+      "name": "Recent Notes",
+      "desc": "List of recently edited notes with previews by time periods",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "sticky-notes",
+      "name": "Sticky Notes",
+      "desc": "Create sticky notes popups.",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "supercharged-links-obsidian",
+      "name": "Supercharged Links",
+      "desc": "Add properties and menu options to links and style them!",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "tag-wrangler",
+      "name": "Tag Wrangler",
+      "desc": "Rename, merge, toggle, and search tags from the tags view",
+      "group": "经常",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "templater-obsidian",
+      "name": "Templater",
+      "desc": "Create and use templates",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "various-complements",
+      "name": "Various Complements",
+      "desc": "This plugin enables you to complete words like the auto-completion of IDE",
+      "group": "default",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "note-status",
+      "name": "Note Status",
+      "desc": "Enhance your note organization with a status management system. Assign and track statuses (active, on hold, completed, dropped) for your notes with a customizable interface including status pane, dropdown, and file explorer integration.",
+      "group": "高频",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "zenmode",
+      "name": "Zen Mode",
+      "desc": "Hide UI most UI elements",
+      "group": "探索",
+      "tags": [],
+      "enabled": true,
+      "delay": "",
+      "note": ""
+    }
+  ],
+  "HIDES": []
+}

@@ -6288,6 +6288,8 @@ var DEFAULT_SETTINGS = {
   maxDisplayLengthAroundMatchedWord: 64,
   includeFilenameInGrepSearch: false,
   defaultGrepFolder: "",
+  autoPreviewInGrepSearch: false,
+  grepAutoPreviewDelayMilliSeconds: 300,
   // Move file to another folder
   moveFileExcludePrefixPathPatterns: [],
   moveFolderSortPriority: "Recently used",
@@ -6971,6 +6973,27 @@ ${invalidValues.map((x) => `- ${x}`).join("\n")}
         }
       );
     });
+    new import_obsidian3.Setting(containerEl).setName("Auto preview").setDesc(
+      "If enabled, automatically shows preview when selecting candidates."
+    ).addToggle((tc) => {
+      tc.setValue(this.plugin.settings.autoPreviewInGrepSearch).onChange(
+        async (value) => {
+          this.plugin.settings.autoPreviewInGrepSearch = value;
+          await this.plugin.saveSettings();
+          this.display();
+        }
+      );
+    });
+    if (this.plugin.settings.autoPreviewInGrepSearch) {
+      new import_obsidian3.Setting(containerEl).setName("Auto preview delay milli-seconds").setDesc(
+        "Delay before auto preview is triggered when selection changes."
+      ).addSlider(
+        (sc) => sc.setLimits(0, 1e3, 50).setValue(this.plugin.settings.grepAutoPreviewDelayMilliSeconds).setDynamicTooltip().onChange(async (value) => {
+          this.plugin.settings.grepAutoPreviewDelayMilliSeconds = value;
+          await this.plugin.saveSettings();
+        })
+      );
+    }
   }
   addMoveSettings(containerEl) {
     containerEl.createEl("h3", { text: "\u{1F4C1} Move file to another folder" });
@@ -8871,6 +8894,13 @@ async function rg(cmd, ...args) {
             });
             return;
           }
+          if (stdout) {
+            const j = JSON.parse(stdout);
+            if (j.type === "summary" && j.data.stats.matches === 0) {
+              resolve([]);
+              return;
+            }
+          }
           console.error("ripgrep error:", error);
           resolve([]);
           return;
@@ -8903,6 +8933,17 @@ async function rgFiles(cmd, queries, searchPath, extensions) {
       { maxBuffer: 1024 * 1024 * 1024 },
       (error, stdout, stderr) => {
         if (error) {
+          if (error.message.includes("No such file or directory")) {
+            resolve([]);
+            return;
+          }
+          if (stdout) {
+            const j = JSON.parse(stdout);
+            if (j.type === "summary" && j.data.stats.matches === 0) {
+              resolve([]);
+              return;
+            }
+          }
           console.error("ripgrep files error:", error);
           resolve([]);
           return;
@@ -8972,15 +9013,6 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
     }
     window.setTimeout(() => {
       var _a2;
-      const selected = globalInternalStorage2.selected;
-      if (selected != null) {
-        this.chooser.setSelectedItem(selected);
-        (_a2 = this.chooser.suggestions.at(selected)) == null ? void 0 : _a2.scrollIntoView({
-          behavior: "auto",
-          block: "center",
-          inline: "center"
-        });
-      }
       this.basePathInputEl = createEl("input", {
         value: this.basePath,
         placeholder: "path from vault root (./ means current directory. ../ means parent directory)",
@@ -9036,10 +9068,61 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
       );
       promptInputContainerEl == null ? void 0 : promptInputContainerEl.after(wrapper);
       wrapper.insertAdjacentHTML("afterbegin", FOLDER);
+      if (this.settings.autoPreviewInGrepSearch) {
+        this.debouncePreview = (0, import_obsidian7.debounce)(
+          this.preview,
+          this.settings.grepAutoPreviewDelayMilliSeconds,
+          true
+        );
+        this.debouncePreviewCancelListener = () => {
+          var _a3;
+          (_a3 = this.debouncePreview) == null ? void 0 : _a3.cancel();
+        };
+        this.debouncePreviewSearchCancelListener = () => {
+          var _a3;
+          (_a3 = this.debouncePreview) == null ? void 0 : _a3.cancel();
+          this.debounceInputEvent.cancel();
+        };
+        const originalSetSelectedItem = this.chooser.setSelectedItem.bind(
+          this.chooser
+        );
+        this.chooser.setSelectedItem = (selectedIndex, evt) => {
+          var _a3;
+          originalSetSelectedItem(selectedIndex, evt);
+          (_a3 = this.debouncePreview) == null ? void 0 : _a3.call(this);
+        };
+        this.clonedInputEl.addEventListener(
+          "keydown",
+          this.debouncePreviewCancelListener
+        );
+        this.clonedInputEl.addEventListener(
+          "focusout",
+          this.debouncePreviewSearchCancelListener
+        );
+        this.basePathInputEl.addEventListener(
+          "keydown",
+          this.debouncePreviewCancelListener
+        );
+        this.basePathInputEl.addEventListener(
+          "focusout",
+          this.debouncePreviewSearchCancelListener
+        );
+      }
+      const selected = globalInternalStorage2.selected;
+      if (selected != null) {
+        this.chooser.setSelectedItem(selected);
+        (_a2 = this.chooser.suggestions.at(selected)) == null ? void 0 : _a2.scrollIntoView({
+          behavior: "auto",
+          block: "center",
+          inline: "center"
+        });
+      }
     }, 0);
   }
   onClose() {
+    var _a;
     super.onClose();
+    (_a = this.debouncePreview) == null ? void 0 : _a.cancel();
     globalInternalStorage2.items = this.suggestions;
     globalInternalStorage2.basePath = this.basePath;
     globalInternalStorage2.selected = this.chooser.selectedItem;
@@ -9051,6 +9134,14 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
       "input",
       this.clonedInputElInputEventListener
     );
+    this.clonedInputEl.removeEventListener(
+      "keydown",
+      this.debouncePreviewCancelListener
+    );
+    this.clonedInputEl.removeEventListener(
+      "focusout",
+      this.debouncePreviewSearchCancelListener
+    );
     this.basePathInputEl.removeEventListener(
       "change",
       this.basePathInputElChangeEventListener
@@ -9058,6 +9149,14 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
     this.basePathInputEl.removeEventListener(
       "keydown",
       this.basePathInputElKeydownEventListener
+    );
+    this.basePathInputEl.removeEventListener(
+      "keydown",
+      this.debouncePreviewCancelListener
+    );
+    this.basePathInputEl.removeEventListener(
+      "focusout",
+      this.debouncePreviewSearchCancelListener
     );
     if (this.stateToRestore) {
       this.navigate(() => this.stateToRestore.restore());
@@ -9446,6 +9545,11 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
       );
     }
   }
+  async preview() {
+    await this.chooseCurrentSuggestion("same-tab", {
+      keepOpen: true
+    });
+  }
   setHotkeys() {
     var _a;
     this.scope.unregister(this.scope.keys.find((x) => x.key === "Enter"));
@@ -9483,30 +9587,29 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
       "keydown",
       this.clonedInputElKeydownEventListener
     );
-    if (this.settings.grepSearchDelayMilliSeconds > 0) {
-      this.clonedInputElInputEventListener = (0, import_obsidian7.debounce)(
-        () => {
-          this.currentQuery = this.clonedInputEl.value;
-          this.inputEl.value = this.currentQuery;
-          this.validateRegexInput();
-          this.inputEl.dispatchEvent(new Event("input"));
-        },
-        this.settings.grepSearchDelayMilliSeconds,
-        true
-      );
-      this.clonedInputEl.addEventListener(
-        "input",
-        this.clonedInputElInputEventListener
-      );
-    } else {
-      this.clonedInputElInputEventListener = () => {
+    this.debounceInputEvent = this.settings.grepSearchDelayMilliSeconds > 0 ? (0, import_obsidian7.debounce)(
+      () => {
+        this.currentQuery = this.clonedInputEl.value;
+        this.inputEl.value = this.currentQuery;
         this.validateRegexInput();
-      };
-      this.clonedInputEl.addEventListener(
-        "input",
-        this.clonedInputElInputEventListener
-      );
-    }
+        this.inputEl.dispatchEvent(new Event("input"));
+      },
+      this.settings.grepSearchDelayMilliSeconds,
+      true
+    ) : (0, import_obsidian7.debounce)(
+      () => {
+        this.validateRegexInput();
+      },
+      0,
+      true
+    );
+    this.clonedInputElInputEventListener = () => {
+      this.debounceInputEvent();
+    };
+    this.clonedInputEl.addEventListener(
+      "input",
+      this.clonedInputElInputEventListener
+    );
     this.registerKeys("up", () => {
       document.dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowUp" }));
     });
@@ -9569,11 +9672,7 @@ var GrepModal = class extends import_obsidian7.SuggestModal {
         await sleep(0);
       }
     });
-    this.registerKeys("preview", async () => {
-      await this.chooseCurrentSuggestion("same-tab", {
-        keepOpen: true
-      });
-    });
+    this.registerKeys("preview", this.preview);
     const modifierKey = this.settings.userAltInsteadOfModForQuickResultSelection ? "Alt" : "Mod";
     for (const n of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
       this.scope.register([modifierKey], String(n), (evt) => {

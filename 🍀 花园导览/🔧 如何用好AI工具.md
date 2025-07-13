@@ -1,8 +1,8 @@
 ---
 uid: f6222587-a8d0-46c3-8e30-7a7f385e095f
-title: 🤖 如何用好AIGC工具
+title: 🔧 如何用好AI工具
 date created: 2023-03-16
-date modified: 2025-07-11
+date modified: 2025-07-12
 publish: true
 ---
 
@@ -16,9 +16,7 @@ publish: true
 
 [[模型使用时间占比毛估估-每月更新]]
 
-## chatbot 类型
-
->
+## chatbot 类
 
 - 本地
 	- [[Cherry Studio]]

@@ -253,7 +253,7 @@ views:
 	- [[kubectl]]
 	- [[podman]]
 	- [[pandoc]]
-	- [[Spaces/1-Project/Raycast/zoxide|zoxide]]
+	- [[zoxide|zoxide]]
 	- [[ffmpeg]]
 	- [[kubectl]]
 	- brew install fd rg fzf

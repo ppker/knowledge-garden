@@ -1472,6 +1472,10 @@ var CanvasPatcher = class extends Patcher {
         that.plugin.app.workspace.trigger("advanced-canvas:canvas-changed", this.canvas);
         return result;
       }),
+      getViewData: Patcher.OverrideExisting((next) => function(...args) {
+        this.canvas.data = this.canvas.getData();
+        return next.call(this, ...args);
+      }),
       close: Patcher.OverrideExisting((next) => function(...args) {
         that.plugin.app.workspace.trigger("advanced-canvas:canvas-view-unloaded:before", this);
         return next.call(this, ...args);
@@ -4537,7 +4541,7 @@ var CollapsibleGroupsCanvasExtension = class extends CanvasExtension {
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       "advanced-canvas:data-requested",
-      (_canvas, data) => this.expandAllCollapsedNodes(data)
+      (_canvas, data) => this.expandNodes(data)
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       "advanced-canvas:data-loaded:before",
@@ -4593,7 +4597,7 @@ var CollapsibleGroupsCanvasExtension = class extends CanvasExtension {
     bbox.maxX = maxPos.x;
     bbox.maxY = maxPos.y;
   }
-  expandAllCollapsedNodes(data) {
+  expandNodes(data) {
     data.nodes = data.nodes.flatMap((groupNodeData) => {
       const collapsedData = groupNodeData.collapsedData;
       if (collapsedData === void 0) return [groupNodeData];

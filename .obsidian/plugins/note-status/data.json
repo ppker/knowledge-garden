@@ -5,11 +5,23 @@
     "completed": "var(--text-accent)",
     "dropped": "var(--text-error)",
     "unknown": "var(--text-muted)",
-    "inProgress": "#2196F3"
+    "inProgress": "#2196F3",
+    "true": "#ffffff",
+    "false": "#ffffff"
   },
   "showStatusBar": false,
   "autoHideStatusBar": true,
-  "customStatuses": [],
+  "customStatuses": [
+    {
+      "name": "true",
+      "icon": "🏹",
+      "description": "已发布"
+    },
+    {
+      "name": "false",
+      "icon": "💧"
+    }
+  ],
   "showStatusIconsInExplorer": true,
   "hideUnknownStatusInExplorer": false,
   "collapsedStatuses": {},
@@ -17,9 +29,9 @@
   "enabledTemplates": [
     "minimal"
   ],
-  "useCustomStatusesOnly": false,
+  "useCustomStatusesOnly": true,
   "useMultipleStatuses": true,
-  "tagPrefix": "obsidian-note-status",
+  "tagPrefix": "publish",
   "strictStatuses": false,
   "excludeUnknownStatus": true,
   "quickStatusCommands": [
