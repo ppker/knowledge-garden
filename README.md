@@ -11,7 +11,8 @@ publish: true
 <img src="https://pub-pic.oldwinter.top/2025/07/7b98f18cfd7da449094dc1496f60d26b.svg">
 <p align="center">
 	<a href="https://garden.oldwinter.top/README">主发布站</a> |
-	<a href="https://github.com/oldwinter/knowledge-garden">源代码仓</a>
+	<a href="https://github.com/oldwinter/knowledge-garden">源代码仓</a> | 
+	<a href="https://www.xiaohongshu.com/user/profile/5787bec15e87e715d4750faf">我的小红书</a> 
 </p>
 
 > [!TIP] 重大更新💡  

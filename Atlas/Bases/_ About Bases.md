@@ -1,5 +1,5 @@
 ---
-date modified: 2025-07-09
+date modified: 2025-07-15
 title: About DB folders
 tags:
   - 本库教程
@@ -8,6 +8,8 @@ date created: 2023-03-01
 publish: true
 是否已review: true
 ---
+
+> obsidian版本号>=1.9，才能使用base功能哦。未拥有obsidian catalyst的用户，请耐心等待这个大版本公开，个人预估在25年8月左右。
 
 相比于dataview，可以批量编辑，具备更好的灵活度。且性能非常强，再也不会像dataview一样，偶尔打开某个页面直接卡死，被硬控10秒。
 

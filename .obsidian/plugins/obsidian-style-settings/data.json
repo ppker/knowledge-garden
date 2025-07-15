@@ -246,5 +246,6 @@
   "supercharged-links@@c-a814-4637-use-background": true,
   "supercharged-links@@01f9-c3f3-after": " 🏹",
   "V1-Willemstad-UI@@ssopt-status-bar-shift-workspace": false,
-  "V1-Willemstad-Editor@@canvas-dot-size": 0
+  "V1-Willemstad-Editor@@canvas-dot-size": 0,
+  "V1-Willemstad-Editor@@ssopt-super-focused-mode": false
 }

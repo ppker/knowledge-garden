@@ -4,7 +4,11 @@ date created: 2023-02-15
 date modified: 2024-11-15
 tags:
   - AI产品
+  - 安卓软件
+  - 好用网站
 publish: true
+相关笔记:
+  - "[[ChatGPT 桌面端]]"
 ---
 
 [[chatgpt windows 下载]]

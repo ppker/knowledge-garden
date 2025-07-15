@@ -3,9 +3,12 @@ date created: 2024-02-04
 date modified: 2024-10-28
 tags:
   - AI产品
+  - 安卓软件
 相关笔记:
   - "[[Perplexity sonar api token]]"
 publish: true
+aliases:
+  - Perplexity
 ---
 
 ## Perplexity.ai

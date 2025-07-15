@@ -33,7 +33,7 @@ publish: true
 - [[BetterTouchTool]]
 - [[Latest - MacOS软件]]
 - [[微信]]
-- [[Spaces/3-Resource/软件梳理/macos软件/微信读书]]
+- [[微信读书]]
 - [[AlDente]]
 - [[CotEditor]]
 - [[Spaces/3-Resource/软件梳理/macos软件/IINA]]

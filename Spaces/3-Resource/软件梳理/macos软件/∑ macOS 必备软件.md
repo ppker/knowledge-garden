@@ -6,6 +6,8 @@ publish: true
 ---
 
 [[2025年我的macOS软件天梯榜.canvas]]
+[[2025年我的macOS软件天梯榜-文字版]]
+
 
 ## 2025-04-03整理
 
@@ -142,12 +144,12 @@ publish: true
 - [[Draw.io]]
 - [[ScreenBrush]]
 - [[CotEditor]]
-- [[Spaces/3-Resource/软件梳理/macos软件/PicGo]]
+- [[PicGo]]
 - [[permute]]
 
 ### 阅读工具
 
-- ! [[Spaces/3-Resource/软件梳理/macos软件/微信读书]]
+- ! [[微信读书]]
 - [[Koodo reader]]
 - [[Reeder]]
 - [[Scudo]]
@@ -162,7 +164,7 @@ publish: true
 
 - [[Loopback]]
 - [[bark - ios 不耗电的推送通知]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Localsend]]
+- [[localsend]]
 
 ### 浏览器
 

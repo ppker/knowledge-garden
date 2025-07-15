@@ -7,6 +7,8 @@ tags:
   - macOS软件
   - 笔记应用
   - 知识管理
+  - 安卓软件
+  - windows软件
 设置同步: git和官方同步
 评价: 7
 brew安装命令: brew install --cask obsidian

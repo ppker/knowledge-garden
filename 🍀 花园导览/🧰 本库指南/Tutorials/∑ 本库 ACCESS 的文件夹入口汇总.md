@@ -29,7 +29,7 @@ x:: [[∑ 本库 ACCESS 工作流汇总]] , [[本库ACCESS文件夹结构与混�
 - #todo/now #todo/本周
 - [Anki 回顾笔记](obsidian://advanced-uri?vault=knowledge-garden&commandid=obsidian-spaced-repetition%253Asrs-note-review-open-note)
 - [[∑ 文章草稿]]
-- [[∑ 已发布文章]]
+- [[∑ 已发布文章.canvas]]
 
 ## Cards
 
