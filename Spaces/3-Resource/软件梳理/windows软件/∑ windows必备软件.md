@@ -13,7 +13,7 @@ publish: true
 ## 常用
 
 - [[Everything]]
-- [[Spaces/3-Resource/软件梳理/windows软件/ImageGlass]]
+- [[ImageGlass]]
 - [[AutoHotkey]]
 - [[Spaces/3-Resource/软件梳理/windows软件/MyKeyMap]]
 - [[Quicker]]
@@ -24,8 +24,8 @@ publish: true
 - [[Burp suite]]
 - [[Spaces/3-Resource/软件梳理/windows软件/Wox]]
 - [[Spaces/3-Resource/软件梳理/windows软件/Git]]
-- [[Spaces/3-Resource/软件梳理/windows软件/Quicklook]]
-- [[Spaces/3-Resource/软件梳理/windows软件/PowerToys]]
+- [[QuickLook]]
+- [[PowerToys]]
 - [[mumu模拟器]]
 - [[火绒安全]]
 - [[图吧工具箱]]
@@ -54,7 +54,7 @@ publish: true
 - [[Unigram]]
 - [[Twinkle Tray]]
 - [[Bulk Carp Uninstaller]]
-- [[Spaces/3-Resource/软件梳理/windows软件/UniGetUI]]
+- [[UniGetUI]]
 - [[bitwarden]]
 - 绿色版
 	- [[HEU_KMS_Activator]]

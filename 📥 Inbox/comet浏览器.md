@@ -6,7 +6,10 @@ publish: true
 
 2025-07-15：这里放上我一个一枚邀请码，闲鱼要卖80元哦当前。
 
-邀请链接： https://perplexity.ai/browser/claim/F1J5PY0OOJ
+~~邀请链接： https://perplexity.ai/browser/claim/F1J5PY0OOJ~~
+
+[You're invited to Comet](https://perplexity.ai/browser/claim/H586GGTNI6)
+[You're invited to Comet](https://perplexity.ai/browser/claim/X70C1NHG8L)
 
 谁领了的话，如果你愿意，可以通过邮箱或者其他方式联系到我，让我知道是哪位高手眼疾手快。
 

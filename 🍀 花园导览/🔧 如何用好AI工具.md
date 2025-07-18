@@ -12,6 +12,8 @@ publish: true
 2. 快速，方便提供足够上下文 。[[Cursor]]快速@引用已有文件。
 3. 提示词说清楚需求。[[∑ MOC - prompts 提示词管理]]
 
+详细阐释：[[AI使用的MAPS框架]]
+
 ## 模型视角，我的产品选择
 
 [[模型使用时间占比毛估估-每月更新]]
@@ -33,7 +35,7 @@ publish: true
 
 ## agent 类型
 
-- [[Spaces/1-Project/AI Agent 开发/Dify|Dify]]
+- [[Spaces/1-Project/搞透 AI Agent 开发/Dify|Dify]]
 - [[n8n]]
 - [[Cursor]]
 - [[fellou浏览器]]

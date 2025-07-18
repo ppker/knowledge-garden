@@ -1,0 +1,26 @@
+/* @settings
+name: Canvas Settings
+id: canvas-settings
+settings:
+-
+    id: canvas-settings
+    title: Canvas
+    type: heading
+    description: 'Options to manipulate items in the Canvas.'
+    level: 2
+    collapsed: false
+-
+    id: ssopt-canvas-hide-node-labels
+    title: Hide Node Labels
+    type: class-toggle
+    description: "When enabled, hides the labels/titles on individual nodes (files/cards) in the Canvas."
+    default: false
+    addCommand: true
+-
+    id: ssopt-canvas-hide-group-labels
+    title: Hide Group Labels
+    type: class-toggle
+    description: "When enabled, hides the labels on groups in the Canvas."
+    default: false
+    addCommand: true
+*/

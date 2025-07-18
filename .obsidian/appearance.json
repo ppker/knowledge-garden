@@ -12,7 +12,8 @@
     "canvas-candy",
     "supercharged-links-gen",
     "hide-file-add-splitline",
-    "editor-full"
+    "editor-full",
+    "toggle-canvas-header"
   ],
   "showViewHeader": true,
   "cssTheme": "Willemstad",

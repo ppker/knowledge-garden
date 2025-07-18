@@ -6291,6 +6291,9 @@ var DEFAULT_SETTINGS = {
   defaultGrepFolder: "",
   autoPreviewInGrepSearch: false,
   grepAutoPreviewDelayMilliSeconds: 300,
+  // Backlink
+  autoPreviewInBacklinkSearch: false,
+  backlinkAutoPreviewDelayMilliSeconds: 300,
   // Move file to another folder
   moveFileExcludePrefixPathPatterns: [],
   moveFolderSortPriority: "Recently used",
@@ -6893,6 +6896,27 @@ ${invalidValues.map((x) => `- ${x}`).join("\n")}
       el.inputEl.className = "another-quick-switcher__settings__ignore_path_patterns";
       return el;
     });
+    new import_obsidian3.Setting(containerEl).setName("Auto preview").setDesc(
+      "If enabled, automatically shows preview when selecting candidates."
+    ).addToggle((tc) => {
+      tc.setValue(this.plugin.settings.autoPreviewInBacklinkSearch).onChange(
+        async (value) => {
+          this.plugin.settings.autoPreviewInBacklinkSearch = value;
+          await this.plugin.saveSettings();
+          this.display();
+        }
+      );
+    });
+    if (this.plugin.settings.autoPreviewInBacklinkSearch) {
+      new import_obsidian3.Setting(containerEl).setName("Auto preview delay milli-seconds").setDesc(
+        "Delay before auto preview is triggered when selection changes."
+      ).addSlider(
+        (sc) => sc.setLimits(0, 1e3, 50).setValue(this.plugin.settings.backlinkAutoPreviewDelayMilliSeconds).setDynamicTooltip().onChange(async (value) => {
+          this.plugin.settings.backlinkAutoPreviewDelayMilliSeconds = value;
+          await this.plugin.saveSettings();
+        })
+      );
+    }
   }
   addInFileSettings(containerEl) {
     containerEl.createEl("h3", { text: "\u{1F50D} In file search" });
@@ -8329,11 +8353,28 @@ var BacklinkModal = class extends import_obsidian6.SuggestModal {
     await this.indexingItems();
   }
   onOpen() {
+    var _a;
     super.onOpen();
     if (!import_obsidian6.Platform.isPhone) {
       setFloatingModal(this.appHelper);
     }
     this.opened = true;
+    if (this.settings.autoPreviewInBacklinkSearch) {
+      this.debouncePreview = (0, import_obsidian6.debounce)(
+        this.preview,
+        this.settings.backlinkAutoPreviewDelayMilliSeconds,
+        true
+      );
+      const originalSetSelectedItem = this.chooser.setSelectedItem.bind(
+        this.chooser
+      );
+      this.chooser.setSelectedItem = (selectedIndex, evt) => {
+        var _a2;
+        originalSetSelectedItem(selectedIndex, evt);
+        (_a2 = this.debouncePreview) == null ? void 0 : _a2.call(this);
+      };
+      (_a = this.debouncePreview) == null ? void 0 : _a.call(this);
+    }
   }
   close() {
     if (import_obsidian6.Platform.isMobile) {
@@ -8342,7 +8383,9 @@ var BacklinkModal = class extends import_obsidian6.SuggestModal {
     super.close();
   }
   onClose() {
+    var _a;
     super.onClose();
+    (_a = this.debouncePreview) == null ? void 0 : _a.cancel();
     if (this.stateToRestore) {
       this.navigate(() => this.stateToRestore.restore());
     }
@@ -8552,6 +8595,11 @@ var BacklinkModal = class extends import_obsidian6.SuggestModal {
   async onChooseSuggestion(item, evt) {
     await this.chooseCurrentSuggestion(toLeafType(evt));
   }
+  async preview() {
+    await this.chooseCurrentSuggestion("same-tab", {
+      keepOpen: true
+    });
+  }
   registerKeys(key, handler) {
     const hotkeys = this.settings.hotkeys.backlink[key];
     for (const x of hotkeys) {
@@ -8635,11 +8683,7 @@ var BacklinkModal = class extends import_obsidian6.SuggestModal {
       this.limit = Number.MAX_SAFE_INTEGER;
       this.inputEl.dispatchEvent(new Event("input"));
     });
-    this.registerKeys("preview", async () => {
-      await this.chooseCurrentSuggestion("same-tab", {
-        keepOpen: true
-      });
-    });
+    this.registerKeys("preview", this.preview.bind(this));
     const modifierKey = this.settings.userAltInsteadOfModForQuickResultSelection ? "Alt" : "Mod";
     for (const n of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
       this.scope.register([modifierKey], String(n), (evt) => {

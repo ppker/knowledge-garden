@@ -49,7 +49,7 @@ permalink: 2025/my-macos-ranks
 	- 插件同步器。arc和zen的plan b。
 - [[CleanShot X]]
 	- 别人都说好。比[[Snipaste]]和[[PixPin]]更原生。一键截图发给ai提问的功能，别家应该没有？
-- [[Spaces/3-Resource/软件梳理/macos软件/Folo|Folo]]
+- [[Folo|Folo]]
 	- 告别被推荐机制裹挟，让RSS再次伟大。
 - [[Klack]]
 	- 给每次按键赋予机械键盘声，使用笔记本时候必开。开源平替是[[KeyEcho]]。

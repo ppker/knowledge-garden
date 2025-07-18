@@ -18,3 +18,7 @@ tags:
 3. 连接到ide，比如cursor。
 	1. cursor中安装claude code。
 	2. cc中输入/ide进行连接。
+
+## 使用其他模型
+
+[[kimi v2用于claude code]]

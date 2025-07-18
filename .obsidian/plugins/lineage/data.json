@@ -30,8 +30,19 @@
     },
     "Atlas/Lineages/《影响力》Lineage笔记.md": {
       "documentFormat": "sections",
-      "viewType": "markdown",
-      "activeSection": "1.3.4",
+      "viewType": "lineage",
+      "activeSection": "1.1.3",
+      "pinnedSections": {
+        "sections": []
+      },
+      "outline": {
+        "collapsedSections": []
+      }
+    },
+    "Atlas/Lineages/Untitled.md": {
+      "documentFormat": "sections",
+      "viewType": "lineage",
+      "activeSection": "1.2.2.1",
       "pinnedSections": {
         "sections": []
       },
@@ -49,23 +60,23 @@
     "theme": {
       "inactiveNodeOpacity": 25
     },
-    "cardWidth": 550,
+    "cardWidth": 300,
     "cardsGap": 50,
     "scrolling": {
-      "centerActiveNodeH": false,
+      "centerActiveNodeH": true,
       "centerActiveNodeV": true
     },
-    "limitPreviewHeight": true,
-    "zoomLevel": 0.7,
+    "limitPreviewHeight": false,
+    "zoomLevel": 1.123,
     "showMinimap": false,
     "showLeftSidebar": false,
     "leftSidebarWidth": 500,
-    "leftSidebarActiveTab": "pinned-cards",
+    "leftSidebarActiveTab": "recent-cards",
     "applyGapBetweenCards": false,
     "outlineMode": false,
     "nodeIndentationWidth": 60,
-    "maintainEditMode": false,
-    "alwaysShowCardButtons": false,
+    "maintainEditMode": true,
+    "alwaysShowCardButtons": true,
     "hiddenVerticalToolbarButtons": []
   },
   "general": {
@@ -73,9 +84,32 @@
     "linkPaneType": "tab"
   },
   "styleRules": {
-    "documents": {},
+    "documents": {
+      "Atlas/Lineages/Untitled.md": {
+        "rules": []
+      }
+    },
     "global": {
-      "rules": []
+      "rules": [
+        {
+          "id": "srfQpD3h__",
+          "name": "",
+          "enabled": true,
+          "condition": {
+            "type": "condition",
+            "scope": "self",
+            "property": "content",
+            "operator": "contains",
+            "value": "",
+            "enabled": true
+          },
+          "style": {
+            "color": "#b2f5ed",
+            "styleVariant": "background-color"
+          },
+          "priority": 0
+        }
+      ]
     },
     "settings": {
       "activeTab": "global-rules"

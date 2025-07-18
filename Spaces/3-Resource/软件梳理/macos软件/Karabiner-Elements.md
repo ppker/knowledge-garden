@@ -4,10 +4,28 @@ date modified: 2024-10-23
 icon: "[[icon-cc-image-Karabiner-Elements.png]]"
 tags:
   - macOS软件
+  - github开源
 brew安装命令: brew install --cask karabiner-elements
 当前使用频率: 5
 评价: 4
 publish: true
+star_date: 2023-10-01 01:14:10
+repo_name: pqrs-org/Karabiner-Elements
+repo_url: https://github.com/pqrs-org/Karabiner-Elements
+description: Karabiner-Elements is a powerful tool for customizing keyboards on macOS
+language: C++
+stars: 20171
+forks: 863
+created_date: 2016-07-11
+updated_date: 2025-06-19
+pushed_date: 2025-06-15
+is_fork: false
+license: The Unlicense
+topics:
+  - keyboard
+  - macos
+size_kb: 111806
+issues: 1226
 ---
 ## 配置备份
 

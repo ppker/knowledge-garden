@@ -47,7 +47,7 @@ publish: true
 - [[Rectangle Pro]]
 - [[Houdahspot]]
 - [[one switch]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Karabiner-Elements]]
+- [[Karabiner-Elements]]
 
 ### 开发工具
 
@@ -118,7 +118,7 @@ publish: true
 
 - ! [[Obsidian]]
 - ! [[Notion]]
-- ! [[Spaces/3-Resource/软件梳理/macos软件/Folo]]
+- ! [[Folo]]
 - ! [[滴答清单]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Cubox]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Logseq]]

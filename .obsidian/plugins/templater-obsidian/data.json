@@ -52,7 +52,8 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "Extras/Templates/templater-js-scripts/add-review-properties.md"
+    "Extras/Templates/templater-js-scripts/add-review-properties.md",
+    "Extras/Templates/templater-js-scripts/toggle-canvas-header-display.md"
   ],
   "startup_templates": [],
   "intellisense_render": 1,
