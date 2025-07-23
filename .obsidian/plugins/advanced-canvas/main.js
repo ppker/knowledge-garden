@@ -1363,11 +1363,11 @@ var _MigrationHelper = class _MigrationHelper {
 };
 _MigrationHelper.MIGRATIONS = {
   undefined: (canvas) => {
-    var _a;
+    var _a, _b, _c;
     const TARGET_SPEC_VERSION = "1.0-1.0";
     let startNode;
     const globalInterdimensionalEdges = {};
-    for (const node of canvas.nodes) {
+    for (const node of (_a = canvas.nodes) != null ? _a : []) {
       node.dynamicHeight = node.autoResizeHeight;
       delete node.autoResizeHeight;
       node.ratio = node.sideRatio;
@@ -1395,11 +1395,11 @@ _MigrationHelper.MIGRATIONS = {
         delete node.edgesToNodeFromPortal;
       }
     }
-    for (const node of canvas.nodes) {
+    for (const node of (_b = canvas.nodes) != null ? _b : []) {
       if (!(node.id in globalInterdimensionalEdges)) continue;
       node.interdimensionalEdges = globalInterdimensionalEdges[node.id];
     }
-    (_a = canvas.metadata) != null ? _a : canvas.metadata = {
+    (_c = canvas.metadata) != null ? _c : canvas.metadata = {
       version: TARGET_SPEC_VERSION,
       frontmatter: {},
       startNode

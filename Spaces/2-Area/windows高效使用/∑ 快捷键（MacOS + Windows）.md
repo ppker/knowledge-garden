@@ -31,7 +31,7 @@ publish: true
 
 [[MacOS Hyper键快捷键分配]]
 
-[[MacOS F区功能键快捷键分配]]
+[[macOS F区功能键快捷键分配]]
 
 ## 编辑器的编辑快捷键
 

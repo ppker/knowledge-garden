@@ -41,7 +41,7 @@ publish: true
 
 [[Raycast Auto Quit Applications]]
 
-[[全局快捷键实现应用一键打开或关闭的备选方案]]
+[[全局快捷键将app一键打开或隐藏]]
 
 [[Raycast Companion]]
 

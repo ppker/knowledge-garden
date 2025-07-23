@@ -8,7 +8,7 @@ publish: true
 
 > AI时代，文件夹的作用又上升了，因为使用@，将整个文件夹给ai作为上下文，是当前最简洁有效的方式。所以需要在习惯上做一些更改，不能像之前一样纯用链接或标签来进行管理了。
 
-如果有需要，比如降低Resource或Archive目录中文档的优先级，则可以在Obsidian -> files and links -> excluded files里面将这个文件夹加入，降低搜索匹配优先级。
+==如果有需要，比如降低Resource或Archive目录中文档的优先级，则可以在Obsidian -> files and links -> excluded files里面将这个文件夹加入，降低搜索匹配优先级。==
 
 移动文件夹和创建moc文件的频率其实不高，需要的时候手动搞一下还能加深印象，所以这里就不搞那些文件夹根据PARA属性进行流转的自动化了。
 

@@ -5084,7 +5084,8 @@ var AppHelper = class {
     if (opt.inplace && opt.leafType === "same-tab") {
       await leaf.setViewState({
         ...leaf.getViewState(),
-        active: !background,
+        active: false,
+        // avoid for conflict
         popstate: true,
         ...this.getOpenState(leaf, file)
       });
@@ -5959,6 +5960,7 @@ var createDefaultHotkeys = () => ({
   "in-file": {
     up: [{ modifiers: ["Mod"], key: "p" }],
     down: [{ modifiers: ["Mod"], key: "n" }],
+    "insert to editor": [],
     "show all results": [{ modifiers: ["Shift", "Alt"], key: "a" }],
     "toggle auto preview": [{ modifiers: ["Mod"], key: "," }],
     dismiss: [{ modifiers: [], key: "Escape" }]
@@ -8365,6 +8367,10 @@ var BacklinkModal = class extends import_obsidian6.SuggestModal {
         this.settings.backlinkAutoPreviewDelayMilliSeconds,
         true
       );
+      this.debouncePreviewCancelListener = () => {
+        var _a2;
+        (_a2 = this.debouncePreview) == null ? void 0 : _a2.cancel();
+      };
       const originalSetSelectedItem = this.chooser.setSelectedItem.bind(
         this.chooser
       );
@@ -8373,6 +8379,10 @@ var BacklinkModal = class extends import_obsidian6.SuggestModal {
         originalSetSelectedItem(selectedIndex, evt);
         (_a2 = this.debouncePreview) == null ? void 0 : _a2.call(this);
       };
+      this.inputEl.addEventListener(
+        "keydown",
+        this.debouncePreviewCancelListener
+      );
       (_a = this.debouncePreview) == null ? void 0 : _a.call(this);
     }
   }
@@ -8386,6 +8396,10 @@ var BacklinkModal = class extends import_obsidian6.SuggestModal {
     var _a;
     super.onClose();
     (_a = this.debouncePreview) == null ? void 0 : _a.cancel();
+    this.inputEl.removeEventListener(
+      "keydown",
+      this.debouncePreviewCancelListener
+    );
     if (this.stateToRestore) {
       this.navigate(() => this.stateToRestore.restore());
     }
@@ -10343,6 +10357,20 @@ var InFileModal = class extends import_obsidian10.SuggestModal {
     });
     this.registerKeys("down", (evt) => {
       navigateNext(evt);
+    });
+    this.registerKeys("insert to editor", async () => {
+      var _a;
+      const item = (_a = this.chooser.values) == null ? void 0 : _a[this.chooser.selectedItem];
+      if (!item) {
+        return;
+      }
+      const editor = this.appHelper.getCurrentEditor();
+      if (!editor) {
+        return;
+      }
+      editor.setCursor(this.initialCursor);
+      this.appHelper.insertStringToActiveFile(item.line);
+      this.close();
     });
     this.registerKeys("show all results", () => {
       this.limit = Number.MAX_SAFE_INTEGER;

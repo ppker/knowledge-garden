@@ -1,0 +1,9 @@
+{
+  "ribbonIcon": true,
+  "ribbonCommandUsesCode": true,
+  "showFileContextMenuItem": true,
+  "executeTemplate": "cursor \"{{vaultpath}}\" \"{{vaultpath}}/{{filepath}}\"",
+  "urlProtocol": "cursor",
+  "openFile": true,
+  "workspacePath": "{{vaultpath}}"
+}

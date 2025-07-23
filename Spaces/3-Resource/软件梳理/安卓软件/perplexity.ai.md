@@ -9,6 +9,7 @@ tags:
 publish: true
 aliases:
   - Perplexity
+评价: 4
 ---
 
 ## Perplexity.ai

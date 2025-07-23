@@ -8,7 +8,7 @@ publish: true
 ---
 
 > [[2025年我的Windows软件天梯榜.canvas|2025年我的Windows软件天梯榜]]
-> [[2025Windows软件天梯榜-文字版本.canvas|2025Windows软件天梯榜-文字版本]]
+> [[2025年Windows软件天梯榜-文字版本.canvas|2025Windows软件天梯榜-文字版本]]
 
 ## 常用
 

@@ -3,6 +3,7 @@ date created: 2025-06-25
 date modified: 2025-07-10
 tags:
   - AI工具
+  - linux命令
 publish: true
 ---
 

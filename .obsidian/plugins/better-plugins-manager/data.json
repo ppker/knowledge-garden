@@ -658,6 +658,26 @@
       "enabled": true,
       "delay": "",
       "note": ""
+    },
+    {
+      "id": "notebook-navigator",
+      "name": "Notebook Navigator",
+      "desc": "Replace the default file explorer with a clean two-pane interface featuring folder tree, tag browsing, file previews, keyboard navigation, drag-and-drop, pinned notes, and customizable display options.",
+      "group": "",
+      "tags": [],
+      "enabled": false,
+      "delay": "",
+      "note": ""
+    },
+    {
+      "id": "sidebar-highlights",
+      "name": "Sidebar Highlights",
+      "desc": "View and manage text highlights, comments on highlights, native comments, and collections for your highlights.",
+      "group": "",
+      "tags": [],
+      "enabled": false,
+      "delay": "",
+      "note": ""
     }
   ],
   "HIDES": []

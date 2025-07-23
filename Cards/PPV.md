@@ -5,6 +5,8 @@ title: PPV
 publish: true
 ---
 
+相关：[[滴答清单官方理解的ppv]]
+
 [Notion Life Design with Pillars, Pipelines & Vaults (PPV)](https://www.yearzero.io/notion-life-design)
 
 [Notion人生經營系統 (PPV) 介紹 | Day 170 - YouTube](https://www.youtube.com/watch?v=2qLrIp1YGUQ)

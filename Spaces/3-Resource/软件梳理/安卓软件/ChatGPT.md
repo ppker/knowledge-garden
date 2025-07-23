@@ -9,6 +9,7 @@ tags:
 publish: true
 相关笔记:
   - "[[ChatGPT 桌面端]]"
+评价: 6
 ---
 
 [[chatgpt windows 下载]]

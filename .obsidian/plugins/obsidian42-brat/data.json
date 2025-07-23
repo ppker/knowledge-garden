@@ -1,8 +1,13 @@
 {
   "pluginList": [
+    "johansan/notebook-navigator",
     "blacksmithgu/datacore"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "johansan/notebook-navigator",
+      "version": "latest"
+    },
     {
       "repo": "blacksmithgu/datacore",
       "version": "latest"

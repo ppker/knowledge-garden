@@ -252,5 +252,6 @@
   "canvas-settings@@ssopt-canvas-hide-group-labels": false,
   "V1-Willemstad-UI@@status-bar-max-width": 85,
   "V1-Willemstad-UI@@status-bar-glass-blur": 4,
-  "V1-Willemstad-Root@@yes-shadows": false
+  "V1-Willemstad-Root@@yes-shadows": false,
+  "V1-Willemstad-Editor@@ssopt-focused-mode": false
 }

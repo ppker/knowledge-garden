@@ -189,7 +189,7 @@ publish: true
 
 - [[1Piece]] (功能未知)
 - [[charmstone]] (功能未知)
-- [[doordoor]] (疑似重复)
+- [[Spaces/3-Resource/软件梳理/macos软件/dockdoor]] (疑似重复)
 - [[expanso]] (功能未知)
 - [[Fig]] (功能未知)
 

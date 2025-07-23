@@ -3,7 +3,7 @@ date created: 2024-11-21
 date modified: 2024-11-21
 publish: true
 ---
-与option快捷键差别，hyper重复按键可以呼出/隐藏切换。option则只能呼出，再按一次无法隐藏。
+与option快捷键差别：hyper重复按键可以呼出/隐藏切换。option则只能呼出，再按一次无法隐藏。
 
 [[MacOS 应用的option快捷键]]
 

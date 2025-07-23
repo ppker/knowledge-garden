@@ -80,7 +80,7 @@ permalink: 2025/my-macos-ranks
 - [[Proxyman]]
 - [[Lookaway]]
 - [[微信读书]]
-- [[夸克]]
+- [[夸克网盘]]
 - [[istat Menus]]
 
 ## C

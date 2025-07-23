@@ -1914,8 +1914,8 @@ var require_logger = __commonJS({
   "node_modules/js-logger/src/logger.js"(exports, module2) {
     (function(global2) {
       "use strict";
-      var Logger8 = {};
-      Logger8.VERSION = "1.6.1";
+      var Logger9 = {};
+      Logger9.VERSION = "1.6.1";
       var logHandler;
       var contextualLoggersByNameMap = {};
       var bind = function(scope, func) {
@@ -1937,13 +1937,13 @@ var require_logger = __commonJS({
       var defineLogLevel = function(value, name) {
         return { value, name };
       };
-      Logger8.TRACE = defineLogLevel(1, "TRACE");
-      Logger8.DEBUG = defineLogLevel(2, "DEBUG");
-      Logger8.INFO = defineLogLevel(3, "INFO");
-      Logger8.TIME = defineLogLevel(4, "TIME");
-      Logger8.WARN = defineLogLevel(5, "WARN");
-      Logger8.ERROR = defineLogLevel(8, "ERROR");
-      Logger8.OFF = defineLogLevel(99, "OFF");
+      Logger9.TRACE = defineLogLevel(1, "TRACE");
+      Logger9.DEBUG = defineLogLevel(2, "DEBUG");
+      Logger9.INFO = defineLogLevel(3, "INFO");
+      Logger9.TIME = defineLogLevel(4, "TIME");
+      Logger9.WARN = defineLogLevel(5, "WARN");
+      Logger9.ERROR = defineLogLevel(8, "ERROR");
+      Logger9.OFF = defineLogLevel(99, "OFF");
       var ContextualLogger = function(defaultContext) {
         this.context = defaultContext;
         this.setLevel(defaultContext.filterLevel);
@@ -1966,28 +1966,28 @@ var require_logger = __commonJS({
           return lvl.value >= filterLevel.value;
         },
         trace: function() {
-          this.invoke(Logger8.TRACE, arguments);
+          this.invoke(Logger9.TRACE, arguments);
         },
         debug: function() {
-          this.invoke(Logger8.DEBUG, arguments);
+          this.invoke(Logger9.DEBUG, arguments);
         },
         info: function() {
-          this.invoke(Logger8.INFO, arguments);
+          this.invoke(Logger9.INFO, arguments);
         },
         warn: function() {
-          this.invoke(Logger8.WARN, arguments);
+          this.invoke(Logger9.WARN, arguments);
         },
         error: function() {
-          this.invoke(Logger8.ERROR, arguments);
+          this.invoke(Logger9.ERROR, arguments);
         },
         time: function(label) {
           if (typeof label === "string" && label.length > 0) {
-            this.invoke(Logger8.TIME, [label, "start"]);
+            this.invoke(Logger9.TIME, [label, "start"]);
           }
         },
         timeEnd: function(label) {
           if (typeof label === "string" && label.length > 0) {
-            this.invoke(Logger8.TIME, [label, "end"]);
+            this.invoke(Logger9.TIME, [label, "end"]);
           }
         },
         // Invokes the logger callback if it's not being filtered.
@@ -1997,9 +1997,9 @@ var require_logger = __commonJS({
           }
         }
       };
-      var globalLogger = new ContextualLogger({ filterLevel: Logger8.OFF });
+      var globalLogger = new ContextualLogger({ filterLevel: Logger9.OFF });
       (function() {
-        var L = Logger8;
+        var L = Logger9;
         L.enabledFor = bind(globalLogger, globalLogger.enabledFor);
         L.trace = bind(globalLogger, globalLogger.trace);
         L.debug = bind(globalLogger, globalLogger.debug);
@@ -2010,10 +2010,10 @@ var require_logger = __commonJS({
         L.error = bind(globalLogger, globalLogger.error);
         L.log = L.info;
       })();
-      Logger8.setHandler = function(func) {
+      Logger9.setHandler = function(func) {
         logHandler = func;
       };
-      Logger8.setLevel = function(level) {
+      Logger9.setLevel = function(level) {
         globalLogger.setLevel(level);
         for (var key in contextualLoggersByNameMap) {
           if (contextualLoggersByNameMap.hasOwnProperty(key)) {
@@ -2021,13 +2021,13 @@ var require_logger = __commonJS({
           }
         }
       };
-      Logger8.getLevel = function() {
+      Logger9.getLevel = function() {
         return globalLogger.getLevel();
       };
-      Logger8.get = function(name) {
+      Logger9.get = function(name) {
         return contextualLoggersByNameMap[name] || (contextualLoggersByNameMap[name] = new ContextualLogger(merge2({ name }, globalLogger.context)));
       };
-      Logger8.createDefaultHandler = function(options) {
+      Logger9.createDefaultHandler = function(options) {
         options = options || {};
         options.formatter = options.formatter || function defaultMessageFormatter(messages, context) {
           if (context.name) {
@@ -2046,7 +2046,7 @@ var require_logger = __commonJS({
           messages = Array.prototype.slice.call(messages);
           var hdlr = console.log;
           var timerLabel;
-          if (context.level === Logger8.TIME) {
+          if (context.level === Logger9.TIME) {
             timerLabel = (context.name ? "[" + context.name + "] " : "") + messages[0];
             if (messages[1] === "start") {
               if (console.time) {
@@ -2062,15 +2062,15 @@ var require_logger = __commonJS({
               }
             }
           } else {
-            if (context.level === Logger8.WARN && console.warn) {
+            if (context.level === Logger9.WARN && console.warn) {
               hdlr = console.warn;
-            } else if (context.level === Logger8.ERROR && console.error) {
+            } else if (context.level === Logger9.ERROR && console.error) {
               hdlr = console.error;
-            } else if (context.level === Logger8.INFO && console.info) {
+            } else if (context.level === Logger9.INFO && console.info) {
               hdlr = console.info;
-            } else if (context.level === Logger8.DEBUG && console.debug) {
+            } else if (context.level === Logger9.DEBUG && console.debug) {
               hdlr = console.debug;
-            } else if (context.level === Logger8.TRACE && console.trace) {
+            } else if (context.level === Logger9.TRACE && console.trace) {
               hdlr = console.trace;
             }
             options.formatter(messages, context);
@@ -2078,22 +2078,22 @@ var require_logger = __commonJS({
           }
         };
       };
-      Logger8.useDefaults = function(options) {
-        Logger8.setLevel(options && options.defaultLevel || Logger8.DEBUG);
-        Logger8.setHandler(Logger8.createDefaultHandler(options));
+      Logger9.useDefaults = function(options) {
+        Logger9.setLevel(options && options.defaultLevel || Logger9.DEBUG);
+        Logger9.setHandler(Logger9.createDefaultHandler(options));
       };
-      Logger8.setDefaults = Logger8.useDefaults;
+      Logger9.setDefaults = Logger9.useDefaults;
       if (typeof define === "function" && define.amd) {
-        define(Logger8);
+        define(Logger9);
       } else if (typeof module2 !== "undefined" && module2.exports) {
-        module2.exports = Logger8;
+        module2.exports = Logger9;
       } else {
-        Logger8._prevLogger = global2.Logger;
-        Logger8.noConflict = function() {
-          global2.Logger = Logger8._prevLogger;
-          return Logger8;
+        Logger9._prevLogger = global2.Logger;
+        Logger9.noConflict = function() {
+          global2.Logger = Logger9._prevLogger;
+          return Logger9;
         };
-        global2.Logger = Logger8;
+        global2.Logger = Logger9;
       }
     })(exports);
   }
@@ -11993,17 +11993,17 @@ var generateSyncerSnapshot_exports = {};
 __export(generateSyncerSnapshot_exports, {
   generateSyncerSnapshot: () => generateSyncerSnapshot
 });
-var import_obsidian20, import_promises, SNAPSHOT_PATH, generateSyncerSnapshot;
+var import_obsidian21, import_promises, SNAPSHOT_PATH, generateSyncerSnapshot;
 var init_generateSyncerSnapshot = __esm({
   "src/test/snapshot/generateSyncerSnapshot.ts"() {
     "use strict";
-    import_obsidian20 = require("obsidian");
+    import_obsidian21 = require("obsidian");
     import_promises = __toESM(require("fs/promises"));
     SNAPSHOT_PATH = "src/test/snapshot/snapshot.md";
     generateSyncerSnapshot = async (settings, publisher) => {
       const devPluginPath = settings.devPluginPath;
       if (!devPluginPath) {
-        new import_obsidian20.Notice("devPluginPath missing, run generateSyncerSettings.mjs");
+        new import_obsidian21.Notice("devPluginPath missing, run generateSyncerSettings.mjs");
         return;
       }
       const marked = await publisher.getFilesMarkedForPublishing();
@@ -12025,11 +12025,11 @@ var init_generateSyncerSnapshot = __esm({
       }
       fileString += "==========\n";
       const fullSnapshotPath = `${devPluginPath}/${SNAPSHOT_PATH}`;
-      if (import_obsidian20.Platform.isDesktop) {
+      if (import_obsidian21.Platform.isDesktop) {
         await import_promises.default.writeFile(fullSnapshotPath, fileString);
       }
-      new import_obsidian20.Notice(`Snapshot written to ${fullSnapshotPath}`);
-      new import_obsidian20.Notice(`Check snapshot to make sure nothing has accidentally changed`);
+      new import_obsidian21.Notice(`Snapshot written to ${fullSnapshotPath}`);
+      new import_obsidian21.Notice(`Check snapshot to make sure nothing has accidentally changed`);
     };
   }
 });
@@ -12040,7 +12040,7 @@ __export(main_exports, {
   default: () => QuartzSyncer
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian21 = require("obsidian");
+var import_obsidian22 = require("obsidian");
 
 // src/utils/utils.ts
 var import_slugify = __toESM(require_slugify());
@@ -12310,7 +12310,7 @@ function isPublishFrontmatterValid(flag, frontMatter, override = false) {
 }
 
 // src/compiler/SyncerPageCompiler.ts
-var import_obsidian6 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 var import_slugify2 = __toESM(require_slugify());
 
 // src/utils/regexes.ts
@@ -12327,7 +12327,7 @@ var TRANSCLUDED_FILE_REGEX = /!\[\[(.*?)(\.(png|jpg|jpeg|gif|webp|mp4|mkv|mov|av
 var FILE_REGEX = /!\[(.*?)\]\((.*?)(\.(png|jpg|jpeg|gif|webp|mp4|mkv|mov|avi|mp3|wav|ogg|pdf))\)/g;
 
 // src/compiler/SyncerPageCompiler.ts
-var import_js_logger4 = __toESM(require_logger());
+var import_js_logger5 = __toESM(require_logger());
 
 // src/compiler/FrontmatterCompiler.ts
 var FrontmatterCompiler = class {
@@ -19330,10 +19330,253 @@ var CompiledPublishFile = class extends PublishFile {
   }
 };
 
-// src/compiler/plugins/DataviewCompiler.ts
+// src/compiler/plugins/AutoCardLinkCompiler.ts
 var import_obsidian3 = require("obsidian");
-var import_obsidian_dataview = __toESM(require_lib());
+
+// src/utils/styles.ts
+var autoCardLink = `.auto-card-link-container{container-type:inline-size;position:relative;overflow:hidden;user-select:none;--auto-card-link-button-width:calc(var(--icon-size, 18px) + var(--size-2-3, 6px));--auto-card-link-indent-size:2.5em}&[data-auto-card-link-depth="1"]{margin-left:calc(var(--auto-card-link-indent-size) * 1)}&[data-auto-card-link-depth="2"]{margin-left:calc(var(--auto-card-link-indent-size) * 2)}&[data-auto-card-link-depth="3"]{margin-left:calc(var(--auto-card-link-indent-size) * 3)}&[data-auto-card-link-depth="4"]{margin-left:calc(var(--auto-card-link-indent-size) * 4)}&[data-auto-card-link-depth="5"]{margin-left:calc(var(--auto-card-link-indent-size) * 5)}&[data-auto-card-link-depth="6"]{margin-left:calc(var(--auto-card-link-indent-size) * 6)}&[data-auto-card-link-depth="7"]{margin-left:calc(var(--auto-card-link-indent-size) * 7)}.auto-card-link-title{white-space:normal!important;--lh:1.5em;line-height:var(--lh);height:calc(var(--lh) * 3);overflow:hidden;text-overflow:ellipsis}.auto-card-link-card{display:flex;flex-direction:row-reverse;height:8em;transition:20ms ease-in;cursor:pointer;text-decoration:none;color:var(--link-external-color,var(--highlight));background:var(--background-primary-alt,var(--darkgray));border:solid var(--border-width) var(--divider-color,var(--lightgray));border-radius:var(--radius-s,4px)}.auto-card-link-main{display:flex;flex-grow:1;flex-direction:column;justify-content:space-between;gap:.18em;padding:.5em .6em;overflow:hidden;text-align:left}.auto-card-link-description{overflow:hidden;--lh:1.4em;line-height:var(--lh);height:calc(var(--lh) * 3);color:var(--text-muted,var(--darkgray));font-size:var(--font-smallest, .9em)}.auto-card-link-host{font-size:var(--font-smallest, .9em);display:flex;flex-direction:row;align-items:center;text-overflow:ellipsis;white-space:nowrap}&:hover{color:var(--link-external-color-hover,var(--tertiary))}.auto-card-link-thumbnail{margin:0;width:unset!important;border-radius:var(--radius-s,4px) 0 0 var(--radius-s,4px)!important;height:100%;object-fit:cover;max-width:50%!important;pointer-events:none}.auto-card-link-container svg.external-icon{display: none}`;
+var datacoreCard = `.datacore-card{display:flex;flex-direction:column;padding:1.2rem;border-radius:.5em;background-color:var(--background-secondary,rgba(0,0,0,0)); min-width: 89%; border: 2px solid var(--table-border-color,var(--gray)); overflow-y: auto;}.datacore-card-title { margin-bottom: .6em; display: flex; justify-content: space-between; font-size: 1.8em;}.datacore-card-title.centered { justify-content: center !important;}.datacore-card-content,.datacore-card-inner,.datacore-card { transition: all .3s cubic-bezier(.65,.05,.36,1);}.datacore-card-inner { overflow-y: auto; overflow-x: hidden; max-height: 500px;}.datacore-card .datacore-card-collapser,.datacore-card.is-collapsed .datacore-card-collapser { transition: all .5s cubic-bezier(.65,.05,.36,1);}.datacore-card-content { flex-grow: 1;}.datacore-card-inner { display: flex;}.datacore-card:not(.datacore-card.is-collapsed) .datacore-card-collapser { transform: rotate(180deg);}.datacore-card.is-collapsed .datacore-card-collapser { transform: rotate(0deg) !important;}.datacore-card-collapse,.datacore-card-collapser svg { min-width: 1em; min-height: 1em; fill: currentColor; vertical-align: middle;}.datacore-card.is-collapsed .datacore-card-collapser { transform: rotate(0deg);}.datacore-card .datacore-card-footer { font-size: .7em; text-align: right; padding: 0;}`;
+var fantasyStatblocks = `:root{--statblock-primary-color:rgb(122, 32, 13);--statblock-rule-color:rgb(146, 38, 16);--statblock-background-color:rgb(253, 241, 220);--statblock-bar-color:rgb(230, 154, 40);--statblock-bar-border-size:1px;--statblock-bar-border-color:black;--statblock-image-width:75px;--statblock-image-height:75px;--statblock-image-border-size:2px;--statblock-image-border-color:var(--statblock-primary-color);--statblock-border-size:1px;--statblock-border-color:rgb(221, 221, 221);--statblock-box-shadow-color:rgb(221, 221, 221);--statblock-box-shadow-x-offset:0;--statblock-box-shadow-y-offset:0;--statblock-box-shadow-blur:1.5em;--statblock-font-color:var(--statblock-primary-color);--statblock-font-weight:700;--statblock-content-font:"Noto Sans","Myriad Pro",Calibri,Helvetica,Arial,sans-serif;--statblock-content-font-size:14px;--statblock-heading-font:"Libre Baskerville","Lora","Calisto MT","Bookman Old Style",Bookman,"Goudy Old Style",Garamond,"Hoefler Text","Bitstream Charter",Georgia,serif;--statblock-heading-font-color:var(--statblock-font-color);--statblock-heading-font-size:23px;--statblock-heading-font-variant:small-caps;--statblock-heading-font-weight:var(--statblock-font-weight);--statblock-heading-line-height:inherit;--statblock-property-line-height:1.4;--statblock-property-font-color:var(--statblock-font-color);--statblock-property-name-font-color:var(--statblock-font-color);--statblock-property-name-font-weight:bold;--statblock-section-heading-border-size:1px;--statblock-section-heading-border-color:var(--statblock-primary-color);--statblock-section-heading-font-color:var(--statblock-font-color);--statblock-section-heading-font-size:21px;--statblock-section-heading-font-variant:small-caps;--statblock-section-heading-font-weight:normal;--statblock-saves-line-height:1.4;--statblock-spells-font-style:italic;--statblock-subheading-font-size:12px;--statblock-subheading-font-style:italic;--statblock-subheading-font-weight:normal;--statblock-table-header-font-weight:bold;--statblock-traits-name-font-weight:bold;--statblock-traits-name-font-style:italic;--statblock-link-style:italic}.statblock-plugin-parent .statblock-detached{position:absolute;top:-9999px;width:auto}.statblock-plugin-parent .statblock-item-container{margin-bottom:.25rem}.statblock-plugin-parent .statblock-item-inline{display:flex;justify-content:space-between}.statblock-plugin-parent .statblock{--active-primary-color:var(--statblock-primary-color);--active-rule-color:var(--statblock-rule-color);--active-background-color:var(--statblock-background-color);--active-bar-color:var(--statblock-bar-color);--active-bar-border-size:var(--statblock-bar-border-size);--active-bar-border-color:var(--statblock-bar-border-color);--active-image-width:var(--statblock-image-width);--active-image-height:var(--statblock-image-height);--active-image-border-size:var(--statblock-image-border-size);--active-image-border-color:var(--statblock-image-border-color,--active-primary-color);--active-border-size:var(--statblock-border-size);--active-border-color:var(--statblock-border-color);--active-box-shadow-color:var(--statblock-box-shadow-color);--active-box-shadow-x-offset:var(--statblock-box-shadow-x-offset);--active-box-shadow-y-offset:var(--statblock-box-shadow-y-offset);--active-box-shadow-blur:var(--statblock-box-shadow-blur);--active-font-color:var(--statblock-font-color,--active-primary-color);--active-font-weight:var(--statblock-font-weight);--active-content-font:var(--statblock-content-font);--active-content-font-size:var(--statblock-content-font-size);--active-heading-font:var(--statblock-heading-font);--active-heading-font-color:var(--statblock-heading-font-color);--active-heading-font-size:var(--statblock-heading-font-size);--active-heading-font-variant:var(--statblock-heading-font-variant);--active-heading-font-weight:var(--statblock-heading-font-weight);--active-heading-line-height:var(--statblock-heading-line-height);--active-property-line-height:var(--statblock-property-line-height);--active-property-font:var(--statblock-property-font);--active-property-font-color:var(--statblock-property-font-color);--active-property-font-variant:var(--statblock-property-font-variant);--active-property-font-size:var(--statblock-property-font-size);--active-property-font-weight:var(--statblock-property-font-weight);--active-property-name-font:var(--statblock-property-name-font);--active-property-name-font-color:var(--statblock-property-name-font-color);--active-property-name-font-variant:var(--statblock-property-name-font-variant);--active-property-name-font-size:var(--statblock-property-name-font-size);--active-property-name-font-weight:var(--statblock-property-name-font-weight);--active-section-heading-border-size:var(--statblock-section-heading-border-size);--active-section-heading-border-color:var(--statblock-section-heading-border-color);--active-section-heading-font:var(--statblock-section-heading-font);--active-section-heading-font-color:var(--statblock-section-heading-font-color);--active-section-heading-font-size:var(--statblock-section-heading-font-size);--active-section-heading-font-variant:var(--statblock-section-heading-font-variant);--active-section-heading-font-weight:var(--statblock-section-heading-font-weight);--active-saves-line-height:var(--statblock-saves-line-height);--active-spells-font-style:var(--statblock-spells-font-style);--active-subheading-font:var(--statblock-subheading-font);--active-subheading-font-color:var(--statblock-subheading-font-color);--active-subheading-font-size:var(--statblock-subheading-font-size);--active-subheading-font-style:var(--statblock-subheading-font-style);--active-subheading-font-weight:var(--statblock-subheading-font-weight);--active-table-header-font-weight:var(--statblock-table-header-font-weight);--active-traits-font:var(--statblock-traits-font);--active-traits-font-color:var(--statblock-traits-font-color);--active-traits-font-size:var(--statblock-traits-font-size);--active-traits-font-weight:var(--statblock-traits-font-weight);--active-traits-font-style:var(--statblock-traits-font-style);--active-traits-name-font:var(--statblock-traits-name-font);--active-traits-name-font-color:var(--statblock-traits-name-font-color);--active-traits-name-font-size:var(--statblock-traits-name-font-size);--active-traits-name-font-weight:var(--statblock-traits-name-font-weight);--active-traits-name-font-style:var(--statblock-traits-name-font-style);--active-link-style:var(--statblock-link-style)}.statblock-plugin-parent .statblock a{font-style:var(--statblock-link-style)}.statblock-plugin-parent .container{display:flex;position:relative;width:100%;margin:.25rem 0}.statblock-plugin-parent .statblock{margin:0 auto;position:relative}.statblock-plugin-parent .icons{position:absolute;left:var(--size-2-2)}.statblock-plugin-parent .bar{height:5px;background:var(--active-bar-color);border:var(--active-bar-border-size) solid var(--active-bar-border-color);z-index:1;width:auto}.statblock-plugin-parent details>summary{outline:0;display:block!important;list-style:none!important;list-style-type:none!important;min-height:1rem;border-top-left-radius:.1rem;border-top-right-radius:.1rem;cursor:pointer;position:relative;margin-bottom:1rem}.statblock-plugin-parent details>summary::-webkit-details-marker,.statblock-plugin-parent details>summary::marker{display:none!important}.statblock-plugin-parent details>summary>.collapser{position:absolute;top:50%;right:8px;transform:translateY(-50%);content:""}.statblock-plugin-parent details>summary>.collapser>.handle{transform:rotate(0);transition:transform .25s;background-color:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z'/></svg>");mask-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z'/></svg>");width:20px;height:20px}.statblock-plugin-parent details[open]>summary>.collapser>.handle{transform:rotate(90deg)}.statblock-plugin-parent .statblock-content{font-family:var(--active-content-font);font-size:var(--active-content-font-size);color:var(--active-font-color);background-color:var(--active-background-color);padding:.5em;border:var(--active-border-size) var(--active-border-color) solid;box-shadow:var(--active-box-shadow-x-offset) var(--active-box-shadow-y-offset) var(--active-box-shadow-blur) var(--active-box-shadow-color);margin-left:2px;margin-right:2px;display:flex;gap:1rem}.statblock-plugin-parent .statblock-content>.column{width:var(--statblock-column-width)}@media screen and (max-width:800px){.statblock-plugin-parent .statblock-content>.column{width:75vw}}.statblock-plugin-parent .flex-container{display:flex;justify-content:space-between;align-items:center}.statblock-plugin-parent .heading{font-family:var(--active-heading-font);color:var(--active-heading-font-color);font-weight:var(--active-heading-font-weight);font-variant:var(--active-heading-font-variant);font-size:var(--active-heading-font-size);line-height:var(--active-heading-line-height);margin:0;letter-spacing:1px;display:flex;justify-content:space-between;align-items:center}.statblock-plugin-parent .image{width:var(--active-image-width);height:var(--active-image-height)}.statblock-plugin-parent .image.pointer{cursor:pointer}.statblock-plugin-parent img{object-fit:cover;width:100%;height:100%;border-radius:100%;border:var(--active-image-border-size) solid var(--active-image-border-color);object-position:center}.statblock-plugin-parent .statblock-markdown{display:inline}.statblock-plugin-parent .statblock-markdown p{display:inline;color:var(--active-font-color)}.statblock-plugin-parent .statblock-markdown p~p{display:inline-block;color:var(--active-font-color)}.statblock-plugin-parent .line{line-height:var(--active-property-line-height);display:block;font-family:var(--active-property-font);color:var(--active-property-font-color);font-variant:var(--active-property-font-variant);font-size:var(--active-property-font-size);font-weight:var(--active-property-font-weight)}.statblock-plugin-parent .property-name{margin:0;margin-right:.25em;display:inline;font-family:var(--active-property-name-font);color:var(--active-property-name-font-color);font-variant:var(--active-property-name-font-variant);font-size:var(--active-property-name-font-size);font-weight:var(--active-property-name-font-weight)}.statblock-plugin-parent .tapered-rule{width:auto;margin:.5em 0;height:5px;background:-webkit-linear-gradient(0deg,var(--active-rule-color) 0,var(--active-rule-color) 50%,var(--active-background-color) 95%,var(--active-background-color) 100%);clip-path:polygon(0 0,0 100%,95% 50%);-webkit-clip-path:polygon(0 0,0 100%,95% 50%)}.statblock-plugin-parent .line{line-height:var(--active-saves-line-height);display:block;color:var(--active-font-color)}.statblock-plugin-parent .property-name{color:var(--active-property-name-font-color);margin:0;margin-right:.25em;display:inline;font-weight:700}.statblock-plugin-parent .property-text{display:inline;margin:0}.statblock-plugin-parent .save-entry,.statblock-plugin-parent .save-name,.statblock-plugin-parent .save-value{display:inline}.statblock-plugin-parent .save-entry:not(:last-child) .save-value::after{content:", "}.statblock-plugin-parent .section-header{border-bottom:var(--active-section-heading-border-size) solid var(--active-section-heading-border-color);color:var(--active-section-heading-font-color);font-size:var(--active-section-heading-font-size);font-variant:var(--active-section-heading-font-variant);font-weight:var(--active-section-heading-font-weight);font-family:var(--active-section-heading-font);letter-spacing:1px;margin:0;margin-bottom:.3em;break-inside:avoid-column;break-after:avoid-column}.statblock-plugin-parent .section-header .inline{display:inline}.statblock-plugin-parent ul.spell-item{margin:0}.statblock-plugin-parent ul.spell-item.first{margin-top:revert}.statblock-plugin-parent ul.spell-item.last{margin-bottom:revert}.statblock-plugin-parent .spells{font-style:italic}.statblock-plugin-parent .subheading{font-weight:var(--active-subheading-font-weight);font-style:var(--active-subheading-font-style);font-size:var(--active-subheading-font-size);font-family:var(--active-subheading-font-family);color:var(--active-subheading-font-color);margin:0}.statblock-plugin-parent .statblock-table-header{font-weight:var(--active-table-header-font-weight)}.statblock-plugin-parent .statblock-table{display:flex;justify-content:space-evenly;align-items:center;flex-wrap:wrap}.statblock-plugin-parent .table-item{display:flex;justify-content:center;align-items:center;flex-flow:column nowrap}.statblock-plugin-parent .inline{display:inline}.statblock-plugin-parent .trait{font-family:var(--active-traits-font);color:var(--active-traits-font-color);font-size:var(--active-traits-font-size);font-weight:var(--active-traits-font-weight);font-style:var(--active-traits-font-style)}.statblock-plugin-parent .trait-name{font-family:var(--active-traits-name-font);color:var(--active-traits-name-font-color);font-size:var(--active-traits-name-font-size);font-weight:var(--active-traits-name-font-weight);font-style:var(--active-traits-name-font-style)}.statblock-plugin-parent .property-name{margin:0;margin-right:.25em;display:inline}.statblock-plugin-parent .statblock-nested-traits{margin-left:1rem}.property-name.trait-name p{font-style:var(--active-traits-name-font-style,italic)}`;
+
+// src/compiler/plugins/AutoCardLinkCompiler.ts
 var import_js_logger = __toESM(require_logger());
+
+// src/ui/suggest/constants.ts
+var quartzSyncerIcon = `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" viewBox="0 0 100 100" version="1.1"><g id="surface1"><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 53.113281 52.53125 L 57.699219 54.550781 L 63.097656 68.074219 L 59.71875 81.945312 L 43.515625 81.671875 L 35.589844 78.5625 L 33.105469 68.734375 L 37.222656 63.136719 Z M 53.113281 52.53125 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 51.832031 49.734375 L 51.792969 28.945312 L 64.691406 30.773438 L 66.050781 18.417969 L 53.347656 7.265625 L 27.390625 23.933594 L 34.464844 51.597656 L 41.109375 57.269531 Z M 51.832031 49.734375 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 30.65625 45.847656 L 32.519531 53.152344 L 39.125 58.980469 L 35.242188 61.972656 L 30.773438 68.34375 L 33.066406 76.386719 L 19.894531 57.582031 L 24.4375 44.800781 Z M 30.65625 45.847656 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 54.511719 31.628906 L 66.710938 33.414062 L 68.074219 23.738281 L 76.117188 27.78125 L 80.3125 40.449219 L 70.171875 73.472656 L 63.992188 74.210938 L 65.78125 67.179688 L 59.71875 52.570312 L 54.550781 49.964844 Z M 54.511719 31.628906 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 63.761719 76.621094 L 70.871094 75.726562 L 77.515625 77.980469 L 75.921875 82.175781 L 69.589844 85.867188 L 61.855469 82.566406 Z M 63.761719 76.621094 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 60.691406 84.390625 L 67.800781 88.277344 L 66.597656 92.628906 L 61.777344 95.152344 L 54.863281 93.753906 Z M 60.691406 84.390625 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 44.800781 84.742188 L 57.777344 84.546875 L 52.375 93.210938 L 43.363281 94.609375 L 41.652344 93.25 Z M 44.800781 84.742188 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 35.628906 81.789062 L 42.699219 84.351562 L 39.398438 92.824219 L 32.871094 91.578125 Z M 35.628906 81.789062 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 31.742188 77.320312 L 34.191406 80.46875 L 32.367188 86.449219 L 29.023438 81.90625 Z M 31.742188 77.320312 "/></g></svg>`;
+var AUTO_CARD_LINK_PLUGIN_ID = "auto-card-link";
+var DATACORE_PLUGIN_ID = "datacore";
+var DATAVIEW_PLUGIN_ID = "dataview";
+var FANTASY_STATBLOCKS_PLUGIN_ID = "obsidian-5e-statblocks";
+
+// src/compiler/plugins/AutoCardLinkCompiler.ts
+var AutoCardLinkCompiler = class {
+  app;
+  serializer;
+  constructor(app2) {
+    this.app = app2;
+    this.serializer = new XMLSerializer();
+  }
+  /**
+   * Compiles the text by replacing Auto Card Link queries with their results.
+   * It also injects the necessary CSS for the Auto Card Link renders.
+   *
+   * @param _file - The PublishFile object representing the file being compiled.
+   * @returns A function that takes the text to compile and returns the compiled text.
+   * @throws If the Auto Card Link plugin is not enabled, it returns the original text.
+   */
+  compile = (_file) => async (text2) => {
+    let replacedText = text2;
+    if (!isPluginEnabled(AUTO_CARD_LINK_PLUGIN_ID)) return text2;
+    let injectCardCSS = false;
+    const autoCardLinkRegex = /```cardlink\s(.+?)```/gms;
+    const autoCardLinkMatches = text2.matchAll(autoCardLinkRegex);
+    for (const cardLink of autoCardLinkMatches) {
+      try {
+        const block = cardLink[0];
+        const query = cardLink[1];
+        if (!query) continue;
+        try {
+          const renderedDiv = await this.tryRenderCardLink(query);
+          injectCardCSS = true;
+          replacedText = replacedText.replace(
+            block,
+            sanitizeHTMLToString(renderedDiv, this.serializer)
+          );
+        } catch (error) {
+          import_js_logger.default.error("Auto Card Link Compiler error", error);
+        }
+      } catch (error) {
+        console.log(error);
+        new import_obsidian3.Notice(`Quartz Syncer: DatacoreTSX query error: ${error}`);
+        return cardLink[0];
+      }
+    }
+    const injectCSS = injectCardCSS ? `
+
+<style>${autoCardLink}</style>
+` : "";
+    return replacedText + injectCSS;
+  };
+  /**
+   * Attempts to render a card link from the provided source string.
+   * It parses the YAML metadata and generates the corresponding HTML element.
+   *
+   * @param source - The source string containing the YAML metadata for the card link.
+   * @returns A Promise that resolves to an HTMLElement containing the rendered card link.
+   */
+  async tryRenderCardLink(source) {
+    const div = createEl("div");
+    try {
+      const data = this.parseLinkMetadataFromYaml(source);
+      div.appendChild(this.genLinkEl(data));
+    } catch (error) {
+      if (error instanceof NoRequiredParamsError) {
+        div.appendChild(this.genErrorEl(error.message));
+      } else if (error instanceof YamlParseError) {
+        div.appendChild(this.genErrorEl(error.message));
+      } else if (error instanceof TypeError) {
+        div.appendChild(
+          this.genErrorEl(
+            "internal links must be surrounded by quotes."
+          )
+        );
+        console.log(error);
+      } else {
+        console.log("Code Block: cardlink unknown error", error);
+      }
+      return div;
+    }
+    return div;
+  }
+  /**
+   * Parses the YAML metadata from the provided source string and returns a LinkMetadata object.
+   * It extracts the required fields (url, title) and optional fields (description, host, favicon, image).
+   *
+   * @param source - The source string containing the YAML metadata.
+   * @returns A LinkMetadata object containing the parsed data.
+   * @throws YamlParseError if the YAML parsing fails.
+   * @throws NoRequiredParamsError if required parameters are missing.
+   */
+  parseLinkMetadataFromYaml(source) {
+    let yaml;
+    let indent = -1;
+    source = source.split(/\r?\n|\r|\n/g).map(
+      (line) => line.replace(/^\t+/g, (tabs) => {
+        const n2 = tabs.length;
+        if (indent < 0) {
+          indent = n2;
+        }
+        return " ".repeat(n2);
+      })
+    ).join("\n");
+    try {
+      yaml = (0, import_obsidian3.parseYaml)(source);
+    } catch (error) {
+      console.log(error);
+      throw new YamlParseError(
+        "failed to parse yaml. Check debug console for more detail."
+      );
+    }
+    if (!yaml || !yaml.url || !yaml.title) {
+      throw new NoRequiredParamsError(
+        "required params[url, title] are not found."
+      );
+    }
+    return {
+      url: yaml.url,
+      title: yaml.title,
+      description: yaml.description,
+      host: yaml.host,
+      favicon: yaml.favicon,
+      image: yaml.image,
+      indent
+    };
+  }
+  /**
+   * Generates an error element with the provided error message.
+   * This element is used to display errors related to card links.
+   *
+   * @param errorMsg - The error message to display.
+   * @returns An HTMLElement containing the error message.
+   */
+  genErrorEl(errorMsg) {
+    const containerEl = createEl("div");
+    containerEl.addClass("auto-card-link-error-container");
+    const spanEl = createEl("span");
+    spanEl.textContent = `cardlink error: ${errorMsg}`;
+    containerEl.appendChild(spanEl);
+    return containerEl;
+  }
+  /**
+   * Generates an HTML element representing a card link based on the provided LinkMetadata.
+   * This element includes the title, description, host, and image (if available).
+   *
+   * @param data - The LinkMetadata object containing the link information.
+   * @returns An HTMLElement representing the card link.
+   */
+  genLinkEl(data) {
+    const containerEl = createEl("div");
+    containerEl.addClass("auto-card-link-container");
+    containerEl.setAttr("data-auto-card-link-depth", data.indent);
+    const cardEl = createEl("a");
+    cardEl.addClass("auto-card-link-card");
+    cardEl.setAttr("href", data.url);
+    containerEl.appendChild(cardEl);
+    const mainEl = createEl("div");
+    mainEl.addClass("auto-card-link-main");
+    cardEl.appendChild(mainEl);
+    const titleEl = createEl("div");
+    titleEl.addClass("auto-card-link-title");
+    titleEl.textContent = data.title;
+    mainEl.appendChild(titleEl);
+    if (data.description) {
+      const descriptionEl = createEl("div");
+      descriptionEl.addClass("auto-card-link-description");
+      descriptionEl.textContent = data.description;
+      mainEl.appendChild(descriptionEl);
+    }
+    const hostEl = createEl("div");
+    hostEl.addClass("auto-card-link-host");
+    mainEl.appendChild(hostEl);
+    if (data.host) {
+      const hostNameEl = createEl("span");
+      hostNameEl.textContent = data.host;
+      hostEl.appendChild(hostNameEl);
+    }
+    if (data.image) {
+      if (!CheckIf.isUrl(data.image))
+        data.image = this.getLocalImagePath(data.image);
+      const thumbnailEl = createEl("img");
+      thumbnailEl.addClass("auto-card-link-thumbnail");
+      thumbnailEl.setAttr("src", data.image);
+      thumbnailEl.setAttr("draggable", "false");
+      cardEl.appendChild(thumbnailEl);
+    }
+    return containerEl;
+  }
+  /**
+   * Retrieves the local image path from the provided link.
+   * It removes the surrounding brackets and resolves the link to a local path.
+   *
+   * @param link - The link to the image, which may be a local Obsidian link.
+   * @returns The resolved local image path.
+   */
+  getLocalImagePath(link) {
+    link = link.slice(2, -2);
+    const imageRelativePath = this.app.metadataCache.getFirstLinkpathDest(
+      (0, import_obsidian3.getLinkpath)(link),
+      ""
+    )?.path;
+    if (!imageRelativePath) return link;
+    return this.app.vault.adapter.getResourcePath(imageRelativePath);
+  }
+};
+var YamlParseError = class extends Error {
+};
+var NoRequiredParamsError = class extends Error {
+};
+var urlRegex = /^(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})$/i;
+var linkRegex = /^\[([^[\]]*)\]\((https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})\)$/i;
+var imageRegex = /\.(gif|jpe?g|tiff?|png|webp|bmp|tga|psd|ai)$/i;
+var CheckIf = class {
+  static isUrl(text2) {
+    const regex = new RegExp(urlRegex);
+    return regex.test(text2);
+  }
+  static isImage(text2) {
+    const regex = new RegExp(imageRegex);
+    return regex.test(text2);
+  }
+  static isLinkedUrl(text2) {
+    const regex = new RegExp(linkRegex);
+    return regex.test(text2);
+  }
+};
+
+// src/compiler/plugins/DataviewCompiler.ts
+var import_obsidian4 = require("obsidian");
+var import_obsidian_dataview = __toESM(require_lib());
+var import_js_logger2 = __toESM(require_logger());
 var DataviewCompiler = class {
   app;
   dataview;
@@ -19395,7 +19638,7 @@ var DataviewCompiler = class {
         replacedText = replacedText.replace(block, `${markdown}`);
       } catch (e) {
         console.log(e);
-        new import_obsidian3.Notice(
+        new import_obsidian4.Notice(
           "Quartz Syncer: Unable to render dataview query. Please update the dataview plugin to the latest version."
         );
         return queryBlock[0];
@@ -19414,7 +19657,7 @@ var DataviewCompiler = class {
         }
       } catch (e) {
         console.log(e);
-        new import_obsidian3.Notice(
+        new import_obsidian4.Notice(
           "Quartz Syncer: Unable to render dataviewjs query. Please update the dataview plugin to the latest version."
         );
         return queryBlock[0];
@@ -19433,7 +19676,7 @@ var DataviewCompiler = class {
         }
       } catch (e) {
         console.log(e);
-        new import_obsidian3.Notice(
+        new import_obsidian4.Notice(
           "Quartz Syncer: Unable to render inline dataview query. Please update the dataview plugin to the latest version."
         );
         return inlineQuery[0];
@@ -19456,8 +19699,8 @@ var DataviewCompiler = class {
           result ?? "Unable to render query"
         );
       } catch (e) {
-        import_js_logger.default.error(e);
-        new import_obsidian3.Notice(
+        import_js_logger2.default.error(e);
+        new import_obsidian4.Notice(
           "Quartz Syncer: Unable to render inline dataviewjs query. Please update the dataview plugin to the latest version."
         );
         return inlineJsQuery[0];
@@ -19474,7 +19717,7 @@ function tryDVEvaluate(query, file, dvApi) {
     });
     result = dataviewResult?.toString() ?? "";
   } catch (e) {
-    import_js_logger.default.warn("dvapi.tryEvaluate did not yield any result", e);
+    import_js_logger2.default.warn("dvapi.tryEvaluate did not yield any result", e);
   }
   return result;
 }
@@ -19483,38 +19726,24 @@ function tryEval(query) {
   try {
     result = (0, eval)("const dv = DataviewAPI;" + query);
   } catch (e) {
-    import_js_logger.default.warn("eval did not yield any result", e);
+    import_js_logger2.default.warn("eval did not yield any result", e);
   }
   return result;
 }
 async function tryExecuteJs(query, file, dvApi) {
   const div = createEl("div");
-  const component = new import_obsidian3.Component();
+  const component = new import_obsidian4.Component();
   component.load();
   await dvApi.executeJs(query, div, component, file.getPath());
   await renderPromise(div, "[data-tag-name]");
-  const markdown = (0, import_obsidian3.htmlToMarkdown)(div) || "";
+  const markdown = (0, import_obsidian4.htmlToMarkdown)(div) || "";
   const result = cleanQueryResult(markdown);
   return result;
 }
 
 // src/compiler/plugins/DatacoreCompiler.ts
-var import_obsidian4 = require("obsidian");
-
-// src/utils/styles.ts
-var datacoreCard = `.datacore-card{display:flex;flex-direction:column;padding:1.2rem;border-radius:.5em;background-color:var(--background-secondary,rgba(0,0,0,0)); min-width: 89%; border: 2px solid var(--table-border-color,var(--gray)); overflow-y: auto;}.datacore-card-title { margin-bottom: .6em; display: flex; justify-content: space-between; font-size: 1.8em;}.datacore-card-title.centered { justify-content: center !important;}.datacore-card-content,.datacore-card-inner,.datacore-card { transition: all .3s cubic-bezier(.65,.05,.36,1);}.datacore-card-inner { overflow-y: auto; overflow-x: hidden; max-height: 500px;}.datacore-card .datacore-card-collapser,.datacore-card.is-collapsed .datacore-card-collapser { transition: all .5s cubic-bezier(.65,.05,.36,1);}.datacore-card-content { flex-grow: 1;}.datacore-card-inner { display: flex;}.datacore-card:not(.datacore-card.is-collapsed) .datacore-card-collapser { transform: rotate(180deg);}.datacore-card.is-collapsed .datacore-card-collapser { transform: rotate(0deg) !important;}.datacore-card-collapse,.datacore-card-collapser svg { min-width: 1em; min-height: 1em; fill: currentColor; vertical-align: middle;}.datacore-card.is-collapsed .datacore-card-collapser { transform: rotate(0deg);}.datacore-card .datacore-card-footer { font-size: .7em; text-align: right; padding: 0;}`;
-var fantasyStatblocks = `:root{--statblock-primary-color:rgb(122, 32, 13);--statblock-rule-color:rgb(146, 38, 16);--statblock-background-color:rgb(253, 241, 220);--statblock-bar-color:rgb(230, 154, 40);--statblock-bar-border-size:1px;--statblock-bar-border-color:black;--statblock-image-width:75px;--statblock-image-height:75px;--statblock-image-border-size:2px;--statblock-image-border-color:var(--statblock-primary-color);--statblock-border-size:1px;--statblock-border-color:rgb(221, 221, 221);--statblock-box-shadow-color:rgb(221, 221, 221);--statblock-box-shadow-x-offset:0;--statblock-box-shadow-y-offset:0;--statblock-box-shadow-blur:1.5em;--statblock-font-color:var(--statblock-primary-color);--statblock-font-weight:700;--statblock-content-font:"Noto Sans","Myriad Pro",Calibri,Helvetica,Arial,sans-serif;--statblock-content-font-size:14px;--statblock-heading-font:"Libre Baskerville","Lora","Calisto MT","Bookman Old Style",Bookman,"Goudy Old Style",Garamond,"Hoefler Text","Bitstream Charter",Georgia,serif;--statblock-heading-font-color:var(--statblock-font-color);--statblock-heading-font-size:23px;--statblock-heading-font-variant:small-caps;--statblock-heading-font-weight:var(--statblock-font-weight);--statblock-heading-line-height:inherit;--statblock-property-line-height:1.4;--statblock-property-font-color:var(--statblock-font-color);--statblock-property-name-font-color:var(--statblock-font-color);--statblock-property-name-font-weight:bold;--statblock-section-heading-border-size:1px;--statblock-section-heading-border-color:var(--statblock-primary-color);--statblock-section-heading-font-color:var(--statblock-font-color);--statblock-section-heading-font-size:21px;--statblock-section-heading-font-variant:small-caps;--statblock-section-heading-font-weight:normal;--statblock-saves-line-height:1.4;--statblock-spells-font-style:italic;--statblock-subheading-font-size:12px;--statblock-subheading-font-style:italic;--statblock-subheading-font-weight:normal;--statblock-table-header-font-weight:bold;--statblock-traits-name-font-weight:bold;--statblock-traits-name-font-style:italic;--statblock-link-style:italic}.statblock-plugin-parent .statblock-detached{position:absolute;top:-9999px;width:auto}.statblock-plugin-parent .statblock-item-container{margin-bottom:.25rem}.statblock-plugin-parent .statblock-item-inline{display:flex;justify-content:space-between}.statblock-plugin-parent .statblock{--active-primary-color:var(--statblock-primary-color);--active-rule-color:var(--statblock-rule-color);--active-background-color:var(--statblock-background-color);--active-bar-color:var(--statblock-bar-color);--active-bar-border-size:var(--statblock-bar-border-size);--active-bar-border-color:var(--statblock-bar-border-color);--active-image-width:var(--statblock-image-width);--active-image-height:var(--statblock-image-height);--active-image-border-size:var(--statblock-image-border-size);--active-image-border-color:var(--statblock-image-border-color,--active-primary-color);--active-border-size:var(--statblock-border-size);--active-border-color:var(--statblock-border-color);--active-box-shadow-color:var(--statblock-box-shadow-color);--active-box-shadow-x-offset:var(--statblock-box-shadow-x-offset);--active-box-shadow-y-offset:var(--statblock-box-shadow-y-offset);--active-box-shadow-blur:var(--statblock-box-shadow-blur);--active-font-color:var(--statblock-font-color,--active-primary-color);--active-font-weight:var(--statblock-font-weight);--active-content-font:var(--statblock-content-font);--active-content-font-size:var(--statblock-content-font-size);--active-heading-font:var(--statblock-heading-font);--active-heading-font-color:var(--statblock-heading-font-color);--active-heading-font-size:var(--statblock-heading-font-size);--active-heading-font-variant:var(--statblock-heading-font-variant);--active-heading-font-weight:var(--statblock-heading-font-weight);--active-heading-line-height:var(--statblock-heading-line-height);--active-property-line-height:var(--statblock-property-line-height);--active-property-font:var(--statblock-property-font);--active-property-font-color:var(--statblock-property-font-color);--active-property-font-variant:var(--statblock-property-font-variant);--active-property-font-size:var(--statblock-property-font-size);--active-property-font-weight:var(--statblock-property-font-weight);--active-property-name-font:var(--statblock-property-name-font);--active-property-name-font-color:var(--statblock-property-name-font-color);--active-property-name-font-variant:var(--statblock-property-name-font-variant);--active-property-name-font-size:var(--statblock-property-name-font-size);--active-property-name-font-weight:var(--statblock-property-name-font-weight);--active-section-heading-border-size:var(--statblock-section-heading-border-size);--active-section-heading-border-color:var(--statblock-section-heading-border-color);--active-section-heading-font:var(--statblock-section-heading-font);--active-section-heading-font-color:var(--statblock-section-heading-font-color);--active-section-heading-font-size:var(--statblock-section-heading-font-size);--active-section-heading-font-variant:var(--statblock-section-heading-font-variant);--active-section-heading-font-weight:var(--statblock-section-heading-font-weight);--active-saves-line-height:var(--statblock-saves-line-height);--active-spells-font-style:var(--statblock-spells-font-style);--active-subheading-font:var(--statblock-subheading-font);--active-subheading-font-color:var(--statblock-subheading-font-color);--active-subheading-font-size:var(--statblock-subheading-font-size);--active-subheading-font-style:var(--statblock-subheading-font-style);--active-subheading-font-weight:var(--statblock-subheading-font-weight);--active-table-header-font-weight:var(--statblock-table-header-font-weight);--active-traits-font:var(--statblock-traits-font);--active-traits-font-color:var(--statblock-traits-font-color);--active-traits-font-size:var(--statblock-traits-font-size);--active-traits-font-weight:var(--statblock-traits-font-weight);--active-traits-font-style:var(--statblock-traits-font-style);--active-traits-name-font:var(--statblock-traits-name-font);--active-traits-name-font-color:var(--statblock-traits-name-font-color);--active-traits-name-font-size:var(--statblock-traits-name-font-size);--active-traits-name-font-weight:var(--statblock-traits-name-font-weight);--active-traits-name-font-style:var(--statblock-traits-name-font-style);--active-link-style:var(--statblock-link-style)}.statblock-plugin-parent .statblock a{font-style:var(--statblock-link-style)}.statblock-plugin-parent .container{display:flex;position:relative;width:100%;margin:.25rem 0}.statblock-plugin-parent .statblock{margin:0 auto;position:relative}.statblock-plugin-parent .icons{position:absolute;left:var(--size-2-2)}.statblock-plugin-parent .bar{height:5px;background:var(--active-bar-color);border:var(--active-bar-border-size) solid var(--active-bar-border-color);z-index:1;width:auto}.statblock-plugin-parent details>summary{outline:0;display:block!important;list-style:none!important;list-style-type:none!important;min-height:1rem;border-top-left-radius:.1rem;border-top-right-radius:.1rem;cursor:pointer;position:relative;margin-bottom:1rem}.statblock-plugin-parent details>summary::-webkit-details-marker,.statblock-plugin-parent details>summary::marker{display:none!important}.statblock-plugin-parent details>summary>.collapser{position:absolute;top:50%;right:8px;transform:translateY(-50%);content:""}.statblock-plugin-parent details>summary>.collapser>.handle{transform:rotate(0);transition:transform .25s;background-color:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z'/></svg>");mask-image:url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z'/></svg>");width:20px;height:20px}.statblock-plugin-parent details[open]>summary>.collapser>.handle{transform:rotate(90deg)}.statblock-plugin-parent .statblock-content{font-family:var(--active-content-font);font-size:var(--active-content-font-size);color:var(--active-font-color);background-color:var(--active-background-color);padding:.5em;border:var(--active-border-size) var(--active-border-color) solid;box-shadow:var(--active-box-shadow-x-offset) var(--active-box-shadow-y-offset) var(--active-box-shadow-blur) var(--active-box-shadow-color);margin-left:2px;margin-right:2px;display:flex;gap:1rem}.statblock-plugin-parent .statblock-content>.column{width:var(--statblock-column-width)}@media screen and (max-width:800px){.statblock-plugin-parent .statblock-content>.column{width:75vw}}.statblock-plugin-parent .flex-container{display:flex;justify-content:space-between;align-items:center}.statblock-plugin-parent .heading{font-family:var(--active-heading-font);color:var(--active-heading-font-color);font-weight:var(--active-heading-font-weight);font-variant:var(--active-heading-font-variant);font-size:var(--active-heading-font-size);line-height:var(--active-heading-line-height);margin:0;letter-spacing:1px;display:flex;justify-content:space-between;align-items:center}.statblock-plugin-parent .image{width:var(--active-image-width);height:var(--active-image-height)}.statblock-plugin-parent .image.pointer{cursor:pointer}.statblock-plugin-parent img{object-fit:cover;width:100%;height:100%;border-radius:100%;border:var(--active-image-border-size) solid var(--active-image-border-color);object-position:center}.statblock-plugin-parent .statblock-markdown{display:inline}.statblock-plugin-parent .statblock-markdown p{display:inline;color:var(--active-font-color)}.statblock-plugin-parent .statblock-markdown p~p{display:inline-block;color:var(--active-font-color)}.statblock-plugin-parent .line{line-height:var(--active-property-line-height);display:block;font-family:var(--active-property-font);color:var(--active-property-font-color);font-variant:var(--active-property-font-variant);font-size:var(--active-property-font-size);font-weight:var(--active-property-font-weight)}.statblock-plugin-parent .property-name{margin:0;margin-right:.25em;display:inline;font-family:var(--active-property-name-font);color:var(--active-property-name-font-color);font-variant:var(--active-property-name-font-variant);font-size:var(--active-property-name-font-size);font-weight:var(--active-property-name-font-weight)}.statblock-plugin-parent .tapered-rule{width:auto;margin:.5em 0;height:5px;background:-webkit-linear-gradient(0deg,var(--active-rule-color) 0,var(--active-rule-color) 50%,var(--active-background-color) 95%,var(--active-background-color) 100%);clip-path:polygon(0 0,0 100%,95% 50%);-webkit-clip-path:polygon(0 0,0 100%,95% 50%)}.statblock-plugin-parent .line{line-height:var(--active-saves-line-height);display:block;color:var(--active-font-color)}.statblock-plugin-parent .property-name{color:var(--active-property-name-font-color);margin:0;margin-right:.25em;display:inline;font-weight:700}.statblock-plugin-parent .property-text{display:inline;margin:0}.statblock-plugin-parent .save-entry,.statblock-plugin-parent .save-name,.statblock-plugin-parent .save-value{display:inline}.statblock-plugin-parent .save-entry:not(:last-child) .save-value::after{content:", "}.statblock-plugin-parent .section-header{border-bottom:var(--active-section-heading-border-size) solid var(--active-section-heading-border-color);color:var(--active-section-heading-font-color);font-size:var(--active-section-heading-font-size);font-variant:var(--active-section-heading-font-variant);font-weight:var(--active-section-heading-font-weight);font-family:var(--active-section-heading-font);letter-spacing:1px;margin:0;margin-bottom:.3em;break-inside:avoid-column;break-after:avoid-column}.statblock-plugin-parent .section-header .inline{display:inline}.statblock-plugin-parent ul.spell-item{margin:0}.statblock-plugin-parent ul.spell-item.first{margin-top:revert}.statblock-plugin-parent ul.spell-item.last{margin-bottom:revert}.statblock-plugin-parent .spells{font-style:italic}.statblock-plugin-parent .subheading{font-weight:var(--active-subheading-font-weight);font-style:var(--active-subheading-font-style);font-size:var(--active-subheading-font-size);font-family:var(--active-subheading-font-family);color:var(--active-subheading-font-color);margin:0}.statblock-plugin-parent .statblock-table-header{font-weight:var(--active-table-header-font-weight)}.statblock-plugin-parent .statblock-table{display:flex;justify-content:space-evenly;align-items:center;flex-wrap:wrap}.statblock-plugin-parent .table-item{display:flex;justify-content:center;align-items:center;flex-flow:column nowrap}.statblock-plugin-parent .inline{display:inline}.statblock-plugin-parent .trait{font-family:var(--active-traits-font);color:var(--active-traits-font-color);font-size:var(--active-traits-font-size);font-weight:var(--active-traits-font-weight);font-style:var(--active-traits-font-style)}.statblock-plugin-parent .trait-name{font-family:var(--active-traits-name-font);color:var(--active-traits-name-font-color);font-size:var(--active-traits-name-font-size);font-weight:var(--active-traits-name-font-weight);font-style:var(--active-traits-name-font-style)}.statblock-plugin-parent .property-name{margin:0;margin-right:.25em;display:inline}.statblock-plugin-parent .statblock-nested-traits{margin-left:1rem}.property-name.trait-name p{font-style:var(--active-traits-name-font-style,italic)}`;
-
-// src/compiler/plugins/DatacoreCompiler.ts
-var import_js_logger2 = __toESM(require_logger());
-
-// src/ui/suggest/constants.ts
-var quartzSyncerIcon = `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" viewBox="0 0 100 100" version="1.1"><g id="surface1"><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 53.113281 52.53125 L 57.699219 54.550781 L 63.097656 68.074219 L 59.71875 81.945312 L 43.515625 81.671875 L 35.589844 78.5625 L 33.105469 68.734375 L 37.222656 63.136719 Z M 53.113281 52.53125 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 51.832031 49.734375 L 51.792969 28.945312 L 64.691406 30.773438 L 66.050781 18.417969 L 53.347656 7.265625 L 27.390625 23.933594 L 34.464844 51.597656 L 41.109375 57.269531 Z M 51.832031 49.734375 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 30.65625 45.847656 L 32.519531 53.152344 L 39.125 58.980469 L 35.242188 61.972656 L 30.773438 68.34375 L 33.066406 76.386719 L 19.894531 57.582031 L 24.4375 44.800781 Z M 30.65625 45.847656 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 54.511719 31.628906 L 66.710938 33.414062 L 68.074219 23.738281 L 76.117188 27.78125 L 80.3125 40.449219 L 70.171875 73.472656 L 63.992188 74.210938 L 65.78125 67.179688 L 59.71875 52.570312 L 54.550781 49.964844 Z M 54.511719 31.628906 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 63.761719 76.621094 L 70.871094 75.726562 L 77.515625 77.980469 L 75.921875 82.175781 L 69.589844 85.867188 L 61.855469 82.566406 Z M 63.761719 76.621094 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 60.691406 84.390625 L 67.800781 88.277344 L 66.597656 92.628906 L 61.777344 95.152344 L 54.863281 93.753906 Z M 60.691406 84.390625 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 44.800781 84.742188 L 57.777344 84.546875 L 52.375 93.210938 L 43.363281 94.609375 L 41.652344 93.25 Z M 44.800781 84.742188 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 35.628906 81.789062 L 42.699219 84.351562 L 39.398438 92.824219 L 32.871094 91.578125 Z M 35.628906 81.789062 "/><path style=" stroke:none;fill-rule:nonzero;fill:currentColor;fill-opacity:1;" d="M 31.742188 77.320312 L 34.191406 80.46875 L 32.367188 86.449219 L 29.023438 81.90625 Z M 31.742188 77.320312 "/></g></svg>`;
-var DATAVIEW_PLUGIN_ID = "dataview";
-var DATACORE_PLUGIN_ID = "datacore";
-var FANTASY_STATBLOCKS_PLUGIN_ID = "obsidian-5e-statblocks";
-
-// src/compiler/plugins/DatacoreCompiler.ts
+var import_obsidian5 = require("obsidian");
+var import_js_logger3 = __toESM(require_logger());
 var DatacoreCompiler = class {
   app;
   datacore;
@@ -19569,7 +19798,7 @@ var DatacoreCompiler = class {
         }
       } catch (error) {
         console.log(error);
-        new import_obsidian4.Notice(`Quartz Syncer: DatacoreJS query error: ${error}`);
+        new import_obsidian5.Notice(`Quartz Syncer: DatacoreJS query error: ${error}`);
         return queryBlock[0];
       }
     }
@@ -19598,7 +19827,7 @@ var DatacoreCompiler = class {
         }
       } catch (error) {
         console.log(error);
-        new import_obsidian4.Notice(`Quartz Syncer: DatacoreJSX query error: ${error}`);
+        new import_obsidian5.Notice(`Quartz Syncer: DatacoreJSX query error: ${error}`);
         return queryBlock[0];
       }
     }
@@ -19623,7 +19852,7 @@ var DatacoreCompiler = class {
         }
       } catch (error) {
         console.log(error);
-        new import_obsidian4.Notice(`Quartz Syncer: DatacoreTS query error: ${error}`);
+        new import_obsidian5.Notice(`Quartz Syncer: DatacoreTS query error: ${error}`);
         return queryBlock[0];
       }
     }
@@ -19652,7 +19881,7 @@ var DatacoreCompiler = class {
         }
       } catch (error) {
         console.log(error);
-        new import_obsidian4.Notice(`Quartz Syncer: DatacoreTSX query error: ${error}`);
+        new import_obsidian5.Notice(`Quartz Syncer: DatacoreTSX query error: ${error}`);
         return queryBlock[0];
       }
     }
@@ -19671,13 +19900,13 @@ function getDatacoreApi() {
 }
 async function tryExecuteJs2(query, file, dcApi) {
   const div = createEl("div");
-  const component = new import_obsidian4.Component();
+  const component = new import_obsidian5.Component();
   component.load();
   try {
     dcApi.executeJs(query, div, component, file.getPath());
   } catch (error) {
-    import_js_logger2.default.error(error);
-    new import_obsidian4.Notice(
+    import_js_logger3.default.error(error);
+    new import_obsidian5.Notice(
       `Quartz Syncer: DatacoreJS execution error: ${error}, trying JSX...`
     );
     return tryExecuteJsx(query, file, dcApi);
@@ -19690,13 +19919,13 @@ async function tryExecuteJs2(query, file, dcApi) {
 }
 async function tryExecuteJsx(query, file, dcApi) {
   const div = createEl("div");
-  const component = new import_obsidian4.Component();
+  const component = new import_obsidian5.Component();
   component.load();
   try {
     dcApi.executeJsx(query, div, component, file.getPath());
   } catch (error) {
-    import_js_logger2.default.error(error);
-    new import_obsidian4.Notice(`Quartz Syncer: DatacoreJSX execution error: ${error}`);
+    import_js_logger3.default.error(error);
+    new import_obsidian5.Notice(`Quartz Syncer: DatacoreJSX execution error: ${error}`);
     return div;
   }
   await renderPromise(
@@ -19707,13 +19936,13 @@ async function tryExecuteJsx(query, file, dcApi) {
 }
 async function tryExecuteTs(query, file, dcApi) {
   const div = createEl("div");
-  const component = new import_obsidian4.Component();
+  const component = new import_obsidian5.Component();
   component.load();
   try {
     dcApi.executeTs(query, div, component, file.getPath());
   } catch (error) {
-    import_js_logger2.default.error(error);
-    new import_obsidian4.Notice(
+    import_js_logger3.default.error(error);
+    new import_obsidian5.Notice(
       `Quartz Syncer: DatacoreTS execution error: ${error}, trying TSX...`
     );
     return tryExecuteTsx(query, file, dcApi);
@@ -19726,13 +19955,13 @@ async function tryExecuteTs(query, file, dcApi) {
 }
 async function tryExecuteTsx(query, file, dcApi) {
   const div = createEl("div");
-  const component = new import_obsidian4.Component();
+  const component = new import_obsidian5.Component();
   component.load();
   try {
     dcApi.executeTsx(query, div, component, file.getPath());
   } catch (error) {
-    import_js_logger2.default.error(error);
-    new import_obsidian4.Notice(`Quartz Syncer: DatacoreTSX execution error: ${error}`);
+    import_js_logger3.default.error(error);
+    new import_obsidian5.Notice(`Quartz Syncer: DatacoreTSX execution error: ${error}`);
     return div;
   }
   await renderPromise(
@@ -19750,8 +19979,8 @@ function flagInjects(html) {
 }
 
 // src/compiler/plugins/FantasyStatblocksCompiler.ts
-var import_obsidian5 = require("obsidian");
-var import_js_logger3 = __toESM(require_logger());
+var import_obsidian6 = require("obsidian");
+var import_js_logger4 = __toESM(require_logger());
 var FantasyStatblocksCompiler = class {
   app;
   fantasyStatblocksApi;
@@ -19813,7 +20042,7 @@ var FantasyStatblocksCompiler = class {
           );
         }
       } catch (error) {
-        import_js_logger3.default.error(error);
+        import_js_logger4.default.error(error);
       }
     }
     if (injectCSS) {
@@ -19833,7 +20062,7 @@ function getFantasyStatblocksApi() {
 }
 async function tryRenderStatblock(query, file, fantasyStatblocksApi) {
   const div = createEl("div");
-  const component = new import_obsidian5.Component();
+  const component = new import_obsidian6.Component();
   component.load();
   try {
     fantasyStatblocksApi.renderMarkdown(
@@ -19843,8 +20072,8 @@ async function tryRenderStatblock(query, file, fantasyStatblocksApi) {
       component
     );
   } catch (error) {
-    import_js_logger3.default.error(error);
-    new import_obsidian5.Notice(
+    import_js_logger4.default.error(error);
+    new import_obsidian6.Notice(
       `Quartz Syncer: Fantasy Statblocks execution error: ${error}.`
     );
     return div;
@@ -19863,6 +20092,10 @@ var PluginCompiler = class {
   }
   integrationTargets = () => {
     return [
+      {
+        compiler: AutoCardLinkCompiler,
+        enabled: this.settings.useAutoCardLink
+      },
       {
         compiler: DataviewCompiler,
         enabled: this.settings.useDataview
@@ -19967,11 +20200,11 @@ var SyncerPageCompiler = class {
    */
   applyVaultPath = () => (text2) => {
     const wikilinkRegex = new RegExp(
-      "\\[\\[" + this.settings.vaultPath + "(.*?)\\]\\]",
+      "\\[\\[" + escapeRegExp(this.settings.vaultPath) + "(.*?)\\]\\]",
       "g"
     );
     const markdownLinkRegex = new RegExp(
-      "\\[(.*?)\\]\\(" + this.settings.vaultPath + "(.*?)\\)",
+      "\\[(.*?)\\]\\(" + escapeRegExp(this.settings.vaultPath) + "(.*?)\\)",
       "g"
     );
     if (this.settings.vaultPath !== "/" && this.settings.vaultPath !== "") {
@@ -19979,7 +20212,7 @@ var SyncerPageCompiler = class {
         text2 = text2.replace(wikilinkRegex, "[[$1]]");
         text2 = text2.replace(markdownLinkRegex, "[$1]($2)");
       } catch (e) {
-        import_js_logger4.default.error(
+        import_js_logger5.default.error(
           `Error while applying vault path to text: ${text2}. Error: ${e}`
         );
       }
@@ -20087,7 +20320,7 @@ var SyncerPageCompiler = class {
             linkedFileName = headerSplit[0];
             headerPath = headerSplit.length > 1 ? `#${headerSplit[1]}` : "";
           }
-          const fullLinkedFilePath = (0, import_obsidian6.getLinkpath)(linkedFileName);
+          const fullLinkedFilePath = (0, import_obsidian7.getLinkpath)(linkedFileName);
           const linkedFile = this.metadataCache.getFirstLinkpathDest(
             fullLinkedFilePath,
             file.getPath()
@@ -20146,7 +20379,7 @@ var SyncerPageCompiler = class {
           0,
           transclusionFileNameInitial.length - 1
         ) : transclusionFileNameInitial;
-        const transclusionFilePath = (0, import_obsidian6.getLinkpath)(transclusionFileName);
+        const transclusionFilePath = (0, import_obsidian7.getLinkpath)(transclusionFileName);
         const linkedFile = this.metadataCache.getFirstLinkpathDest(
           transclusionFilePath,
           file.getPath()
@@ -20279,7 +20512,7 @@ var SyncerPageCompiler = class {
       for (const svg of transcludedSvgs) {
         try {
           const [blobName, size] = svg.substring(svg.indexOf("[") + 2, svg.indexOf("]")).split("|");
-          const blobPath = (0, import_obsidian6.getLinkpath)(blobName);
+          const blobPath = (0, import_obsidian7.getLinkpath)(blobName);
           const linkedFile = this.metadataCache.getFirstLinkpathDest(
             blobPath,
             file.getPath()
@@ -20357,7 +20590,7 @@ var SyncerPageCompiler = class {
             actualBlobName = actualBlobName.replace(/\.\.\//g, "");
           } while (actualBlobName !== previous);
           const actualBlobPath = actualBlobName;
-          const blobPath = (0, import_obsidian6.getLinkpath)(actualBlobPath);
+          const blobPath = (0, import_obsidian7.getLinkpath)(actualBlobPath);
           const linkedFile = this.metadataCache.getFirstLinkpathDest(
             blobPath,
             file.getPath()
@@ -20438,7 +20671,7 @@ var SyncerPageCompiler = class {
           if (lastValueIsMetaData) {
             metaData = `${lastValue}`;
           }
-          let blobPath = (0, import_obsidian6.getLinkpath)(blobName);
+          let blobPath = (0, import_obsidian7.getLinkpath)(blobName);
           const linkedFile = this.metadataCache.getFirstLinkpathDest(
             blobPath,
             filePath
@@ -20447,7 +20680,7 @@ var SyncerPageCompiler = class {
             continue;
           }
           const blob = await this.vault.readBinary(linkedFile);
-          const blobBase64 = (0, import_obsidian6.arrayBufferToBase64)(blob);
+          const blobBase64 = (0, import_obsidian7.arrayBufferToBase64)(blob);
           blobPath = this.metadataCache.fileToLinktext(
             linkedFile,
             this.settings.vaultPath
@@ -20503,7 +20736,7 @@ var SyncerPageCompiler = class {
             continue;
           }
           const blob = await this.vault.readBinary(linkedFile);
-          const blobBase64 = (0, import_obsidian6.arrayBufferToBase64)(blob);
+          const blobBase64 = (0, import_obsidian7.arrayBufferToBase64)(blob);
           blobPath = this.metadataCache.fileToLinktext(
             linkedFile,
             this.settings.vaultPath
@@ -20523,6 +20756,7 @@ var SyncerPageCompiler = class {
         }
       }
     }
+    blobText = await this.applyVaultPath(file)(blobText);
     return [blobText, assets];
   };
 };
@@ -21379,10 +21613,10 @@ var Octokit = class {
 };
 
 // src/repositoryConnection/RepositoryConnection.ts
-var import_obsidian7 = require("obsidian");
-var import_js_logger5 = __toESM(require_logger());
-var logger = import_js_logger5.default.get("repository-connection");
-var oktokitLogger = import_js_logger5.default.get("octokit");
+var import_obsidian8 = require("obsidian");
+var import_js_logger6 = __toESM(require_logger());
+var logger = import_js_logger6.default.get("repository-connection");
+var oktokitLogger = import_js_logger6.default.get("octokit");
 var RepositoryConnection = class {
   githubUserName;
   quartzRepository;
@@ -21442,7 +21676,7 @@ var RepositoryConnection = class {
    * @returns The vault path.
    */
   getVaultPath(path) {
-    path = (0, import_obsidian7.normalizePath)(path);
+    path = (0, import_obsidian8.normalizePath)(path);
     const vaultPath = path.startsWith(this.vaultPath) ? path.replace(this.vaultPath, "") : path;
     return vaultPath.startsWith("/") ? vaultPath.slice(1) : vaultPath;
   }
@@ -21455,7 +21689,7 @@ var RepositoryConnection = class {
    * @returns The repository path.
    */
   setRepositoryPath(path) {
-    path = (0, import_obsidian7.normalizePath)(path);
+    path = (0, import_obsidian8.normalizePath)(path);
     const repositoryPath = path.startsWith(this.contentFolder) ? path : `${this.contentFolder}/${path}`;
     return repositoryPath.startsWith("/") ? repositoryPath.slice(1) : repositoryPath;
   }
@@ -21789,7 +22023,7 @@ var RepositoryConnection = class {
 };
 
 // src/publisher/Publisher.ts
-var import_js_logger6 = __toESM(require_logger());
+var import_js_logger7 = __toESM(require_logger());
 var Publisher = class {
   app;
   plugin;
@@ -21862,7 +22096,7 @@ var Publisher = class {
           blobs.forEach((i) => blobsToPublish.add(i));
         }
       } catch (e) {
-        import_js_logger6.default.error(e);
+        import_js_logger7.default.error(e);
       }
     }
     return {
@@ -21947,7 +22181,7 @@ var Publisher = class {
 };
 
 // src/views/PublicationCenter/PublicationCenter.ts
-var import_obsidian10 = require("obsidian");
+var import_obsidian11 = require("obsidian");
 
 // node_modules/svelte/src/runtime/internal/utils.js
 function noop2() {
@@ -22719,13 +22953,13 @@ if (typeof window !== "undefined")
   (window.__svelte || (window.__svelte = { v: /* @__PURE__ */ new Set() })).v.add(PUBLIC_VERSION);
 
 // src/views/PublicationCenter/PublicationCenter.svelte
-var import_obsidian9 = require("obsidian");
+var import_obsidian10 = require("obsidian");
 
 // src/ui/Icon.svelte
-var import_obsidian8 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 function create_fragment(ctx) {
   let html_tag;
-  let raw_value = (0, import_obsidian8.getIcon)(
+  let raw_value = (0, import_obsidian9.getIcon)(
     /*name*/
     ctx[0]
   )?.outerHTML + "";
@@ -22742,7 +22976,7 @@ function create_fragment(ctx) {
     },
     p(ctx2, [dirty]) {
       if (dirty & /*name*/
-      1 && raw_value !== (raw_value = (0, import_obsidian8.getIcon)(
+      1 && raw_value !== (raw_value = (0, import_obsidian9.getIcon)(
         /*name*/
         ctx2[0]
       )?.outerHTML + "")) html_tag.p(raw_value);
@@ -24998,7 +25232,7 @@ function instance4($$self, $$props, $$invalidate) {
     return root;
   }
   function loadingProgressBar(node) {
-    const progressBar = new import_obsidian9.ProgressBarComponent(node);
+    const progressBar = new import_obsidian10.ProgressBarComponent(node);
     controller = {
       setProgress: (percentage) => {
         progressBar.setValue(percentage);
@@ -25016,7 +25250,7 @@ function instance4($$self, $$props, $$invalidate) {
     };
   }
   function publishProgressBarAction(node) {
-    const progressBar = new import_obsidian9.ProgressBarComponent(node);
+    const progressBar = new import_obsidian10.ProgressBarComponent(node);
     $$invalidate(23, publishController = {
       setProgress: (progress) => {
         progressBar.setValue(progress);
@@ -25032,7 +25266,7 @@ function instance4($$self, $$props, $$invalidate) {
     };
   }
   const rotatingCog = () => {
-    let cog = (0, import_obsidian9.getIcon)("cog");
+    let cog = (0, import_obsidian10.getIcon)("cog");
     cog?.classList.add("quartz-syncer-rotate", "quartz-syncer-cog");
     return cog;
   };
@@ -25806,7 +26040,7 @@ var PublicationCenter2 = class {
   vault;
   publicationCenterUi;
   constructor(app2, publishStatusManager, publisher, siteManager, settings) {
-    this.modal = new import_obsidian10.Modal(app2);
+    this.modal = new import_obsidian11.Modal(app2);
     this.settings = settings;
     this.publishStatusManager = publishStatusManager;
     this.publisher = publisher;
@@ -25824,7 +26058,7 @@ var PublicationCenter2 = class {
    * @returns A Node representing the icon.
    */
   getIcon(name) {
-    const icon = (0, import_obsidian10.getIcon)(name) ?? document.createElement("span");
+    const icon = (0, import_obsidian11.getIcon)(name) ?? document.createElement("span");
     if (icon instanceof SVGSVGElement) {
       icon.addClass("quartz-syncer-svg-icon");
     }
@@ -25859,7 +26093,7 @@ var PublicationCenter2 = class {
         localFile = localContent ? localContent[0] : void 0;
       } else {
         localContent = this.vault.getFileByPath(localNotePath);
-        if (!(localContent instanceof import_obsidian10.TFile)) {
+        if (!(localContent instanceof import_obsidian11.TFile)) {
           localFile = "";
         } else {
           localContent = await this.publisher.compiler.generateMarkdown(
@@ -25883,7 +26117,7 @@ var PublicationCenter2 = class {
       if (remoteFile && localFile) {
         const diff2 = diffLines(remoteFile, localFile);
         let diffView;
-        const diffModal = new import_obsidian10.Modal(this.modal.app);
+        const diffModal = new import_obsidian11.Modal(this.modal.app);
         const title = notePath.split("/").pop() || "Diff";
         diffModal.titleEl.createEl("span", {
           text: `${title}`
@@ -26433,23 +26667,23 @@ var QuartzSyncerSiteManager = class {
 };
 
 // src/views/QuartzSyncerSettingTab.ts
-var import_obsidian19 = require("obsidian");
+var import_obsidian20 = require("obsidian");
 
 // src/views/SettingsView/SettingView.ts
-var import_obsidian18 = require("obsidian");
+var import_obsidian19 = require("obsidian");
 
 // src/views/SettingsView/Views/GithubSettings.ts
-var import_obsidian12 = require("obsidian");
+var import_obsidian13 = require("obsidian");
 
 // src/ui/suggest/folder.ts
-var import_obsidian11 = require("obsidian");
-var FolderSuggest = class extends import_obsidian11.AbstractInputSuggest {
+var import_obsidian12 = require("obsidian");
+var FolderSuggest = class extends import_obsidian12.AbstractInputSuggest {
   folders;
   inputEl;
   constructor(app2, inputEl) {
     super(app2, inputEl);
     this.inputEl = inputEl;
-    this.folders = this.app.vault.getAllFolders(true).map((folder) => (0, import_obsidian11.normalizePath)(folder.path));
+    this.folders = this.app.vault.getAllFolders(true).map((folder) => (0, import_obsidian12.normalizePath)(folder.path));
   }
   /**
    * Returns the suggestions to display based on the user's input.
@@ -26486,7 +26720,7 @@ var FolderSuggest = class extends import_obsidian11.AbstractInputSuggest {
 };
 
 // src/views/SettingsView/Views/GithubSettings.ts
-var GithubSettings = class extends import_obsidian12.PluginSettingTab {
+var GithubSettings = class extends import_obsidian13.PluginSettingTab {
   app;
   plugin;
   settings;
@@ -26535,7 +26769,7 @@ var GithubSettings = class extends import_obsidian12.PluginSettingTab {
       "quartz-syncer-connection-status",
       "quartz-syncer-connection-status-pending"
     );
-    new import_obsidian12.Setting(this.settingsRootElement).setName("GitHub").setDesc(
+    new import_obsidian13.Setting(this.settingsRootElement).setName("GitHub").setDesc(
       "Quartz Syncer will use this GitHub repository to sync your notes."
     ).setHeading().nameEl.append(connectionStatusElement);
   };
@@ -26571,7 +26805,7 @@ var GithubSettings = class extends import_obsidian12.PluginSettingTab {
     }
     this.updateConnectionStatusIndicator();
   };
-  debouncedUpdateConnectionStatus = (0, import_obsidian12.debounce)(
+  debouncedUpdateConnectionStatus = (0, import_obsidian13.debounce)(
     this.updateConnectionStatus,
     500,
     true
@@ -26622,12 +26856,12 @@ var GithubSettings = class extends import_obsidian12.PluginSettingTab {
    */
   initializeGitHubVaultFolder() {
     const app2 = this.settings.app;
-    new import_obsidian12.Setting(this.settingsRootElement).setName("Vault root folder name").setDesc(
+    new import_obsidian13.Setting(this.settingsRootElement).setName("Vault root folder name").setDesc(
       'The folder in your Obsidian vault that Quartz Syncer should consider as your Quartz website root folder. Useful for Obsidian vaults that are not exclusively used for Quartz. By default "/" (the root of your Obsidian vault).'
     ).addSearch((text2) => {
       new FolderSuggest(app2, text2.inputEl);
       text2.setPlaceholder("/").setValue(this.settings.settings.vaultPath).onChange(async (value) => {
-        value = (0, import_obsidian12.normalizePath)(value.trim());
+        value = (0, import_obsidian13.normalizePath)(value.trim());
         if (value === "/") {
           value = "";
         }
@@ -26641,7 +26875,7 @@ var GithubSettings = class extends import_obsidian12.PluginSettingTab {
    * This method allows the user to specify the name of their Quartz repository on GitHub.
    */
   initializeGitHubRepoSetting() {
-    new import_obsidian12.Setting(this.settingsRootElement).setName("Repository name").setDesc("The name of your Quartz repository on GitHub.").addText(
+    new import_obsidian13.Setting(this.settingsRootElement).setName("Repository name").setDesc("The name of your Quartz repository on GitHub.").addText(
       (text2) => text2.setPlaceholder("quartz").setValue(this.settings.settings.githubRepo).onChange(async (value) => {
         if (value.length === 0) {
           value = "quartz";
@@ -26656,7 +26890,7 @@ var GithubSettings = class extends import_obsidian12.PluginSettingTab {
    * This method allows the user to specify their GitHub username that owns the Quartz repository.
    */
   initializeGitHubUserNameSetting() {
-    new import_obsidian12.Setting(this.settingsRootElement).setName("Username").setDesc("The username on GitHub that owns the Quartz repository.").addText(
+    new import_obsidian13.Setting(this.settingsRootElement).setName("Username").setDesc("The username on GitHub that owns the Quartz repository.").addText(
       (text2) => text2.setPlaceholder("username").setValue(this.settings.settings.githubUserName).onChange(async (value) => {
         this.settings.settings.githubUserName = value;
         await this.checkConnectionAndSaveSettings();
@@ -26676,7 +26910,7 @@ var GithubSettings = class extends import_obsidian12.PluginSettingTab {
         link.innerText = "the documentation.";
       });
     });
-    new import_obsidian12.Setting(this.settingsRootElement).setName("Access token").setDesc(desc).addText(
+    new import_obsidian13.Setting(this.settingsRootElement).setName("Access token").setDesc(desc).addText(
       (text2) => text2.setPlaceholder("Secret Token").setValue(this.settings.settings.githubToken).onChange(async (value) => {
         this.settings.settings.githubToken = value;
         await this.checkConnectionAndSaveSettings();
@@ -26686,8 +26920,8 @@ var GithubSettings = class extends import_obsidian12.PluginSettingTab {
 };
 
 // src/views/SettingsView/Views/QuartzSettings.ts
-var import_obsidian13 = require("obsidian");
-var QuartzSettings = class extends import_obsidian13.PluginSettingTab {
+var import_obsidian14 = require("obsidian");
+var QuartzSettings = class extends import_obsidian14.PluginSettingTab {
   app;
   plugin;
   settings;
@@ -26718,7 +26952,7 @@ var QuartzSettings = class extends import_obsidian13.PluginSettingTab {
    * This method creates a header for the Quartz settings section.
    */
   initializeQuartzHeader = () => {
-    new import_obsidian13.Setting(this.settingsRootElement).setName("Quartz").setDesc(
+    new import_obsidian14.Setting(this.settingsRootElement).setName("Quartz").setDesc(
       "Quartz Syncer will apply these settings to your Quartz notes."
     ).setHeading();
   };
@@ -26727,7 +26961,7 @@ var QuartzSettings = class extends import_obsidian13.PluginSettingTab {
    * This method creates a toggle setting that allows users to choose whether to use full resolution images.
    */
   initializeUseFullImageResolutionSetting() {
-    new import_obsidian13.Setting(this.settingsRootElement).setName("Use full image resolution").setDesc(
+    new import_obsidian14.Setting(this.settingsRootElement).setName("Use full image resolution").setDesc(
       "By default, Quartz Syncer will use lower resolution images to save space. If you want to use the full resolution blob, enable this setting."
     ).addToggle(
       (toggle) => toggle.setValue(this.settings.settings.useFullResolutionImages).onChange(async (value) => {
@@ -26741,7 +26975,7 @@ var QuartzSettings = class extends import_obsidian13.PluginSettingTab {
    * This method creates a toggle setting that allows users to choose whether to apply embeds directly to their notes.
    */
   initializeApplyEmbedsSetting() {
-    new import_obsidian13.Setting(this.settingsRootElement).setName("Apply embeds").setDesc(
+    new import_obsidian14.Setting(this.settingsRootElement).setName("Apply embeds").setDesc(
       "By default, Quartz Syncer will apply embeds directly to your notes. If you want to let Quartz handle embeds, disable this setting."
     ).addToggle(
       (toggle) => toggle.setValue(this.settings.settings.applyEmbeds).onChange(async (value) => {
@@ -26755,11 +26989,11 @@ var QuartzSettings = class extends import_obsidian13.PluginSettingTab {
    * This method creates a text input for the content folder where Quartz Syncer should store notes.
    */
   initializeQuartzContentFolder() {
-    new import_obsidian13.Setting(this.settingsRootElement).setName("Content folder").setDesc(
+    new import_obsidian14.Setting(this.settingsRootElement).setName("Content folder").setDesc(
       'The folder in your Quartz repository where Quartz Syncer should store your notes. By default "content"'
     ).addText(
       (text2) => text2.setPlaceholder("content").setValue(this.settings.settings.contentFolder).onChange(async (value) => {
-        this.settings.settings.contentFolder = (0, import_obsidian13.normalizePath)(value);
+        this.settings.settings.contentFolder = (0, import_obsidian14.normalizePath)(value);
         await this.settings.plugin.saveSettings();
       })
     );
@@ -26767,8 +27001,8 @@ var QuartzSettings = class extends import_obsidian13.PluginSettingTab {
 };
 
 // src/views/SettingsView/Views/FrontmatterSettings.ts
-var import_obsidian14 = require("obsidian");
-var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
+var import_obsidian15 = require("obsidian");
+var FrontmatterSettings = class extends import_obsidian15.PluginSettingTab {
   app;
   plugin;
   settings;
@@ -26825,7 +27059,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    * This method creates a heading for the frontmatter settings in the UI.
    */
   initializeFrontmatterHeader = () => {
-    new import_obsidian14.Setting(this.settingsRootElement).setName("Note properties (frontmatter)").setDesc(
+    new import_obsidian15.Setting(this.settingsRootElement).setName("Note properties (frontmatter)").setDesc(
       "Quartz Syncer will apply these settings to your Quartz notes' properties or frontmatter."
     ).setHeading();
   };
@@ -26835,7 +27069,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    */
   initializePublishFrontmatterKeySetting() {
     if (!this.settings.settings.allNotesPublishableByDefault) {
-      new import_obsidian14.Setting(this.settingsRootElement).setName("Publish key").setDesc(
+      new import_obsidian15.Setting(this.settingsRootElement).setName("Publish key").setDesc(
         'Note property key used to mark a note as eligible to publish. Quartz Syncer will ignore all notes without this property. By default "publish".'
       ).addText(
         (text2) => text2.setPlaceholder("publish").setValue(this.settings.settings.publishFrontmatterKey).onChange(async (value) => {
@@ -26853,7 +27087,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    * This method allows users to override the publish key setting and make all notes eligible for publication.
    */
   initializeAllNotesPublishableByDefaultSetting() {
-    new import_obsidian14.Setting(this.settingsRootElement).setName("All notes publishable by default").setDesc(
+    new import_obsidian15.Setting(this.settingsRootElement).setName("All notes publishable by default").setDesc(
       "Make all notes publishable by default. This will override the publish key setting and make all notes eligible for publication."
     ).addToggle(
       (toggle) => toggle.setValue(
@@ -26871,7 +27105,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    * overriding other property settings.
    */
   initializeIncludeAllFrontmatterSetting() {
-    new import_obsidian14.Setting(this.settingsRootElement).setName("Include all properties").setDesc(
+    new import_obsidian15.Setting(this.settingsRootElement).setName("Include all properties").setDesc(
       "Include all note properties in the Quartz Syncer note. Enabling this will overrides other property settings to include all properties keys and values. Even note properties that are not used by Quartz will be included in the note's frontmatter. You shouldn't need this setting unless you have Quartz components that require non-standard properties."
     ).addToggle(
       (toggle) => toggle.setValue(this.settings.settings.includeAllFrontmatter).onChange(async (value) => {
@@ -26887,7 +27121,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    */
   initializeShowCreatedTimestampSetting() {
     if (!this.settings.settings.includeAllFrontmatter) {
-      new import_obsidian14.Setting(this.settingsRootElement).setName("Include created timestamp").setDesc(
+      new import_obsidian15.Setting(this.settingsRootElement).setName("Include created timestamp").setDesc(
         "Include the created timestamp in your note's properties."
       ).addToggle(
         (toggle) => toggle.setValue(this.settings.settings.showCreatedTimestamp).setDisabled(
@@ -26906,7 +27140,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    */
   initializeCreatedTimestampKeysSetting() {
     if (!this.settings.settings.includeAllFrontmatter && this.settings.settings.showCreatedTimestamp) {
-      new import_obsidian14.Setting(this.settingsRootElement).setName("Created timestamp keys").setDesc(
+      new import_obsidian15.Setting(this.settingsRootElement).setName("Created timestamp keys").setDesc(
         "Comma-separated list of keys to look for to determine the created timestamp. By default, Quartz Syncer will look for 'created', 'created_at', and 'date'."
       ).addText(
         (text2) => text2.setPlaceholder("created, created_at, date").setValue(this.settings.settings.createdTimestampKey).setDisabled(
@@ -26927,7 +27161,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    */
   initializeShowUpdatedTimestampSetting() {
     if (!this.settings.settings.includeAllFrontmatter) {
-      new import_obsidian14.Setting(this.settingsRootElement).setName("Include modified timestamp").setDesc(
+      new import_obsidian15.Setting(this.settingsRootElement).setName("Include modified timestamp").setDesc(
         "Include the modified timestamp in your note's properties."
       ).addToggle(
         (toggle) => toggle.setValue(this.settings.settings.showUpdatedTimestamp).setDisabled(
@@ -26946,7 +27180,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    */
   initializeUpdatedTimestampKeysSetting() {
     if (!this.settings.settings.includeAllFrontmatter && this.settings.settings.showUpdatedTimestamp) {
-      new import_obsidian14.Setting(this.settingsRootElement).setName("Modified timestamp keys").setDesc(
+      new import_obsidian15.Setting(this.settingsRootElement).setName("Modified timestamp keys").setDesc(
         "Comma-separated list of keys to look for to determine the modified timestamp. By default, Quartz Syncer will look for 'modified', 'lastmod', 'updated', and 'last-modified'."
       ).addText(
         (text2) => text2.setPlaceholder(
@@ -26969,7 +27203,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    */
   initializeShowPublishedTimestampSetting() {
     if (!this.settings.settings.includeAllFrontmatter) {
-      new import_obsidian14.Setting(this.settingsRootElement).setName("Include published timestamp").setDesc(
+      new import_obsidian15.Setting(this.settingsRootElement).setName("Include published timestamp").setDesc(
         "Include the published timestamp in your note's properties."
       ).addToggle(
         (toggle) => toggle.setValue(this.settings.settings.showPublishedTimestamp).setDisabled(
@@ -26988,7 +27222,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    */
   initializePublishedTimestampKeysSetting() {
     if (!this.settings.settings.includeAllFrontmatter && this.settings.settings.showPublishedTimestamp) {
-      new import_obsidian14.Setting(this.settingsRootElement).setName("Published timestamp keys").setDesc(
+      new import_obsidian15.Setting(this.settingsRootElement).setName("Published timestamp keys").setDesc(
         "Comma-separated list of keys to look for to determine the published timestamp. By default, Quartz Syncer will look for 'published', 'publishDate', and 'date'."
       ).addText(
         (text2) => text2.setPlaceholder("published, publishDate, date").setValue(this.settings.settings.publishedTimestampKey).setDisabled(
@@ -27009,7 +27243,7 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
    * even if "permalink" is not in the frontmatter.
    */
   initializeEnablePermalinkSetting() {
-    new import_obsidian14.Setting(this.settingsRootElement).setName("Enable permalinks").setDesc(
+    new import_obsidian15.Setting(this.settingsRootElement).setName("Enable permalinks").setDesc(
       `Use the note's permalink as the Quartz note's URL if "permalink" is not in the frontmatter. This will override the default Quartz URL.`
     ).addToggle(
       (toggle) => toggle.setValue(this.settings.settings.usePermalink).setDisabled(this.settings.settings.includeAllFrontmatter).onChange(async (value) => {
@@ -27021,8 +27255,8 @@ var FrontmatterSettings = class extends import_obsidian14.PluginSettingTab {
 };
 
 // src/views/SettingsView/Views/IntegrationSettings.ts
-var import_obsidian15 = require("obsidian");
-var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
+var import_obsidian16 = require("obsidian");
+var IntegrationSettings = class extends import_obsidian16.PluginSettingTab {
   app;
   plugin;
   settings;
@@ -27042,6 +27276,7 @@ var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
     this.settingsRootElement.empty();
     this.settingsRootElement.addClass("quartz-syncer-github-settings");
     this.initializePluginIntegrationHeader();
+    this.initializeAutoCardLinkSetting();
     this.initializeDataviewSetting();
     this.initializeDatacoreSetting();
     this.initializeExcalidrawSetting();
@@ -27054,10 +27289,30 @@ var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
    * This method creates a header for the plugin integration section in the settings.
    */
   initializePluginIntegrationHeader = () => {
-    new import_obsidian15.Setting(this.settingsRootElement).setName("Plugin integration").setDesc(
+    new import_obsidian16.Setting(this.settingsRootElement).setName("Plugin integration").setDesc(
       "Quartz Syncer will use these Obsidian plugins with your Quartz notes."
     ).setHeading();
   };
+  /**
+   * Initializes the Auto Card Link setting.
+   * This method creates a toggle for enabling/disabling Auto Card Link integration.
+   * It checks if the Auto Card Link plugin is enabled and updates the settings accordingly.
+   */
+  initializeAutoCardLinkSetting() {
+    const autoCardLinkEnabled = isPluginEnabled(AUTO_CARD_LINK_PLUGIN_ID);
+    new import_obsidian16.Setting(this.settingsRootElement).setName("Enable Auto Card Link integration").setDesc(
+      "Converts Auto Card Link queries into Quartz-compatible markdown."
+    ).addToggle(
+      (toggle) => toggle.setValue(
+        this.settings.settings.useAutoCardLink && autoCardLinkEnabled
+      ).setDisabled(!autoCardLinkEnabled).onChange(async (value) => {
+        this.settings.settings.useAutoCardLink = value && autoCardLinkEnabled;
+        await this.settings.plugin.saveSettings();
+      })
+    ).setClass(
+      `${autoCardLinkEnabled ? "quartz-syncer-settings-enabled" : "quartz-syncer-settings-disabled"}`
+    );
+  }
   /**
    * Initializes the Datacore setting.
    * This method creates a toggle for enabling/disabling Datacore integration.
@@ -27065,7 +27320,7 @@ var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
    */
   initializeDatacoreSetting() {
     const datacoreEnabled = isPluginEnabled(DATACORE_PLUGIN_ID);
-    new import_obsidian15.Setting(this.settingsRootElement).setName("Enable Datacore integration").setDesc(
+    new import_obsidian16.Setting(this.settingsRootElement).setName("Enable Datacore integration").setDesc(
       "Converts Datacore queries into Quartz-compatible markdown. Currently, this is an experimental feature and may not work as expected."
     ).addToggle(
       (toggle) => toggle.setValue(
@@ -27085,7 +27340,7 @@ var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
    */
   initializeDataviewSetting() {
     const dataviewEnabled = isPluginEnabled(DATAVIEW_PLUGIN_ID);
-    new import_obsidian15.Setting(this.settingsRootElement).setName("Enable Dataview integration").setDesc(
+    new import_obsidian16.Setting(this.settingsRootElement).setName("Enable Dataview integration").setDesc(
       "Converts Dataview queries into Quartz-compatible markdown."
     ).addToggle(
       (toggle) => toggle.setValue(
@@ -27104,7 +27359,7 @@ var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
    * It currently disables the toggle as Excalidraw integration is not yet implemented.
    */
   initializeExcalidrawSetting() {
-    new import_obsidian15.Setting(this.settingsRootElement).setName("Enable Excalidraw integration").setDesc(
+    new import_obsidian16.Setting(this.settingsRootElement).setName("Enable Excalidraw integration").setDesc(
       "Converts Excalidraw drawings into Quartz-compatible format."
     ).addToggle(
       (toggle) => toggle.setValue(this.settings.settings.useExcalidraw).setValue(false).setDisabled(true).onChange(async (value) => {
@@ -27122,7 +27377,7 @@ var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
     const fantasyStatblocksEnabled = isPluginEnabled(
       FANTASY_STATBLOCKS_PLUGIN_ID
     );
-    new import_obsidian15.Setting(this.settingsRootElement).setName("Enable Fantasy Statblocks integration").setDesc(
+    new import_obsidian16.Setting(this.settingsRootElement).setName("Enable Fantasy Statblocks integration").setDesc(
       "Converts Fantasy Statblocks queries into Quartz-compatible format."
     ).addToggle(
       (toggle) => toggle.setValue(
@@ -27138,8 +27393,8 @@ var IntegrationSettings = class extends import_obsidian15.PluginSettingTab {
 };
 
 // src/views/SettingsView/Views/PerformanceSettings.ts
-var import_obsidian16 = require("obsidian");
-var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
+var import_obsidian17 = require("obsidian");
+var PerformanceSettings = class extends import_obsidian17.PluginSettingTab {
   app;
   plugin;
   settings;
@@ -27172,7 +27427,7 @@ var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
    * This method creates a header for the performance settings section.
    */
   initializePerformanceHeader = () => {
-    new import_obsidian16.Setting(this.settingsRootElement).setName("Performance").setDesc(
+    new import_obsidian17.Setting(this.settingsRootElement).setName("Performance").setDesc(
       "Quartz Syncer will use these settings to improve performance."
     ).setHeading();
   };
@@ -27181,7 +27436,7 @@ var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
    * This method creates a toggle for enabling or disabling the Quartz Syncer cache.
    */
   initializeEnableCacheSetting = () => {
-    new import_obsidian16.Setting(this.settingsRootElement).setName("Enable caching").setDesc(
+    new import_obsidian17.Setting(this.settingsRootElement).setName("Enable caching").setDesc(
       "Enable or disable the Quartz Syncer cache. This can improve performance by storing compiled files and reducing the number of requests made to the GitHub API."
     ).addToggle(
       (toggle) => toggle.setValue(this.settings.settings.useCache).onChange((value) => {
@@ -27189,7 +27444,7 @@ var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
         this.settings.plugin.saveSettings();
         if (!value) {
           this.plugin.datastore.persister.clear();
-          new import_obsidian16.Notice(
+          new import_obsidian17.Notice(
             "Quartz Syncer: Cache disabled. All cached data will be cleared."
           );
         }
@@ -27204,7 +27459,7 @@ var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
    */
   initializeSyncCacheSetting = () => {
     if (this.settings.settings.useCache) {
-      new import_obsidian16.Setting(this.settingsRootElement).setName("Synchronize cache between devices").setDesc(
+      new import_obsidian17.Setting(this.settingsRootElement).setName("Synchronize cache between devices").setDesc(
         "Whether to write the cache to `data.json`. This is useful for syncing the cache across devices. It is recommended to enable this setting if you are using Quartz Syncer on multiple devices."
       ).addToggle(
         (toggle) => toggle.setValue(this.settings.settings.syncCache).onChange((value) => {
@@ -27224,7 +27479,7 @@ var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
    */
   initializePersistCacheSetting = () => {
     if (this.settings.settings.useCache) {
-      new import_obsidian16.Setting(this.settingsRootElement).setName("Persist cache after unload").setDesc(
+      new import_obsidian17.Setting(this.settingsRootElement).setName("Persist cache after unload").setDesc(
         "Whether to persist the cache when the plugin is unloaded. This is useful for users that start Obsidian with the plugin disabled."
       ).addToggle(
         (toggle) => toggle.setValue(this.settings.settings.persistCache).onChange((value) => {
@@ -27241,14 +27496,14 @@ var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
    */
   initializeClearCacheSetting = () => {
     if (this.settings.settings.useCache) {
-      new import_obsidian16.Setting(this.settingsRootElement).setName("Clear cache").setDesc(
+      new import_obsidian17.Setting(this.settingsRootElement).setName("Clear cache").setDesc(
         "Clear the Quartz Syncer cache. This will remove all cached files and force a re-fetch of all data from the GitHub repository."
       ).addButton(
         (button) => button.setButtonText("Clear cache").setCta().onClick(async () => {
           await this.plugin.datastore.dropAllFiles();
           this.settings.settings.cache = "{}";
           this.settings.plugin.saveSettings();
-          new import_obsidian16.Notice("Quartz Syncer: cache cleared.");
+          new import_obsidian17.Notice("Quartz Syncer: cache cleared.");
         })
       );
     }
@@ -27256,8 +27511,8 @@ var PerformanceSettings = class extends import_obsidian16.PluginSettingTab {
 };
 
 // src/views/SettingsView/Views/ThemesSettings.ts
-var import_obsidian17 = require("obsidian");
-var ThemesSettings = class extends import_obsidian17.PluginSettingTab {
+var import_obsidian18 = require("obsidian");
+var ThemesSettings = class extends import_obsidian18.PluginSettingTab {
   app;
   plugin;
   settings;
@@ -27287,7 +27542,7 @@ var ThemesSettings = class extends import_obsidian17.PluginSettingTab {
    * This method is called when the settings tab is unloaded.
    */
   initializeThemesHeader = () => {
-    new import_obsidian17.Setting(this.settingsRootElement).setName("Themes").setDesc(
+    new import_obsidian18.Setting(this.settingsRootElement).setName("Themes").setDesc(
       "Quartz Themes is a project that aims to regularly convert Obsidian themes to a Quartz-compatible format. Quartz Syncer will install the chosen theme in Quartz from the Quartz Themes repository."
     ).setHeading();
   };
@@ -27296,7 +27551,7 @@ var ThemesSettings = class extends import_obsidian17.PluginSettingTab {
    * This method creates a toggle for enabling or disabling the use of themes in Quartz.
    */
   initializeThemeSetting = () => {
-    new import_obsidian17.Setting(this.settingsRootElement).setName("Theme").setDesc("Select the theme for your Quartz site.").addToggle(
+    new import_obsidian18.Setting(this.settingsRootElement).setName("Theme").setDesc("Select the theme for your Quartz site.").addToggle(
       (toggle) => toggle.setValue(this.settings.settings.useThemes).setValue(false).setDisabled(true).onChange((value) => {
         this.settings.settings.useThemes = value;
         this.settings.plugin.saveSettings();
@@ -27317,9 +27572,9 @@ var SettingView = class {
     this.plugin = plugin;
     this.settingsRootElement = settingsRootElement;
     this.settingsRootElement.classList.add("quartz-syncer-settings");
-    if (import_obsidian18.Platform.isDesktop)
+    if (import_obsidian19.Platform.isDesktop)
       this.settingsRootElement.classList.add("quartz-syncer-desktop");
-    else if (import_obsidian18.Platform.isMobile)
+    else if (import_obsidian19.Platform.isMobile)
       this.settingsRootElement.classList.add("quartz-syncer-mobile");
     this.settings = settings;
     this.datastore = datastore;
@@ -27332,7 +27587,7 @@ var SettingView = class {
    * @returns A Node representing the icon.
    */
   getIcon(name) {
-    return (0, import_obsidian18.getIcon)(name) ?? document.createElement("span");
+    return (0, import_obsidian19.getIcon)(name) ?? document.createElement("span");
   }
   /**
    * Initializes the settings view.
@@ -27529,7 +27784,7 @@ var SettingView = class {
 };
 
 // src/views/QuartzSyncerSettingTab.ts
-var QuartzSyncerSettingTab = class extends import_obsidian19.PluginSettingTab {
+var QuartzSyncerSettingTab = class extends import_obsidian20.PluginSettingTab {
   app;
   plugin;
   constructor(app2, plugin) {
@@ -27941,7 +28196,7 @@ var DataStore = class {
 };
 
 // main.ts
-var import_js_logger7 = __toESM(require_logger());
+var import_js_logger8 = __toESM(require_logger());
 var DEFAULT_SETTINGS = {
   /** GitHub settings */
   githubRepo: "quartz",
@@ -27979,6 +28234,13 @@ var DEFAULT_SETTINGS = {
   cacheTimestamp: 0,
   cache: "{}",
   /** Integration settings */
+  /**
+   * Enable Auto Card Link integration.
+   * This will allow the plugin to use Auto Card Link queries in the published notes.
+   *
+   * Auto Card Link documentation: {@link https://github.com/nekoshita/obsidian-auto-card-link}
+   */
+  useAutoCardLink: false,
   /**
    * Enable Dataview integration.
    * This will allow the plugin to use Dataview queries in the published notes.
@@ -28022,14 +28284,14 @@ var DEFAULT_SETTINGS = {
   /** Developer settings */
   logLevel: void 0
 };
-import_js_logger7.default.useDefaults({
-  defaultLevel: import_js_logger7.default.WARN,
+import_js_logger8.default.useDefaults({
+  defaultLevel: import_js_logger8.default.WARN,
   formatter: function(messages, _context) {
     messages.unshift((/* @__PURE__ */ new Date()).toUTCString());
     messages.unshift("QS: ");
   }
 });
-var QuartzSyncer = class extends import_obsidian21.Plugin {
+var QuartzSyncer = class extends import_obsidian22.Plugin {
   settings;
   appVersion;
   datastore;
@@ -28041,12 +28303,12 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
   async onload() {
     this.appVersion = this.manifest.version;
     await this.loadSettings();
-    if (this.settings.logLevel) import_js_logger7.default.setLevel(this.settings.logLevel);
-    import_js_logger7.default.info("Initializing QuartzSyncer plugin v" + this.appVersion);
-    import_js_logger7.default.info("Quartz Syncer log level set to " + import_js_logger7.default.getLevel().name);
+    if (this.settings.logLevel) import_js_logger8.default.setLevel(this.settings.logLevel);
+    import_js_logger8.default.info("Initializing QuartzSyncer plugin v" + this.appVersion);
+    import_js_logger8.default.info("Quartz Syncer log level set to " + import_js_logger8.default.getLevel().name);
     this.addSettingTab(new QuartzSyncerSettingTab(this.app, this));
     await this.addCommands();
-    (0, import_obsidian21.addIcon)("quartz-syncer-icon", quartzSyncerIcon);
+    (0, import_obsidian22.addIcon)("quartz-syncer-icon", quartzSyncerIcon);
     this.addRibbonIcon(
       "quartz-syncer-icon",
       "Quartz Syncer publication center",
@@ -28070,7 +28332,7 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
    * This method can be used to handle changes made to the settings outside of the plugin.
    */
   async onExternalSettingsChange() {
-    import_js_logger7.default.info("External settings change detected, reloading settings.");
+    import_js_logger8.default.info("External settings change detected, reloading settings.");
     await this.compareDataToCache();
   }
   /**
@@ -28110,8 +28372,8 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
    * These commands can be triggered from the command palette or ribbon icon.
    */
   async addCommands() {
-    if (this.settings["ENABLE_DEVELOPER_TOOLS"] && import_obsidian21.Platform.isDesktop) {
-      import_js_logger7.default.info("Developer tools enabled");
+    if (this.settings["ENABLE_DEVELOPER_TOOLS"] && import_obsidian22.Platform.isDesktop) {
+      import_js_logger8.default.info("Developer tools enabled");
       const publisher = new Publisher(
         this.app,
         this,
@@ -28132,7 +28394,7 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
           }
         });
       }).catch((e) => {
-        import_js_logger7.default.error("Unable to load generateSyncerSnapshot", e);
+        import_js_logger8.default.error("Unable to load generateSyncerSnapshot", e);
       });
     }
     this.addCommand({
@@ -28190,7 +28452,7 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
   getActiveFile(workspace) {
     const activeFile = workspace.getActiveFile();
     if (!activeFile) {
-      new import_obsidian21.Notice(
+      new import_obsidian22.Notice(
         "Quartz Syncer: No file is open/active. Please open a file and try again."
       );
       return null;
@@ -28215,13 +28477,13 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
         this.settings.cacheTimestamp,
         this
       );
-      import_js_logger7.default.info(`Cache cleared for file: ${activeFile.path}`);
-      new import_obsidian21.Notice(
+      import_js_logger8.default.info(`Cache cleared for file: ${activeFile.path}`);
+      new import_obsidian22.Notice(
         `Quartz Syncer: Cache cleared for file: ${activeFile.path}`
       );
     } else {
-      import_js_logger7.default.warn("Cache is disabled, no action taken.");
-      new import_obsidian21.Notice("Quartz Syncer: Cache is disabled, no action taken.");
+      import_js_logger8.default.warn("Cache is disabled, no action taken.");
+      new import_obsidian22.Notice("Quartz Syncer: Cache is disabled, no action taken.");
     }
   }
   /**
@@ -28238,8 +28500,8 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
         "Are you sure you want to clear the Quartz Syncer cache for all files? This action cannot be undone."
       );
       if (!confirmation) {
-        import_js_logger7.default.info("Cache clearing cancelled by user.");
-        new import_obsidian21.Notice("Quartz Syncer: Cache clearing cancelled.");
+        import_js_logger8.default.info("Cache clearing cancelled by user.");
+        new import_obsidian22.Notice("Quartz Syncer: Cache clearing cancelled.");
         return;
       }
       if (this.settings.useCache) {
@@ -28251,11 +28513,11 @@ var QuartzSyncer = class extends import_obsidian21.Plugin {
           this
         );
         await this.datastore.recreate();
-        import_js_logger7.default.info("Cache cleared for all files.");
-        new import_obsidian21.Notice("Quartz Syncer: Cache cleared for all files.");
+        import_js_logger8.default.info("Cache cleared for all files.");
+        new import_obsidian22.Notice("Quartz Syncer: Cache cleared for all files.");
       } else {
-        import_js_logger7.default.warn("Cache is disabled, no action taken.");
-        new import_obsidian21.Notice(
+        import_js_logger8.default.warn("Cache is disabled, no action taken.");
+        new import_obsidian22.Notice(
           "Quartz Syncer: Cache is disabled, no action taken."
         );
       }

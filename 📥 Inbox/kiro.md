@@ -2,6 +2,11 @@
 date created: 2025-07-15
 date modified: 2025-07-15
 publish: true
+tags:
+  - macOS软件
+  - windows软件
+评价: 4
+icon: "[[kiro-icon-cc-image.png]]"
 ---
 
 [Kiro: The AI IDE for prototype to production](https://kiro.dev/)

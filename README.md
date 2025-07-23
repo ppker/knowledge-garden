@@ -5,6 +5,8 @@ tags:
   - 本库教程
 title: README
 publish: true
+canvas-edges:
+  - "[[第二大脑]]"
 ---
 
 <h1 align="center">oldwinterの数字花园</h1>

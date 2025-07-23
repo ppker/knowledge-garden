@@ -54,7 +54,7 @@ Raycast 提供了强大的窗口管理功能，可以替代 [[Rectangle]] 等专
 - **快速链接与深度链接**: [[Raycast Quicklinks]], [[raycast deeplink]], [[Raycast 小技巧之 Quicklink 二三事 - 少数派-2022-05-30]]
 - **应用启动与快捷键**:
     - [[raycast 一键快速应用 平替 rcmd]]
-    - [[全局快捷键实现应用一键打开或关闭的备选方案]]
+    - [[全局快捷键将app一键打开或隐藏]]
     - [[Raycast Hyper Key]]
 - **浮动笔记**: [[Raycast Notes]]
 - **其他**:

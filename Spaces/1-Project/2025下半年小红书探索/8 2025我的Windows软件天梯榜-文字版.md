@@ -10,7 +10,7 @@ date modified: 2025-07-16
 publish: true
 ---
 
-图片来源： [[2025Windows软件天梯榜-文字版本.canvas]]
+图片来源： [[2025年Windows软件天梯榜-文字版本.canvas]]
 
 文字：[[2025年我的Windows软件天梯榜-文字版]]
 
